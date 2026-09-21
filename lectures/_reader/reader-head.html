@@ -1,0 +1,69 @@
+<script>
+// 本机预览(quarto preview 使用 localhost)时显示进度等仅供编辑者看的信息。
+if (["localhost", "127.0.0.1"].indexOf(location.hostname) >= 0) {
+  document.documentElement.classList.add("bb-dev");
+}
+</script>
+<script>
+// 原文在 raw HTML 块中,Quarto 不会为其中的 \( \) 公式加载 MathJax;页面出现公式时按需加载。
+window.MathJax = {
+  tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"], ["$$", "$$"]] },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".bb-en .math")) {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+    s.async = true;
+    document.head.appendChild(s);
+  }
+});
+
+// 阅读页工具栏:全部展开/折叠、只显示日本語訳或ノート。
+document.addEventListener("DOMContentLoaded", function () {
+  var main = document.querySelector("main.content");
+  if (!main || !main.querySelector(".bb-block")) return;
+
+  var KEY = "bb-mode";
+  function load() { try { return localStorage.getItem(KEY) || "all"; } catch (e) { return "all"; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function apply(mode) {
+    document.body.classList.toggle("bb-hide-ja", mode === "note" || mode === "none");
+    document.body.classList.toggle("bb-hide-note", mode === "ja" || mode === "none");
+  }
+
+  function setAll(open) {
+    main.querySelectorAll(".bb-block .callout").forEach(function (c) {
+      var body = c.querySelector(".callout-collapse");
+      var head = c.querySelector(".callout-header");
+      if (!body || !head || c.offsetParent === null) return;
+      if (body.classList.contains("show") !== open) head.click();
+    });
+  }
+
+  var bar = document.createElement("div");
+  bar.className = "bb-toolbar";
+  bar.innerHTML =
+    '<button type="button" data-a="open">すべて展開</button>' +
+    '<button type="button" data-a="close">すべて折りたたむ</button>' +
+    '<span>表示:' +
+    '<label><input type="radio" name="bbm" value="all"> 両方</label>' +
+    '<label><input type="radio" name="bbm" value="ja"> 日本語訳のみ</label>' +
+    '<label><input type="radio" name="bbm" value="note"> ノートのみ</label>' +
+    '<label><input type="radio" name="bbm" value="none"> すべて隠す</label></span>';
+  main.insertBefore(bar, main.firstChild.nextSibling || main.firstChild);
+
+  var mode = load();
+  bar.querySelector('input[value="' + mode + '"]').checked = true;
+  apply(mode);
+
+  bar.addEventListener("click", function (e) {
+    var a = e.target.getAttribute && e.target.getAttribute("data-a");
+    if (a) setAll(a === "open");
+  });
+  bar.addEventListener("change", function (e) {
+    if (e.target.name === "bbm") { save(e.target.value); apply(e.target.value); }
+  });
+});
+</script>

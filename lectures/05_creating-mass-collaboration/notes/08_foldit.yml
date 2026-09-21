@@ -1,0 +1,42 @@
+# 5.3.2 Foldit
+# 原文: https://www.bitbybitbook.com/en/1st-ed/creating-mass-collaboration/open-calls/foldit/
+# 每段一条,id 对应页面上的段落编号。status: todo / draft / reviewed
+# 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
+blocks: 9   # 原文段落数,build 时校验
+paragraphs:
+  - id: 1
+    status: todo
+    ja: ""
+    point: ""
+  - id: 2
+    status: todo
+    ja: ""
+    point: ""
+  - id: 3
+    status: todo
+    ja: ""
+    point: ""
+  - id: 4
+    status: todo
+    ja: ""
+    point: ""
+  - id: 5
+    status: todo
+    ja: ""
+    point: ""
+  - id: 6
+    status: todo
+    ja: ""
+    point: ""
+  - id: 7
+    status: todo
+    ja: ""
+    point: ""
+  - id: 8
+    status: todo
+    ja: ""
+    point: ""
+  - id: 9
+    status: todo
+    ja: ""
+    point: ""

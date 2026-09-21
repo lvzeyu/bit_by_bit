@@ -1,0 +1,142 @@
+# Activities
+# 原文: https://www.bitbybitbook.com/en/1st-ed/running-experiments/exp-activities/
+# 每段一条,id 对应页面上的段落编号。status: todo / draft / reviewed
+# 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
+blocks: 34   # 原文段落数,build 时校验
+paragraphs:
+  - id: 1
+    status: todo
+    ja: ""
+    point: ""
+  - id: 2
+    status: todo
+    ja: ""
+    point: ""
+  - id: 3
+    status: todo
+    ja: ""
+    point: ""
+  - id: 4
+    status: todo
+    ja: ""
+    point: ""
+  - id: 5
+    status: todo
+    ja: ""
+    point: ""
+  - id: 6
+    status: todo
+    ja: ""
+    point: ""
+  - id: 7
+    status: todo
+    ja: ""
+    point: ""
+  - id: 8
+    status: todo
+    ja: ""
+    point: ""
+  - id: 9
+    status: todo
+    ja: ""
+    point: ""
+  - id: 10
+    status: todo
+    ja: ""
+    point: ""
+  - id: 11
+    status: todo
+    ja: ""
+    point: ""
+  - id: 12
+    status: todo
+    ja: ""
+    point: ""
+  - id: 13
+    status: todo
+    ja: ""
+    point: ""
+  - id: 14
+    status: todo
+    ja: ""
+    point: ""
+  - id: 15
+    status: todo
+    ja: ""
+    point: ""
+  - id: 16
+    status: todo
+    ja: ""
+    point: ""
+  - id: 17
+    status: todo
+    ja: ""
+    point: ""
+  - id: 18
+    status: todo
+    ja: ""
+    point: ""
+  - id: 19
+    status: todo
+    ja: ""
+    point: ""
+  - id: 20
+    status: todo
+    ja: ""
+    point: ""
+  - id: 21
+    status: todo
+    ja: ""
+    point: ""
+  - id: 22
+    status: todo
+    ja: ""
+    point: ""
+  - id: 23
+    status: todo
+    ja: ""
+    point: ""
+  - id: 24
+    status: todo
+    ja: ""
+    point: ""
+  - id: 25
+    status: todo
+    ja: ""
+    point: ""
+  - id: 26
+    status: todo
+    ja: ""
+    point: ""
+  - id: 27
+    status: todo
+    ja: ""
+    point: ""
+  - id: 28
+    status: todo
+    ja: ""
+    point: ""
+  - id: 29
+    status: todo
+    ja: ""
+    point: ""
+  - id: 30
+    status: todo
+    ja: ""
+    point: ""
+  - id: 31
+    status: todo
+    ja: ""
+    point: ""
+  - id: 32
+    status: todo
+    ja: ""
+    point: ""
+  - id: 33
+    status: todo
+    ja: ""
+    point: ""
+  - id: 34
+    status: todo
+    ja: ""
+    point: ""

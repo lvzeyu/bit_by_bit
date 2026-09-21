@@ -1,0 +1,185 @@
+<script>
+// 原文高亮:划选文字 → 色板;点击已有高亮 → 改色/删除。
+// 保存在 localStorage(按页面路径),只存段落编号 + 字符偏移 + 文字片段(用于校验)。
+// 偏移只统计 .math / mjx-container 之外的文本,因此不受 MathJax 渲染影响。
+(function () {
+  var COLORS = ["yellow", "green", "blue", "pink"];
+  var NAMES = { yellow: "黄", green: "緑", blue: "青", pink: "桃" };
+  var KEY = "bb-hl:" + location.pathname;
+  var list = [];
+  var pending = null; // {mode:"new", segs} | {mode:"edit", id}
+
+  function load() { try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { list = []; } }
+  function save() {
+    try { if (list.length) localStorage.setItem(KEY, JSON.stringify(list)); else localStorage.removeItem(KEY); } catch (e) {}
+  }
+
+  function textNodes(body) {
+    var w = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return n.parentElement && n.parentElement.closest(".math, mjx-container")
+          ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var out = [], n;
+    while ((n = w.nextNode())) out.push(n);
+    return out;
+  }
+  function plain(body) { return textNodes(body).map(function (n) { return n.data; }).join(""); }
+
+  // 容器内某个 DOM 位置对应的"纯文本偏移"
+  function offsetOf(body, container, off) {
+    var r = document.createRange();
+    r.setStart(body, 0);
+    r.setEnd(container, off);
+    var acc = 0, nodes = textNodes(body);
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i];
+      if (t === container) return acc + off;
+      if (r.comparePoint(t, 0) > 0) break;
+      acc += t.data.length;
+    }
+    return acc;
+  }
+
+  function wrap(body, h) {
+    var pos = 0;
+    textNodes(body).forEach(function (n) {
+      var len = n.data.length;
+      var a = Math.max(h.s, pos) - pos, b = Math.min(h.e, pos + len) - pos;
+      pos += len;
+      if (b <= a) return;
+      var mid = a > 0 ? n.splitText(a) : n;
+      if (b - a < mid.data.length) mid.splitText(b - a);
+      var m = document.createElement("mark");
+      m.className = "bb-hl bb-hl-" + h.c;
+      m.setAttribute("data-h", h.id);
+      mid.parentNode.replaceChild(m, mid);
+      m.appendChild(mid);
+    });
+  }
+
+  function renderBlock(block) {
+    var body = block.querySelector(".bb-body");
+    if (!body) return;
+    body.querySelectorAll("mark.bb-hl").forEach(function (m) {
+      var p = m.parentNode;
+      while (m.firstChild) p.insertBefore(m.firstChild, m);
+      p.removeChild(m);
+    });
+    body.normalize();
+    var text = plain(body);
+    list.forEach(function (h) {
+      if (h.p === block.id && text.slice(h.s, h.e) === h.t) wrap(body, h);
+    });
+  }
+  function renderAll() {
+    document.querySelectorAll(".bb-block").forEach(renderBlock);
+    updateClear();
+  }
+
+  // ---- 色板
+  var pop = document.createElement("div");
+  pop.className = "bb-pop";
+  pop.hidden = true;
+  pop.innerHTML = COLORS.map(function (c) {
+    return '<button type="button" class="bb-sw bb-hl-' + c + '" data-c="' + c + '" title="' + NAMES[c] + '"></button>';
+  }).join("") + '<button type="button" class="bb-del" data-a="del" title="ハイライトを削除">✕</button>';
+  pop.addEventListener("mousedown", function (e) { e.preventDefault(); }); // 保持选区
+
+  function showPop(rect, mode) {
+    pop.querySelector(".bb-del").style.display = mode === "edit" ? "" : "none";
+    pop.hidden = false;
+    pop.style.left = window.scrollX + rect.left + rect.width / 2 + "px";
+    pop.style.top = window.scrollY + rect.top - 6 + "px";
+  }
+  function hidePop() { pop.hidden = true; pending = null; }
+
+  function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  pop.addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn || !pending) return;
+    var c = btn.getAttribute("data-c"), touched = [];
+    if (pending.mode === "new" && c) {
+      pending.segs.forEach(function (s) {
+        list.push({ id: newId(), p: s.block.id, s: s.s, e: s.e, c: c, t: s.t });
+        touched.push(s.block);
+      });
+      var sel = window.getSelection();
+      if (sel) sel.removeAllRanges();
+    } else if (pending.mode === "edit") {
+      var i = list.findIndex(function (h) { return h.id === pending.id; });
+      if (i >= 0) {
+        var blk = document.getElementById(list[i].p);
+        if (c) list[i].c = c; else list.splice(i, 1);
+        if (blk) touched.push(blk);
+      }
+    }
+    touched.forEach(renderBlock);
+    save();
+    updateClear();
+    hidePop();
+  });
+
+  function onSelectEnd() {
+    setTimeout(function () {
+      var sel = window.getSelection();
+      if (!sel || !sel.rangeCount || sel.isCollapsed) return;
+      var r = sel.getRangeAt(0), segs = [];
+      document.querySelectorAll(".bb-body").forEach(function (b) {
+        if (!r.intersectsNode(b)) return;
+        var full = plain(b);
+        var s = b.contains(r.startContainer) ? offsetOf(b, r.startContainer, r.startOffset) : 0;
+        var e = b.contains(r.endContainer) ? offsetOf(b, r.endContainer, r.endOffset) : full.length;
+        var t = full.slice(s, e);
+        if (e > s && t.trim()) segs.push({ block: b.closest(".bb-block"), s: s, e: e, t: t });
+      });
+      if (!segs.length) return;
+      pending = { mode: "new", segs: segs };
+      showPop(r.getBoundingClientRect(), "new");
+    }, 0);
+  }
+
+  function onClick(e) {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    var m = e.target.closest && e.target.closest("mark.bb-hl");
+    if (!m) return;
+    pending = { mode: "edit", id: m.getAttribute("data-h") };
+    showPop(m.getBoundingClientRect(), "edit");
+  }
+
+  // ---- 工具栏上的"消去"按钮
+  var clearBtn = null;
+  function updateClear() {
+    if (clearBtn) clearBtn.textContent = "ハイライトを消去(" + list.length + ")";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = document.querySelector("main.content");
+    if (!main || !main.querySelector(".bb-block")) return;
+    load();
+    document.body.appendChild(pop);
+    var bar = main.querySelector(".bb-toolbar");
+    if (bar) {
+      clearBtn = document.createElement("button");
+      clearBtn.type = "button";
+      clearBtn.addEventListener("click", function () {
+        if (!list.length || !confirm("このページのハイライトをすべて消去しますか?")) return;
+        list = [];
+        save();
+        renderAll();
+      });
+      bar.appendChild(clearBtn);
+    }
+    renderAll();
+    document.addEventListener("mouseup", function (e) { if (!pop.contains(e.target)) onSelectEnd(); });
+    document.addEventListener("touchend", onSelectEnd);
+    document.addEventListener("keyup", function (e) { if (e.shiftKey) onSelectEnd(); });
+    document.addEventListener("click", onClick);
+    document.addEventListener("mousedown", function (e) { if (!pop.contains(e.target)) hidePop(); });
+    window.addEventListener("scroll", hidePop, { passive: true });
+  });
+})();
+</script>

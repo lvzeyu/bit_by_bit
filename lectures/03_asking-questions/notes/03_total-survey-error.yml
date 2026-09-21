@@ -1,0 +1,26 @@
+# 3.3 The total survey error framework
+# 原文: https://www.bitbybitbook.com/en/1st-ed/asking-questions/total-survey-error/
+# 每段一条,id 对应页面上的段落编号。status: todo / draft / reviewed
+# 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
+blocks: 5   # 原文段落数,build 时校验
+paragraphs:
+  - id: 1
+    status: todo
+    ja: ""
+    point: ""
+  - id: 2
+    status: todo
+    ja: ""
+    point: ""
+  - id: 3
+    status: todo
+    ja: ""
+    point: ""
+  - id: 4
+    status: todo
+    ja: ""
+    point: ""
+  - id: 5
+    status: todo
+    ja: ""
+    point: ""

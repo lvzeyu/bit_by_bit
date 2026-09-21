@@ -1,0 +1,18 @@
+# 5.4 Distributed data collection
+# 原文: https://www.bitbybitbook.com/en/1st-ed/creating-mass-collaboration/dist-data-collection/
+# 每段一条,id 对应页面上的段落编号。status: todo / draft / reviewed
+# 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
+blocks: 3   # 原文段落数,build 时校验
+paragraphs:
+  - id: 1
+    status: todo
+    ja: ""
+    point: ""
+  - id: 2
+    status: todo
+    ja: ""
+    point: ""
+  - id: 3
+    status: todo
+    ja: ""
+    point: ""

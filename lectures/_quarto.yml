@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: python3 ../scripts/build_reader.py
+  render:
+    - index.qmd
+    - "0*/notes/*.qmd"
+
+metadata-files:
+  - _sidebar.yml
+
+website:
+  title: "Bit by Bit 読書ガイド"
+  page-navigation: true
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: [cosmo, _reader/reader.scss]
+    toc: true
+    toc-depth: 2
+    callout-appearance: simple
+    html-math-method: mathjax
+    include-in-header:
+      - _reader/reader-head.html
+      - _reader/highlight.html

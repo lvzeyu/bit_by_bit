@@ -1,0 +1,28 @@
+# 1.1 An ink blot
+# 原文: https://www.bitbybitbook.com/en/1st-ed/introduction/ink-blot/
+# 每段一条,id 对应页面上的段落编号。status: todo / draft / reviewed
+# 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
+blocks: 4   # 原文段落数,build 时校验
+paragraphs:
+  - id: 1
+    status: draft
+    ja: |
+      (要約)2009年の夏、ルワンダで研究者のブルーメンストックらが、国内最大手の携帯電話会社の顧客約150万人のデータベースから無作為に選んだ約1,000人に電話をかけた。目的は富と貧困の研究で、調査への参加を依頼し、人口・社会・経済に関する質問をした。
+    point: 本の冒頭で、ごく普通の電話調査の場面を具体的に描いて読者を引き込む導入。ここでは「調査の方法」(無作為抽出+電話での質問)を頭に入れておくと、後の展開との対比が分かりやすい。
+    vocab:
+      - {term: random sample, gloss: 無作為標本(母集団から偶然に選んだ一部)}
+      - {term: survey, gloss: 調査、アンケート}
+      - {term: demographic, gloss: 人口統計的な(年齢・性別・居住地など)}
+    background: ブルーメンストックは、携帯電話の通話記録などのデータから貧困を推定する研究で知られる計算社会科学者(この段落の調査はその研究の一部)。
+  - id: 2
+    status: todo
+    ja: ""
+    point: ""
+  - id: 3
+    status: todo
+    ja: ""
+    point: ""
+  - id: 4
+    status: todo
+    ja: ""
+    point: ""

@@ -36,3 +36,13 @@ __pycache__/
 *.fdb_latexmk
 *.out
 *.xdv
+
+# Bit by Bit 阅读页面:含英文原文的生成物与缓存,不提交
+lectures/.cache/
+lectures/.quarto/
+lectures/index.qmd
+lectures/_sidebar.yml
+lectures/*/notes/*.qmd
+lectures/index.html
+lectures/*/notes/*.html
+lectures/**/*_files/
