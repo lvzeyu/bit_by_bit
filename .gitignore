@@ -1,0 +1,38 @@
+# 个人信息(学生名单、成绩等)
+admin/private/*
+!admin/private/README.md
+
+# 系统/编辑器
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# 构建产物
+build/
+dist/
+_site/
+
+# Slides 导出中间文件
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.synctex.gz
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# 大文件(在 README 中记录下载方式)
+*.mp4
+*.mov
+*.zip
+
+# LaTeX
+*.fls
+*.fdb_latexmk
+*.out
+*.xdv

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include file="header.html"-->
+
+<body>
+
+  <!--#include file="navbar.html"-->
+
+  <div class="container">
+
+    <h2>Logistics</h2>
+
+    <h3 id="time">Time and location</h3>
+    <ul>
+      <li>Class: Tuesday 2pm-5pm (165 Wallace Hall)</li>
+      <li>Lab (optional): Wednesday 2pm-5pm (TBA)</li>
+    </ul>
+
+    <h3 id="prereqs">Prerequisites</h3>
+    <p>There are no official prerequisites for the course, and students from all departments are welcome.  Activities involving mathematics, statistics, and computer programming at the level in Soc 500 and Soc 504 will be in a separate, optional lab session.  Students without this level of background may find some of the reading challenging.  The reading will also assume a basic understanding of the process of social science research (equivalent to Soc 503), and students without this background may find some of the reading challenging.  Undergraduates interested in taking the course should contact the instructor for permission.</p>
+
+     <h3 id="collaboration">Collaboration policy</h3>
+     <p>You are encouraged to work together on the activities for the class, but you are only only able to put your name on projects to which you made an intellectual contribution.  If you have any doubts about what is appropriate, ask me.</p>
+
+     <h3 id="piazza">Piazza</h3>
+     <p>In this course we will be using Piazza for online class discussion. You will not be required to post, but the system is designed to get you help quickly and efficiently from classmates and me. Rather than emailing me questions, I encourage you to post your questions on Piazza. Here is our class page: <a href="https://piazza.com/class/iss26a5trbl6zj">https://piazza.com/class/iss26a5trbl6zj</a>.</p>
+
+     <h3 id="weekly-schedule">Weekly schedule</h3>
+     <p>Here is the schedule for each week:</p>
+
+     <ul>
+       <li>Sunday at midnight: upload research proposal (not in first week), annotating the chapter using hypothes.is
+       <li>Monday at midnight: give feedback on research proposal (not in first week), upload feedback on chapter
+       <li>Tuesday, 2 - 5: class
+       <li>Wednesday, 2 - 5: lab (optional)
+     </ul>
+
+     <h3 id="grading">Grading</h3>
+
+     <p>This course will be graded P/D/F.  Non-Sociology graduate students wishing to receive a grade for this course must submit a completed <a href="https://gradschool.princeton.edu/sites/gradschool/files/Enrollment%20Form%20Revised_1.pdf">Graduate Student Enrollment Change Form</a>.</p>
+
+     <h3 id="access">Open access</h4>
+       
+     <p>The prohibitive cost of academic journals means that many of the readings for this course are not available to everyone.  I have marked these closed access articles with a <img src="images/closed.png" height="12">.  Fortunately, some of the more recent scholarship in this area is freely available to everyone in the world. I have marked these open access article with a <img src="images/open.png" height="12">.  It is my hope that eventually I will be able to construct this syllabus using exclusively open access scholarship.  In the meantime, if you do not have access to a university library, copies of many of the closed access articles can be found through <a href="http://scholar.google.com">Google Scholar</a>.</p>
+
+
+     <br />
+     <br />
+
+      <!--#include file="footer.html"-->
+
+  </div>
+  <!-- /container -->
+
+</html>

@@ -1,0 +1,124 @@
+% Build: latexmk -lualatex syllabus.tex   (or: lualatex syllabus.tex)
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=25mm]{geometry}
+\usepackage{luatexja}
+\usepackage[haranoaji]{luatexja-preset}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+
+\setlist{nosep,leftmargin=*}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.4em}
+\renewcommand{\arraystretch}{1.25}
+
+% Items to be confirmed before distribution.
+\newcommand{\tbd}[1]{\textcolor{red}{[#1]}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\extlink}[2]{\href{#1}{\textcolor{blue}{#2\,\textsuperscript{\faLink}}}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries 英語原書講読入門}\\[0.3em]
+  {\Large\bfseries Introduction to Academic Reading in English}\\[0.6em]
+  {\large Syllabus \quad Fall 2026}
+\end{center}
+
+\section{Course Information}
+\begin{tabularx}{\textwidth}{@{}lY@{}}
+  \toprule
+  Instructor & Zeyu Lyu \\
+  Meeting time & Friday  13:00--14:30  \\
+  Location & \tbd{classroom} \\
+  Contact & lyu.zeyu.e8@tohoku.ac.jp \\
+  Main text & Matthew J.\ Salganik, \emph{Bit by Bit: Social Research in the Digital Age}
+              (Princeton University Press, 2018). 
+              \extlink{https://www.bitbybitbook.com/en/}{Link} \\
+  Japanese edition & マシュー・J.\ サルガニック(著)、瀧川裕貴・常松淳・阪本拓人・大林真也(訳)
+              『ビット・バイ・ビット――デジタル社会調査入門』有斐閣、2019年
+              (\extlink{https://www.yuhikaku.co.jp/book/b10189273.html}{Link}) \\
+  \bottomrule
+\end{tabularx}
+
+
+\section{Course Objectives}
+\begin{enumerate}
+  \item Learn how to read and understand academic texts in English.
+  \item Learn how to find and use relevant background information to better understand academic texts in English.
+  \item Learn how to summarize and present academic texts in English.
+  \item Develop a basic understanding of computational social science and its
+        research methods.
+\end{enumerate}
+
+\section{Assessment}
+\begin{itemize}
+  \item Attendance and class participation: 70\%
+  \item Group presentation: 30\%
+\end{itemize}
+
+\newpage
+\section{Schedule}
+
+\begin{tabularx}{\textwidth}{@{}rlYl@{}}
+  \toprule
+  \# & Date & Topic & Format \\
+  \midrule
+   1 & Oct 2  & Introduction & \\
+   2 & Oct 9  & Observing behavior I (Chapter 2) & \\
+   3 & Oct 30 & Observing behavior II (Chapter 2) & \\
+   4 & Nov 6  & Asking questions I (Chapter 3) & \\
+   5 & Nov 13 & Asking questions II (Chapter 3) & \\
+   6 & Nov 20 & Running experiments I (Chapter 4) & \\
+   7 & Nov 27 & Running experiments II (Chapter 4) & \\
+   8 & Dec 4  & Creating mass collaboration I (Chapter 5) & \\
+   9 & Dec 11 & Creating mass collaboration II (Chapter 5) & \\
+  10 & Dec 18 & Ethics (Chapter 6) and The future (Chapter 7) & \\
+  11 & Dec 25 & Presentations & Online \\
+  12 & Jan 8  & Presentations & Online \\
+  13 & Jan 15 & Presentations & Online \\
+  14 & Jan 22 & Presentations & \\
+  15 & Jan 29 & Presentations & \\
+  16 & Feb 3 (Wed) & Wrap-up and reserve session & \\
+  \bottomrule
+\end{tabularx}
+
+\small\emph{Note: There are no classes on October 16 or 23 because of the
+university festival. Class dates and the course schedule are subject to change.}
+\normalsize
+
+\section{Course Content}
+
+\subsection{Reading the English Texts}
+
+\begin{itemize}
+  \item The main text is written in English. Students are expected to read the
+        assigned chapters in English before each class. Students are encouraged
+        to use dictionaries and other resources to help them understand the text.
+  \item In each class, the instructor will explain the main points of the
+        assigned chapter and discuss any questions or difficulties that students
+        may have. Students are encouraged to ask questions and participate in
+        the discussion.
+\end{itemize}
+
+\subsection{Presentations}
+
+\begin{itemize}
+  \item Groups will normally consist of two or three students; the final number
+        of groups will be determined after enrollment is finalized.
+  \item Each group will choose one paper from a reading list provided by the
+        instructor.
+  \item Each group will have 30--45 minutes for its presentation and the
+        discussion that follows. Two groups will present in each session.
+  \item The presentation order will be announced on December 4. Please form
+        your group by that date.
+\end{itemize}
+
+\end{document}
