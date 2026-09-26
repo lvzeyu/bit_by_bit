@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Paragraph Notes"
+  short_description: "Create concise Japanese notes for English paragraphs"
+  default_prompt: "Use $academic-paragraph-notes to complete the specified lecture note YAML with concise Japanese translations and reading notes."

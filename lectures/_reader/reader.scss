@@ -31,6 +31,23 @@
 .bb-body > :first-child { margin-top: 0; }
 .bb-body > :last-child { margin-bottom: 0; }
 
+// 原文中的図を本文カラムと同じ幅に揃える。
+// figure に限定し、本文中の小さなインライン画像は拡大しない。
+.bb-body > .figure,
+.bb-body > figure {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.bb-body > .figure > img,
+.bb-body > figure > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .bb-block .callout {
   margin: 0.5rem 0 0 2.6rem;
 }

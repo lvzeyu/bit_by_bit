@@ -37,9 +37,6 @@ VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "met
 HEADINGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
 BLOCKS = {"p", "ul", "ol", "dl", "blockquote", "table", "pre", "figure", "div"}
 
-STATUS_LABEL = {"draft": "(草稿)", "reviewed": ""}
-
-
 # ---------------------------------------------------------------- 抓取
 
 def write_if_changed(path: Path, text: str):
@@ -246,9 +243,8 @@ def has(note, key):
 
 def render_note_blocks(note: dict) -> str:
     out = []
-    label = STATUS_LABEL.get(note.get("status", "todo"), "")
     if has(note, "ja"):
-        out.append(f'::: {{.callout-tip .bb-ja collapse="true" lang="ja" title="日本語訳{label}"}}\n{str(note["ja"]).strip()}\n:::')
+        out.append(f'::: {{.callout-tip .bb-ja collapse="true" lang="ja" title="日本語訳"}}\n{str(note["ja"]).strip()}\n:::')
     body = []
     if has(note, "point"):
         body.append(f"**要点**:{str(note['point']).strip()}")
@@ -260,7 +256,7 @@ def render_note_blocks(note: dict) -> str:
         body.append(f"**背景**:{str(note['background']).strip()}")
     if body:
         out.append(
-            f'::: {{.callout-note .bb-note collapse="true" lang="ja" title="理解のポイント{label}"}}\n'
+            '::: {.callout-note .bb-note collapse="true" lang="ja" title="理解のポイント"}\n'
             + "\n\n".join(body) + "\n:::"
         )
     return "\n\n".join(out)
@@ -310,7 +306,27 @@ def main():
     toc = yaml.safe_load((LEC / "toc.yml").read_text(encoding="utf-8"))
     base = toc["base_url"]
     sidebar = [{"href": "index.qmd", "text": "目次"}]
-    index = ["---", 'title: "Bit by Bit 読書ガイド"', "---", "", "各段落の下の折りたたみで日本語訳・理解のポイントを表示します。", ""]
+    index = [
+        "---",
+        'title: "英語原書講読入門"',
+        "---",
+        "",
+        "本授業では、英語で書かれた学術文献を読み解く力を身につけるとともに、"
+        "『Bit by Bit: Social Research in the Digital Age』の講読を通して、"
+        "計算社会科学とその研究方法の基礎を学びます。",
+        "",
+        "本サイトに掲載する英文本文は、Matthew J. Salganik, "
+        "[*Bit by Bit: Social Research in the Digital Age*](https://www.bitbybitbook.com/en/) "
+        "の公開オンライン版に基づいています。",
+        "",
+        "## 授業の目標",
+        "",
+        "- 英語の学術文献を正確に読み、内容を理解できるようになる。",
+        "- 文献の理解に必要な背景情報を調べ、適切に活用できるようになる。",
+        "- 英語の学術文献を要約し、その内容を発表できるようになる。",
+        "- 計算社会科学とその主要な研究方法について、基礎的な理解を得る。",
+        "",
+    ]
     failed = []
 
     for ch in toc["chapters"]:

@@ -10,7 +10,7 @@ metadata-files:
   - _sidebar.yml
 
 website:
-  title: "Bit by Bit 読書ガイド"
+  title: "英語原書講読入門"
   page-navigation: true
   back-to-top-navigation: true
 
