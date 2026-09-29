@@ -4,59 +4,87 @@
 # 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
 blocks: 14   # 原文段落数,build 时校验
 paragraphs:
-  - id: 1
-    status: todo
-    ja: ""
-    point: ""
-  - id: 2
-    status: todo
-    ja: ""
-    point: ""
-  - id: 3
-    status: todo
-    ja: ""
-    point: ""
-  - id: 4
-    status: todo
-    ja: ""
-    point: ""
-  - id: 5
-    status: todo
-    ja: ""
-    point: ""
-  - id: 6
-    status: todo
-    ja: ""
-    point: ""
-  - id: 7
-    status: todo
-    ja: ""
-    point: ""
-  - id: 8
-    status: todo
-    ja: ""
-    point: ""
-  - id: 9
-    status: todo
-    ja: ""
-    point: ""
-  - id: 10
-    status: todo
-    ja: ""
-    point: ""
-  - id: 11
-    status: todo
-    ja: ""
-    point: ""
-  - id: 12
-    status: todo
-    ja: ""
-    point: ""
-  - id: 13
-    status: todo
-    ja: ""
-    point: ""
-  - id: 14
-    status: todo
-    ja: ""
-    point: ""
+- id: 1
+  status: draft
+  ja: |
+    インクしみ（第1.1節）
+  point: |
+    インクしみについて述べている
+- id: 2
+  status: draft
+  ja: |
+    プロジェクトの詳細な説明については、この書籍の第3章を参照してください。
+  point: |
+    プロジェクトの詳細はこの書籍の第3章に記載されている。
+- id: 3
+  status: draft
+  ja: |
+    デジタル時代へようこそ（第1.2節）
+  point: |
+    デジタル時代の到来が紹介されている
+- id: 4
+  status: draft
+  ja: |
+    Gleick (2011) は、人類の情報収集、保存、伝送、処理能力の変化に関する歴史的概観を提供している。
+  point: |
+    人類の情報処理能力の変化に関する歴史的概観が提供されている
+- id: 5
+  status: draft
+  ja: |
+    デジタル時代における潜在的な危害、例えばプライバシー侵害についての紹介にはAbelson, Ledeen, Lewis (2008)およびMayer-Schönberger (2009)を、デジタル時代における機会についての紹介にはMayer-SchönbergerとCukier (2013)を参照してください。
+  point: |
+    デジタル時代の危害と機会についての文献を紹介している
+- id: 6
+  status: draft
+  ja: |
+    企業が日常的な実践に実験を組み込むことについて詳しく知りたい場合はManzi (2012)を、企業が現実世界での行動を追跡することについて詳しく知りたい場合はLevy and Baracas (2017)を参照してください。
+  point: |
+    企業が日常業務に実験を取り入れる方法と、現実世界での行動を追跡する方法についての文献を紹介している。
+- id: 7
+  status: draft
+  ja: |
+    デジタル時代のシステムは、研究の道具としてだけでなく、研究対象としても機能する。例えば、ソーシャルメディアを利用して公共の意見を測定するか、ソーシャルメディアが公共の意見に与える影響を理解するかのどちらかである。前者ではデジタルシステムは新たな測定を助ける道具となり、後者ではデジタルシステム自体が研究の対象となる。この区別の詳細については、SandvigとHargittai（2015）を参照されたい。
+  point: |
+    デジタルシステムは研究の道具と研究対象の両方であり、ソーシャルメディアの利用目的によってその役割が異なる。
+- id: 8
+  status: draft
+  ja: |
+    研究設計（第1.3節）
+  point: |
+    研究設計について述べている
+- id: 9
+  status: draft
+  ja: |
+    社会科学における研究設計についてさらに詳しく知りたい場合は、King, Keohane, and Verba (1994)、Singleton and Straits (2009)、およびKhan and Fisher (2013)を参照してください。
+  point: |
+    社会科学における研究設計についての詳細はKing, Keohane, and Verba (1994)、Singleton and Straits (2009)、Khan and Fisher (2013)に記載されている。
+- id: 10
+  status: draft
+  ja: |
+    Donoho (2015) はデータサイエンスをデータから学ぶ人々の活動として記述し、Tukey, Cleveland, Chambers, Breimanなどの学者の思想的起源を遡るデータサイエンスの歴史を提供している。
+  point: |
+    データサイエンスはデータから学ぶ活動であり、その歴史はTukeyらの思想的起源に遡る。
+- id: 11
+  status: draft
+  ja: |
+    HargittaiとSandvig (2015)によるデジタル時代における社会調査の実施に関する一連の第一人称報告を参照してください。
+  point: |
+    デジタル時代における社会調査の実施についての第一人称報告がHargittaiとSandvig (2015)で提供されている。
+- id: 12
+  status: draft
+  ja: |
+    この書籍のテーマ（第1.4節）
+  point: |
+    この書籍のテーマが述べられている
+- id: 13
+  status: draft
+  ja: |
+    レディメイドデータとカスタムメイドデータの混在についてさらに知りたい場合は、Groves (2011)を参照してください。
+  point: |
+    レディメイドデータとカスタムメイドデータの混在についての詳細はGroves (2011)に記載されている。
+- id: 14
+  status: draft
+  ja: |
+    この書籍の第6章で「匿名化」の失敗について詳しく説明されている。Blumenstockらが収入を推定するために使用した一般的な手法は、性的指向、民族、宗教的および政治的見解、依存性のある物質の使用といった潜在的に敏感な個人情報も推定するために使用できる（Kosinski, Stillwell, and Graepel 2013）
+  point: |
+    「匿名化」の失敗と、収入推定と同じ手法で性的指向や宗教的見解などの個人情報を推定できる可能性が指摘されている
