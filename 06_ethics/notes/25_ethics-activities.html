@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Activities – 英語原書講読入門</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../07_the-future/notes/01_looking-forward.html" rel="next">
+<link href="../../06_ethics/notes/24_ethics-what-to-read-next.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0aecec4fa854f4509179baef4aac6b11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// 本机预览(quarto preview 使用 localhost)时显示进度等仅供编辑者看的信息。
+if (["localhost", "127.0.0.1"].indexOf(location.hostname) >= 0) {
+  document.documentElement.classList.add("bb-dev");
+}
+</script>
+<script>
+// 原文在 raw HTML 块中,Quarto 不会为其中的 \( \) 公式加载 MathJax;页面出现公式时按需加载。
+window.MathJax = {
+  tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"], ["$$", "$$"]] },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".bb-en .math")) {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+    s.async = true;
+    document.head.appendChild(s);
+  }
+});
+
+// 阅读页工具栏:全部展开/折叠、只显示日本語訳或ノート。
+document.addEventListener("DOMContentLoaded", function () {
+  var main = document.querySelector("main.content");
+  if (!main || !main.querySelector(".bb-block")) return;
+
+  var KEY = "bb-mode";
+  function load() { try { return localStorage.getItem(KEY) || "all"; } catch (e) { return "all"; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function apply(mode) {
+    document.body.classList.toggle("bb-hide-ja", mode === "note" || mode === "none");
+    document.body.classList.toggle("bb-hide-note", mode === "ja" || mode === "none");
+  }
+
+  function setAll(open) {
+    main.querySelectorAll(".bb-block .callout").forEach(function (c) {
+      var body = c.querySelector(".callout-collapse");
+      var head = c.querySelector(".callout-header");
+      if (!body || !head || c.offsetParent === null) return;
+      if (body.classList.contains("show") !== open) head.click();
+    });
+  }
+
+  var bar = document.createElement("div");
+  bar.className = "bb-toolbar";
+  bar.innerHTML =
+    '<button type="button" data-a="open">すべて展開</button>' +
+    '<button type="button" data-a="close">すべて折りたたむ</button>' +
+    '<span>表示:' +
+    '<label><input type="radio" name="bbm" value="all"> 両方</label>' +
+    '<label><input type="radio" name="bbm" value="ja"> 日本語訳のみ</label>' +
+    '<label><input type="radio" name="bbm" value="note"> ノートのみ</label>' +
+    '<label><input type="radio" name="bbm" value="none"> すべて隠す</label></span>';
+  main.insertBefore(bar, main.firstChild.nextSibling || main.firstChild);
+
+  var mode = load();
+  bar.querySelector('input[value="' + mode + '"]').checked = true;
+  apply(mode);
+
+  bar.addEventListener("click", function (e) {
+    var a = e.target.getAttribute && e.target.getAttribute("data-a");
+    if (a) setAll(a === "open");
+  });
+  bar.addEventListener("change", function (e) {
+    if (e.target.name === "bbm") { save(e.target.value); apply(e.target.value); }
+  });
+});
+</script>
+<script>
+// 原文高亮:划选文字 → 色板;点击已有高亮 → 改色/删除。
+// 保存在 localStorage(按页面路径),只存段落编号 + 字符偏移 + 文字片段(用于校验)。
+// 偏移只统计 .math / mjx-container 之外的文本,因此不受 MathJax 渲染影响。
+(function () {
+  var COLORS = ["yellow", "green", "blue", "pink"];
+  var NAMES = { yellow: "黄", green: "緑", blue: "青", pink: "桃" };
+  var KEY = "bb-hl:" + location.pathname;
+  var list = [];
+  var pending = null; // {mode:"new", segs} | {mode:"edit", id}
+
+  function load() { try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { list = []; } }
+  function save() {
+    try { if (list.length) localStorage.setItem(KEY, JSON.stringify(list)); else localStorage.removeItem(KEY); } catch (e) {}
+  }
+
+  function textNodes(body) {
+    var w = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return n.parentElement && n.parentElement.closest(".math, mjx-container")
+          ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var out = [], n;
+    while ((n = w.nextNode())) out.push(n);
+    return out;
+  }
+  function plain(body) { return textNodes(body).map(function (n) { return n.data; }).join(""); }
+
+  // 容器内某个 DOM 位置对应的"纯文本偏移"
+  function offsetOf(body, container, off) {
+    var r = document.createRange();
+    r.setStart(body, 0);
+    r.setEnd(container, off);
+    var acc = 0, nodes = textNodes(body);
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i];
+      if (t === container) return acc + off;
+      if (r.comparePoint(t, 0) > 0) break;
+      acc += t.data.length;
+    }
+    return acc;
+  }
+
+  function wrap(body, h) {
+    var pos = 0;
+    textNodes(body).forEach(function (n) {
+      var len = n.data.length;
+      var a = Math.max(h.s, pos) - pos, b = Math.min(h.e, pos + len) - pos;
+      pos += len;
+      if (b <= a) return;
+      var mid = a > 0 ? n.splitText(a) : n;
+      if (b - a < mid.data.length) mid.splitText(b - a);
+      var m = document.createElement("mark");
+      m.className = "bb-hl bb-hl-" + h.c;
+      m.setAttribute("data-h", h.id);
+      mid.parentNode.replaceChild(m, mid);
+      m.appendChild(mid);
+    });
+  }
+
+  function renderBlock(block) {
+    var body = block.querySelector(".bb-body");
+    if (!body) return;
+    body.querySelectorAll("mark.bb-hl").forEach(function (m) {
+      var p = m.parentNode;
+      while (m.firstChild) p.insertBefore(m.firstChild, m);
+      p.removeChild(m);
+    });
+    body.normalize();
+    var text = plain(body);
+    list.forEach(function (h) {
+      if (h.p === block.id && text.slice(h.s, h.e) === h.t) wrap(body, h);
+    });
+  }
+  function renderAll() {
+    document.querySelectorAll(".bb-block").forEach(renderBlock);
+    updateClear();
+  }
+
+  // ---- 色板
+  var pop = document.createElement("div");
+  pop.className = "bb-pop";
+  pop.hidden = true;
+  pop.innerHTML = COLORS.map(function (c) {
+    return '<button type="button" class="bb-sw bb-hl-' + c + '" data-c="' + c + '" title="' + NAMES[c] + '"></button>';
+  }).join("") + '<button type="button" class="bb-del" data-a="del" title="ハイライトを削除">✕</button>';
+  pop.addEventListener("mousedown", function (e) { e.preventDefault(); }); // 保持选区
+
+  function showPop(rect, mode) {
+    pop.querySelector(".bb-del").style.display = mode === "edit" ? "" : "none";
+    pop.hidden = false;
+    pop.style.left = window.scrollX + rect.left + rect.width / 2 + "px";
+    pop.style.top = window.scrollY + rect.top - 6 + "px";
+  }
+  function hidePop() { pop.hidden = true; pending = null; }
+
+  function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  pop.addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn || !pending) return;
+    var c = btn.getAttribute("data-c"), touched = [];
+    if (pending.mode === "new" && c) {
+      pending.segs.forEach(function (s) {
+        list.push({ id: newId(), p: s.block.id, s: s.s, e: s.e, c: c, t: s.t });
+        touched.push(s.block);
+      });
+      var sel = window.getSelection();
+      if (sel) sel.removeAllRanges();
+    } else if (pending.mode === "edit") {
+      var i = list.findIndex(function (h) { return h.id === pending.id; });
+      if (i >= 0) {
+        var blk = document.getElementById(list[i].p);
+        if (c) list[i].c = c; else list.splice(i, 1);
+        if (blk) touched.push(blk);
+      }
+    }
+    touched.forEach(renderBlock);
+    save();
+    updateClear();
+    hidePop();
+  });
+
+  function onSelectEnd() {
+    setTimeout(function () {
+      var sel = window.getSelection();
+      if (!sel || !sel.rangeCount || sel.isCollapsed) return;
+      var r = sel.getRangeAt(0), segs = [];
+      document.querySelectorAll(".bb-body").forEach(function (b) {
+        if (!r.intersectsNode(b)) return;
+        var full = plain(b);
+        var s = b.contains(r.startContainer) ? offsetOf(b, r.startContainer, r.startOffset) : 0;
+        var e = b.contains(r.endContainer) ? offsetOf(b, r.endContainer, r.endOffset) : full.length;
+        var t = full.slice(s, e);
+        if (e > s && t.trim()) segs.push({ block: b.closest(".bb-block"), s: s, e: e, t: t });
+      });
+      if (!segs.length) return;
+      pending = { mode: "new", segs: segs };
+      showPop(r.getBoundingClientRect(), "new");
+    }, 0);
+  }
+
+  function onClick(e) {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    var m = e.target.closest && e.target.closest("mark.bb-hl");
+    if (!m) return;
+    pending = { mode: "edit", id: m.getAttribute("data-h") };
+    showPop(m.getBoundingClientRect(), "edit");
+  }
+
+  // ---- 工具栏上的"消去"按钮
+  var clearBtn = null;
+  function updateClear() {
+    if (clearBtn) clearBtn.textContent = "ハイライトを消去(" + list.length + ")";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = document.querySelector("main.content");
+    if (!main || !main.querySelector(".bb-block")) return;
+    load();
+    document.body.appendChild(pop);
+    var bar = main.querySelector(".bb-toolbar");
+    if (bar) {
+      clearBtn = document.createElement("button");
+      clearBtn.type = "button";
+      clearBtn.addEventListener("click", function () {
+        if (!list.length || !confirm("このページのハイライトをすべて消去しますか?")) return;
+        list = [];
+        save();
+        renderAll();
+      });
+      bar.appendChild(clearBtn);
+    }
+    renderAll();
+    document.addEventListener("mouseup", function (e) { if (!pop.contains(e.target)) onSelectEnd(); });
+    document.addEventListener("touchend", onSelectEnd);
+    document.addEventListener("keyup", function (e) { if (e.shiftKey) onSelectEnd(); });
+    document.addEventListener("click", onClick);
+    document.addEventListener("mousedown", function (e) { if (!pop.contains(e.target)) hidePop(); });
+    window.addEventListener("scroll", hidePop, { passive: true });
+  });
+})();
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../06_ethics/notes/01_ethics-intro.html">6 Ethics</a></li><li class="breadcrumb-item"><a href="../../06_ethics/notes/25_ethics-activities.html">Activities</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">英語原書講読入門</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">目次</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Preface</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../00_preface/notes/01_preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">1 Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/01_ink-blot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 An ink blot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/02_digital-age.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Welcome to the digital age</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/03_research-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Research design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/04_themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Themes of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/05_outline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Outline of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/06_intro-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">2 Observing behavior</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/01_observing-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/02_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Big data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/03_characteristics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Ten common characteristics of big data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/04_big.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.1 Big</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/05_always-on.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.2 Always-on</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/06_nonreactive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.3 Nonreactive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/07_incomplete.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.4 Incomplete</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/08_inaccessible.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.5 Inaccessible</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/09_non-representative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.6 Nonrepresentative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/10_drift.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.7 Drifting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/11_algorithmically-confounded.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.8 Algorithmically confounded</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/12_dirty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.9 Dirty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/13_sensitive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.10 Sensitive</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/14_strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Research strategies</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/15_counting-things.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.1 Counting things</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/16_forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.2 Forecasting and nowcasting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/17_approximating-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.3 Approximating experiments</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/18_observing-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/19_observing-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/20_observing-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/21_observing-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">3 Asking questions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/01_asking-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/02_asking-vs-observing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Asking versus observing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/03_total-survey-error.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 The total survey error framework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/04_representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.1 Representation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/05_measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.2 Measurement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/06_cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.3 Cost</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/07_who.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Who to ask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/08_how.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 New ways of asking questions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/09_ema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.1 Ecological momentary assessments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/10_wiki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.2 Wiki surveys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/11_gamification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.3 Gamification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/12_linking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Surveys linked to big data sources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/13_enriched-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.1 Enriched asking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/14_amplified-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.2 Amplified asking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/15_sampling-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/16_sampling-mathematical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/17_asking-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/18_asking-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">4 Running experiments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/01_exp-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/02_what-exp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 What are experiments?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/03_lab-field.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Two dimensions of experiments: lab-field and analog-digital</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/04_beyond-simple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Moving beyond simple experiments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/05_validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.1 Validity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/06_hetero.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.2 Heterogeneity of treatment effects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/07_mechanisms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.3 Mechanisms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/08_making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Making it happen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/09_use-existing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.1 Use existing environments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/10_build-your-own-experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.2 Build your own experiment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/11_build-your-own-product.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.3 Build your own product</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/12_partner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.4 Partner with the powerful</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/13_exp-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Advice</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/14_zero-variable-cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.1 Create zero variable cost data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/15_3rs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.2 Build ethics into your design: replace, refine, and reduce</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/16_exp-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/17_exp-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/18_exp-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/19_exp-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
+ <span class="menu-text">5 Creating mass collaboration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/01_collab-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/02_human-computation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Human computation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/03_galaxy-zoo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.1 Galaxy Zoo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/04_crowd-manifesto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.2 Crowd-coding of political manifestos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/05_human-computation-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/06_open-calls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Open calls</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/07_netflix-prize.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.1 Netflix Prize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/08_foldit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.2 Foldit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/09_peer-to-patent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.3 Peer-to-Patent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/10_open-call-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.4 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/11_dist-data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Distributed data collection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/12_ebird.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.1 eBird</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/13_photocity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.2 PhotoCity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/14_dist-data-collection-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/15_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Designing your own</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/16_motivate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.1 Motivate participants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/17_heterogenity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.2 Leverage heterogeneity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/18_focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.3 Focus attention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/19_surprise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.4 Enable surprise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/20_be-ethical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.5 Be ethical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/21_design-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.6 Final design advice</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/22_collab-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/23_collab-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/24_collab-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true">
+ <span class="menu-text">6 Ethics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/01_ethics-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/02_three-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Three examples</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/03_ec-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.1 Emotional Contagion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/04_tastes-ties-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.2 Tastes, Ties, and Time</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/05_encore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.3 Encore</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/06_digital-is-diff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Digital is different</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/07_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Four principles</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/08_respect-for-persons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.1 Respect for Persons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/09_beneficence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.2 Beneficence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/10_justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.3 Justice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/11_respect-for-law.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.4 Respect for Law and Public Interest</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/12_frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Two ethical frameworks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/13_dilemmas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Areas of difficulty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/14_consent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.1 Informed consent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/15_info-risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.2 Understanding and managing informational risk</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/16_privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.3 Privacy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/17_uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.4 Making decisions in the face of uncertainty</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/18_tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7 Practical tips</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/19_irb-floor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.1 The IRB is a floor, not a ceiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/20_shoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.2 Put yourself in everyone else’s shoes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/21_continuous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.3 Think of research ethics as continuous, not discrete</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/22_ethics-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.8 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/23_ethics-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Historical appendix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/24_ethics-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/25_ethics-activities.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true">
+ <span class="menu-text">7 The future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/01_looking-forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Looking forward</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../07_the-future/notes/02_future-themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Themes of the future</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/03_blending.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.1 The blending of readymades and custommades</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/04_participant-centered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.2 Participant-centered data collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/05_great-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.3 Ethics in research design</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/06_back.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.3 Back to the beginning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../06_ethics/notes/01_ethics-intro.html">6 Ethics</a></li><li class="breadcrumb-item"><a href="../../06_ethics/notes/25_ethics-activities.html">Activities</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Activities</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="bb-meta">
+<p><a href="https://www.bitbybitbook.com/en/1st-ed/ethics/ethics-activities/" target="_blank">原文を開く ↗</a> <span class="bb-progress">· 日本語訳 0/24 段落 · 審校済み 0</span></p>
+</div>
+<div id="p1" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p1">1</a><div class="bb-body"><ul><li>degree of difficulty: easy <img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">, medium <img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, hard <img src="https://www.bitbybitbook.com/figures/icons/dif-hard.svg" alt="hard">, very hard <img src="https://www.bitbybitbook.com/figures/icons/dif-hardest.svg" alt="very hard">
+</li></ul></div></div>
+</div>
+<div id="p2" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p2">2</a><div class="bb-body"><ul><li>requires math (<img src="https://www.bitbybitbook.com/figures/icons/math.svg" alt="requires math">)</li></ul></div></div>
+</div>
+<div id="p3" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p3">3</a><div class="bb-body"><ul><li>requires coding (<img src="https://www.bitbybitbook.com/figures/icons/code.svg" alt="requires coding">)</li></ul></div></div>
+</div>
+<div id="p4" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p4">4</a><div class="bb-body"><ul><li>data collection (<img src="https://www.bitbybitbook.com/figures/icons/cubes.svg" alt="data collection">)</li></ul></div></div>
+</div>
+<div id="p5" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p5">5</a><div class="bb-body"><ul><li>my favorites (<img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">)</li></ul></div></div>
+</div>
+<div id="p6" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p6">6</a><div class="bb-body"><ol start="1"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] In arguing against the Emotional Contagion experiment, <span class="citation" data-ref-id="[&quot;#ref-kleinsman_facebook_2015&quot;]" data-ref-html="
+<p>Kleinsman, John, and Sue Buckley. 2015. “Facebook Study: A Little Bit Unethical but Worth It?” <em>Journal of Bioethical Inquiry</em> 12 (2):179–82. <a href=&quot;https://doi.org/10.1007/s11673-015-9621-0&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s11673-015-9621-0</a>.</p>
+">Kleinsman and Buckley (2015)</span> wrote:</p>
+<blockquote class="blockquote">
+<p>“Even if it is true that the risks for the Facebook experiment were low and even if, in hindsight, the results are judged to be useful, there is an important principle at stake here that must be upheld. In the same way that stealing is stealing no matter what amounts are involved, so we all have a right not to be experimented on without our knowledge and consent, whatever the nature of the research.”</p>
+</blockquote>
+<ol style="list-style-type: lower-alpha">
+<li>Which of the two ethical frameworks discussed in this chapter—consequentialism or deontology—is this argument most clearly associated with?</li>
+<li>Now, imagine that you wanted to argue against this position. How would you argue the case to a reporter for the <em>New York Times</em>?</li>
+<li>How, if at all, would your argument be different if you were discussing this with a colleague?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p7" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p7">7</a><div class="bb-body"><ol start="2"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] <span class="citation" data-ref-id="[&quot;#ref-maddock_using_2015&quot;]" data-ref-html="
+<p>Maddock, Jim, Robert Mason, and Kate Starbird. 2015. “Using Historical Twitter Data for Research: Ethical Challenges of Tweet Deletions.” In <em>CSCW 15 Workshop on Ethics at the 2015 Conference on Computer Supported Cooperative Work</em>. Vancouver, Canada. <a href=&quot;https://cscwethics2015.files.wordpress.com/2015/02/maddock.pdf&quot; class=&quot;uri&quot;>https://cscwethics2015.files.wordpress.com/2015/02/maddock.pdf</a>.</p>
+">Maddock, Mason, and Starbird (2015)</span> consider the question of whether researchers should use tweets that have been deleted. Read their paper to learn about the background.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Analyze this decision from deontological perspective.</li>
+<li>Analyze the exact same decision from a consequentialist perspective.</li>
+<li>Which do you find more convincing in this case?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p8" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p8">8</a><div class="bb-body"><ol start="3"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] In an article on the ethics of field experiments, <span class="citation" data-ref-id="[&quot;#ref-humphreys_reflections_2015&quot;]" data-ref-html="
+<p>Humphreys, Macartan. 2015. “Reflections on the Ethics of Social Experimentation.” <em>Journal of Globalization and Development</em> 6 (1):87–112. <a href=&quot;https://doi.org/10.1515/jgd-2014-0016&quot; class=&quot;uri&quot;>https://doi.org/10.1515/jgd-2014-0016</a>.</p>
+">Humphreys (2015)</span> proposed the following hypothetical experiment to highlight the ethical challenges of interventions that are done without consent of all impacted parties and that harms some and helps others.</p>
+<blockquote class="blockquote">
+<p>“Say a researcher is contacted by a set of community organizations that want to figure out whether placing street lights in slums will reduce violent crime. In this research the subjects are the criminals: seeking informed consent of the criminals would likely compromise the research and it would likely not be forthcoming anyhow (violation of respect for persons); the criminals will likely bear the costs of the research without benefiting (violation of justice); and there will be disagreement regarding the benefits of the research—if it is effective, the criminals in particular will not value it (producing a difficulty for assessing benevolence) … The special issues here are not just around the subjects however. Here there are also risks that obtain to non-subjects, if for example criminals retaliate against the organizations putting the lamps in place. The organization may be very aware of these risks but be willing to bear them because they erroneously put faith in the ill-founded expectations of researchers from wealthy universities who are themselves motivated in part to publish.”</p>
+</blockquote>
+<ol style="list-style-type: lower-alpha">
+<li>Write an email to the community organization offering your ethical assessment of the experiment as designed? Would you help them do the experiment as proposed? What factors might impact your decision?</li>
+<li>Are there some changes that might improve your assessment of the ethics of this experimental design.</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p9" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p9">9</a><div class="bb-body"><ol start="4"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] In the 1970s 60 men participated in field experiment that took place in the men’s bathroom at a university in the midwestern part of the United States (the researchers don’t name the university) <span class="citation" data-ref-id="[&quot;#ref-middlemist_personal_1976&quot;]" data-ref-html="
+<p>Middlemist, R. D., E. S. Knowles, and C. F. Matter. 1976. “Personal Space Invasions in the Lavatory: Suggestive Evidence for Arousal.” <em>Journal of Personality and Social Psychology</em> 33 (5):541–46.</p>
+">(Middlemist, Knowles, and Matter 1976)</span>. The researchers were interested in how people respond to violations of their personal space, which <span class="citation" data-ref-id="[&quot;#ref-sommer_personal_1969&quot;]" data-ref-html="
+<p>Sommer, Robert. 1969. <em>Personal Space: The Behavioral Basis of Design</em>. Englewood Cliffs, NJ: Prentice Hall.</p>
+">Sommer (1969)</span> defined as the “area with invisible boundaries surrounding a person’s body into which intruders may not come.” More specifically, the researchers chose to study how a man’s urination was impacted by the presence of others nearby. After conducting a purely observational study, the researchers conducted a field experiment. Participants were forced to use the left-most urinal in a three-urinal bathroom (the researchers do not explain exactly how this was done). Next, participants were assigned to one of three levels of interpersonal distance. For some men, a confederate used a urinal right next to them; for some men, a confederate used a urinal one space away from them; and for some men, no confederate entered the bathroom. The researchers measured their outcome variables—delay time and persistence—by stationing a research assistant inside the toilet stall adjacent to the participant’s urinal. Here’s how the researchers described the measurement procedure:</p>
+<blockquote class="blockquote">
+<p>“An observer was stationed in the toilet stall immediately adjacent to the subjects’ urinal. During pilot tests of these procedures it became clear that auditory cues could not be used to signal the initiation and cessation of [urination] … Instead, visual cues were used. The observer used a periscopic prism imbedded in a stack of books lying on the floor of the toilet stall. An 11-inch (28-cm) space between the floor and the wall of the toilet stall provided a view, through the periscope, of the user’s lower torso and made possible direct visual sightings of the stream of urine. The observer, however, was unable to see a subject’s face. The observer started two stop watches when a subject stepped up to the urinal, stopped one when urination began, and stopped the other when urination was terminated.”</p>
+</blockquote>
+<p>The researchers found that decreased physical distance leads to increased delay of onset and decreased persistence (figure&nbsp;6.7).</p>
+<ol style="list-style-type: lower-alpha">
+<li>Do you think the participants were harmed by this experiment?</li>
+<li>Do you think that the researchers should have conducted this experiment?</li>
+<li>What changes, if any, would you recommend to improve the ethical balance?</li>
+</ol>
+<div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter6/bitbybit6-7_middlemist_personal_1976_fig1.png" alt="Figure 6.7: Results from Middlemist, Knowles, and Matter (1976). Men who entered the bathroom were assigned to one of three conditions: close distance (a confederate was placed in the immediately adjacent urinal), moderate distance (a confederate was placed one urinal removed), or control (no confederate). An observer stationed in a toilet stall used a custom-built periscope to observe and time the delay and persistence of urination. Standard errors around estimates are not available. Adapted from Middlemist, Knowles, and Matter (1976), figure 1." id="fig:middlemist_personal_1976_fig1">
+<p class="caption">Figure 6.7: Results from <span class="citation" data-ref-id="[&quot;#ref-middlemist_personal_1976&quot;]" data-ref-html="
+<p>Middlemist, R. D., E. S. Knowles, and C. F. Matter. 1976. “Personal Space Invasions in the Lavatory: Suggestive Evidence for Arousal.” <em>Journal of Personality and Social Psychology</em> 33 (5):541–46.</p>
+">Middlemist, Knowles, and Matter (1976)</span>. Men who entered the bathroom were assigned to one of three conditions: close distance (a confederate was placed in the immediately adjacent urinal), moderate distance (a confederate was placed one urinal removed), or control (no confederate). An observer stationed in a toilet stall used a custom-built periscope to observe and time the delay and persistence of urination. Standard errors around estimates are not available. Adapted from <span class="citation" data-ref-id="[&quot;#ref-middlemist_personal_1976&quot;]" data-ref-html="
+<p>Middlemist, R. D., E. S. Knowles, and C. F. Matter. 1976. “Personal Space Invasions in the Lavatory: Suggestive Evidence for Arousal.” <em>Journal of Personality and Social Psychology</em> 33 (5):541–46.</p>
+">Middlemist, Knowles, and Matter (1976)</span>, figure 1.</p>
+</div>
+</li></ol></div></div>
+</div>
+<div id="p10" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p10">10</a><div class="bb-body"><ol start="5"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, <img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">] In August 2006, about 10 days prior to the primary election, 20,000 people living in Michigan received a mailing that showed their voting behavior and the voting behavior of their neighbors (figure&nbsp;6.8). (As discussed in this chapter, in the United States, state governments keep records of who votes in each election and this information is available to the public.) One piece mailings typically increase voter turnout by about one percentage point, but this one increased turnout by 8.1 percentage points, the largest effect seen up to that point <span class="citation" data-ref-id="[&quot;#ref-gerber_social_2008&quot;]" data-ref-html="
+<p>Gerber, Alan S., Donald P. Green, and Christopher W. Larimer. 2008. “Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment.” <em>American Political Science Review</em> 102 (1):33–48. <a href=&quot;https://doi.org/10.1017/S000305540808009X&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S000305540808009X</a>.</p>
+">(Gerber, Green, and Larimer 2008)</span>. The effect was so large that a political operative named Hal Malchow offered Donald Green $100,000 not to publish the result of the experiment (presumably so that Malchow could make use of this information himself) <span class="citation" data-ref-id="[&quot;#ref-issenberg_victory_2012&quot;]" data-ref-html="
+<p>Issenberg, Sasha. 2012. <em>The Victory Lab: The Secret Science of Winning Campaigns</em>. New York: Broadway Books.</p>
+">(Issenberg 2012, p 304)</span>. But, Alan Gerber, Donald Green, and Christopher Larimer did publish the paper in 2008 in the <em>American Political Science Review</em>.</p>
+<p>When you carefully inspect the mailer in figure&nbsp;6.8 you may notice that the researchers’ names do not appear on it. Rather, the return address is to Practical Political Consulting. In the acknowledgment to the paper, the authors explain: “Special thanks go to Mark Grebner of Practical Political Consulting, who designed and administered the mail program studied here.”</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess the use of this treatment in terms of the four ethical principles described in this chapter.</li>
+<li>Assess the treatment in terms of the idea of contextual integrity.</li>
+<li>What changes, if any, would you recommend to this experiment?</li>
+<li>Would it impact your answer to the questions above if Mark Grebner was already sending out similar mailings at this time? More generally, how should researchers think about evaluating existing interventions created by practitioners?</li>
+<li>Imagine that you decide to try to receive informed consent from people in the treatment group but not those in the control group. What impact might this decision have on your ability to understand the cause of a difference in voting rates between the treatment and control groups?</li>
+<li>Write an ethical appendix that could appear with this paper when it was published.</li>
+</ol>
+<div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter6/bitbybit6-8_gerber_social_2008_neighbor.png" alt="Figure 6.8: Neighbor mailer from Gerber, Green, and Larimer (2008). This mailer increased turnout rates by 8.1 percentage points, the largest effect that had ever been observed for a single-piece mailer. Reproduced by permission from Gerber, Green, and Larimer (2008), appendix A." id="fig:gerber_social_2008_neighbor">
+<p class="caption">Figure 6.8: Neighbor mailer from <span class="citation" data-ref-id="[&quot;#ref-gerber_social_2008&quot;]" data-ref-html="
+<p>Gerber, Alan S., Donald P. Green, and Christopher W. Larimer. 2008. “Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment.” <em>American Political Science Review</em> 102 (1):33–48. <a href=&quot;https://doi.org/10.1017/S000305540808009X&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S000305540808009X</a>.</p>
+">Gerber, Green, and Larimer (2008)</span>. This mailer increased turnout rates by 8.1 percentage points, the largest effect that had ever been observed for a single-piece mailer. Reproduced by permission from <span class="citation" data-ref-id="[&quot;#ref-gerber_social_2008&quot;]" data-ref-html="
+<p>Gerber, Alan S., Donald P. Green, and Christopher W. Larimer. 2008. “Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment.” <em>American Political Science Review</em> 102 (1):33–48. <a href=&quot;https://doi.org/10.1017/S000305540808009X&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S000305540808009X</a>.</p>
+">Gerber, Green, and Larimer (2008)</span>, appendix A.</p>
+</div>
+</li></ol></div></div>
+</div>
+<div id="p11" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p11">11</a><div class="bb-body"><ol start="6"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] This builds on the previous question. Once these 20,000 mailers had been sent (figure&nbsp;6.8), as well as 60,000 other potentially less sensitive mailers, there was a backlash from participants. In fact, <span class="citation" data-ref-id="[&quot;#ref-issenberg_victory_2012&quot;]" data-ref-html="
+<p>Issenberg, Sasha. 2012. <em>The Victory Lab: The Secret Science of Winning Campaigns</em>. New York: Broadway Books.</p>
+">Issenberg (2012)</span> (p.&nbsp;198) reports that “Grebner [the director of Practical Political Consulting] was never able to calculate how many people took the trouble to complain by phone, because his office answering machine filled so quickly that new callers were unable to leave a message.” In fact, Grebner noted that the backlash could have been even larger if they had scaled up the treatment. He said to Alan Gerber, one of the researchers, “Alan if we had spent five hundred thousand dollars and covered the whole state you and I would be living with Salman Rushdie.” <span class="citation" data-ref-id="[&quot;#ref-issenberg_victory_2012&quot;]" data-ref-html="
+<p>Issenberg, Sasha. 2012. <em>The Victory Lab: The Secret Science of Winning Campaigns</em>. New York: Broadway Books.</p>
+">(Issenberg 2012, 200)</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Does this information change your answers to the previous question?</li>
+<li>What strategies for dealing with decision making in the face of uncertainty would you recommend for similar studies in the future?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p12" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p12">12</a><div class="bb-body"><ol start="7"><li><p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, <img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">] In practice, most ethical debate occurs about studies where researchers do not have true informed consent from participants (e.g., the three case studies described in this chapter). However, ethical debate can also arise for studies that have true informed consent. Design a hypothetical study where you would have true informed consent from participants, but which you still think would be unethical. (Hint: If you are struggling, you can try reading <span class="citation" data-ref-id="[&quot;#ref-emanuel_what_2000&quot;]" data-ref-html="
+<p>Emanuel, Ezekiel J., David Wendler, and Christine Grady. 2000. “What Makes Clinical Research Ethical?” <em>Journal of the American Medical Association</em> 283 (20):2701–11. <a href=&quot;https://doi.org/10.1001/jama.283.20.2701&quot; class=&quot;uri&quot;>https://doi.org/10.1001/jama.283.20.2701</a>.</p>
+">Emanuel, Wendler, and Grady (2000)</span>.)</p></li></ol></div></div>
+</div>
+<div id="p13" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p13">13</a><div class="bb-body"><ol start="8"><li><p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, <img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">] Researchers often struggle to describe their ethical thinking to each other and to the general public. After it was discovered that Tastes, Ties, and Time was re-identified, Jason Kauffman, the leader of the research team, made a few public comments about the ethics of the project. Read <span class="citation" data-ref-id="[&quot;#ref-zimmer_but_2010&quot;]" data-ref-html="
+<p>Zimmer, Michael. 2010. “But the Data Is Already Public: On the Ethics of Research in Facebook.” <em>Ethics and Information Technology</em> 12 (4):313–25. <a href=&quot;https://doi.org/10.1007/s10676-010-9227-5&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s10676-010-9227-5</a>.</p>
+">Zimmer (2010)</span> and then rewrite Kauffman’s comments using the principles and ethical frameworks that are described in this chapter.</p></li></ol></div></div>
+</div>
+<div id="p14" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p14">14</a><div class="bb-body"><ol start="9"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] Banksy is one of the most famous contemporary artists in the United Kingdom and is known for politically-oriented street graffiti (figure&nbsp;6.9). His precise identity, however, is a mystery. Banksy has a personal website, so he could make his identity public if he wanted, but he has chosen not to. In 2008, the <em>Daily Mail</em> newspaper published an article claiming to identify Banksy’s real name. Then, in 2016, Michelle Hauge, Mark Stevenson, D. Kim Rossmo and Steven C. Le Comber <span class="citation" data-ref-id="[&quot;#ref-hauge_tagging_2016&quot;]" data-ref-html="
+<p>Hauge, Michelle V., Mark D. Stevenson, D. Kim Rossmo, and Steven C. Le Comber. 2016. “Tagging Banksy: Using Geographic Profiling to Investigate a Modern Art Mystery.” <em>Journal of Spatial Science</em> 61 (1):185–90. <a href=&quot;https://doi.org/10.1080/14498596.2016.1138246&quot; class=&quot;uri&quot;>https://doi.org/10.1080/14498596.2016.1138246</a>.</p>
+">(2016)</span> attempted to verify this claim using a Dirichlet process mixture model of geographic profiling. More specifically, they collected the geographic locations of Banksy’s public graffiti in Bristol and London. Next, by searching through old newspaper articles and public voting records, they found past addresses of the named individual, his wife, and his football (i.e., soccer) team. The author’s summarize the finding of their paper as follows:</p>
+<blockquote class="blockquote">
+<p>“With no other serious ‘suspects’ [sic] to investigate, it is difficult to make conclusive statements about Banksy’s identity based on the analysis presented here, other than saying the peaks of the geoprofiles in both Bristol and London include addresses known to be associated with [name redacted].”</p>
+</blockquote>
+<p>Following <span class="citation" data-ref-id="[&quot;#ref-metcalf_where_2016&quot;]" data-ref-html="
+<p>Metcalf, Jacob, and Kate Crawford. 2016. “Where Are Human Subjects in Big Data Research? The Emerging Ethics Divide.” <em>Big Data &amp;amp; Society</em> 3 (1):1–14. <a href=&quot;https://doi.org/10.1177/2053951716650211&quot; class=&quot;uri&quot;>https://doi.org/10.1177/2053951716650211</a>.</p>
+">Metcalf and Crawford (2016)</span>, who consider this case in more detail, I have decided not to include the name of the individual when discussing this study.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess this study using the principles and ethical frameworks in this chapter.</li>
+<li>Would you have done this study?</li>
+<li>The authors justify this study in the abstract of their paper with the following sentence: “More broadly, these results support previous suggestions that the analysis of minor terrorism-related acts (e.g., graffiti) could be used to help locate terrorist bases before more serious incidents occur, and provides a fascinating example of the application of the model to a complex, real-world problem.” Does this change your opinion of the paper? If so, how?</li>
+<li>The authors included the following ethical note at the end of their paper: “The authors are aware of, and respectful of, the privacy of [name redacted] and his relatives and have thus only used data in the public domain. We have deliberately omitted precise addresses.” Does this change your opinion of the paper? If so, how? Do you think the public/private dichotomy makes sense in this case?</li>
+</ol>
+<div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter6/bitbybit6-9_banksy_hewlett_road_cheltenham_resize.png" alt="Figure 6.9: Photograph of Spy Booth by Banksy in Cheltenham, England by Kathryn Yengel, 2014. Source: Kathryn Yengel/Flickr." id="fig:banksy">
+<p class="caption">Figure 6.9: Photograph of Spy Booth by Banksy in Cheltenham, England by Kathryn Yengel, 2014. Source: Kathryn Yengel/<a href="https://www.flickr.com/photos/kathryn-wright/13844037173/">Flickr</a>.</p>
+</div>
+</li></ol></div></div>
+</div>
+<div id="p15" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p15">15</a><div class="bb-body"><ol start="10"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] <span class="citation" data-ref-id="[&quot;#ref-metcalf_big_2016&quot;]" data-ref-html="
+<p>Metcalf, Jacob. 2016. “Big Data Analytics and Revision of the Common Rule.” <em>Communications of the ACM</em> 59 (7):31–33. <a href=&quot;https://doi.org/10.1145/2935882&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2935882</a>.</p>
+">Metcalf (2016)</span> makes the argument that “publicly available datasets containing private data are among the most interesting to researchers and most risky to subjects.”</p>
+<ol style="list-style-type: lower-alpha">
+<li>What are two concrete examples that support this claim?</li>
+<li>In this same article, Metcalf also claims that it is anachronistic to assume that “any information harm has already been done by a public dataset.” Give one example of where this could be the case.</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p16" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p16">16</a><div class="bb-body"><ol start="11"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, <img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">] In this chapter, I have proposed a rule of thumb that <em>all</em> data are potentially identifiable and <em>all</em> data are potentially sensitive. table&nbsp;6.5 provides a list of examples of data that have no obviously personally identifying information but that can still be linked to specific people.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Pick two of these examples and describe how the re-identification attack in both cases has a similar structure.</li>
+<li>For each of the two examples in part (a), describe how the data could reveal sensitive information about the people in the dataset.</li>
+<li>Now pick a third dataset from the table. Write an email to someone considering releasing it. Explain to them how this data could be potentially identifiable and potentially sensitive.</li>
+</ol>
+<div id="tbl:not-anonymous">
+
+<table class="caption-top table">
+<caption>Table 6.5: Examples of Social Data that Do Not Have Any Obvious Personally Identifying Information but Can Still be Linked to Specific People</caption>
+<colgroup>
+<col style="width: 51%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Data</th>
+<th data-quarto-table-cell-role="th">Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Health insurance records</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-sweeney_k-anonymity:_2002&quot;]" data-ref-html="
+<p>Sweeney, Latanya. 2002. “K-Anonymity: A Model for Protecting Privacy.” <em>International Journal on Uncertainty Fuzziness and Knowledge-Based Systems</em> 10 (5):557–70. <a href=&quot;https://doi.org/10.1142/S0218488502001648&quot; class=&quot;uri&quot;>https://doi.org/10.1142/S0218488502001648</a>.</p>
+">Sweeney (2002)</span></td>
+</tr>
+<tr class="even">
+<td>Credit card transaction data</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-montjoye_unique_2015&quot;]" data-ref-html="
+<p>Montjoye, Yves-Alexandre de, Laura Radaelli, Vivek Kumar Singh, and Alex Sandy Pentland. 2015. “Unique in the Shopping Mall: On the Reidentifiability of Credit Card Metadata.” <em>Science</em> 347 (6221):536–39. <a href=&quot;https://doi.org/10.1126/science.1256297&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.1256297</a>.</p>
+">Montjoye et al. (2015)</span></td>
+</tr>
+<tr class="odd">
+<td>Netflix movie rating data</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-narayanan_robust_2008&quot;]" data-ref-html="
+<p>Narayanan, Arvind, and Vitaly Shmatikov. 2008. “Robust de-Anonymization of Large Sparse Datasets.” In <em>Proceedings of the 2008 IEEE Symposium on Security and Privacy</em>, 111–25. Washington, DC: IEEE Computer Society. <a href=&quot;https://doi.org/10.1109/SP.2008.33&quot; class=&quot;uri&quot;>https://doi.org/10.1109/SP.2008.33</a>.</p>
+">Narayanan and Shmatikov (2008)</span></td>
+</tr>
+<tr class="even">
+<td>Phone call meta-data</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-mayer_evaluating_2016&quot;]" data-ref-html="
+<p>Mayer, Jonathan, Patrick Mutchler, and John C. Mitchell. 2016. “Evaluating the Privacy Properties of Telephone Metadata.” <em>Proceedings of the National Academy of Sciences of the USA</em> 113 (20):5536–41. <a href=&quot;https://doi.org/10.1073/pnas.1508081113&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.1508081113</a>.</p>
+">Mayer, Mutchler, and Mitchell (2016)</span></td>
+</tr>
+<tr class="odd">
+<td>Search log data</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-barbaro_face_2006&quot;]" data-ref-html="
+<p>Barbaro, Michael, and Tom Zeller Jr. 2006. “A Face Is Exposed for AOL Searcher No. 4417749.” <em>New York Times</em>, August. <a href=&quot;http://select.nytimes.com/gst/abstract.html?res=F10612FC345B0C7A8CDDA10894DE404482&quot; class=&quot;uri&quot;>http://select.nytimes.com/gst/abstract.html?res=F10612FC345B0C7A8CDDA10894DE404482</a>.</p>
+">Barbaro and Zeller (2006)</span></td>
+</tr>
+<tr class="even">
+<td>Demographic, administrative, and social data about students</td>
+<td><span class="citation" data-ref-id="[&quot;#ref-zimmer_but_2010&quot;]" data-ref-html="
+<p>Zimmer, Michael. 2010. “But the Data Is Already Public: On the Ethics of Research in Facebook.” <em>Ethics and Information Technology</em> 12 (4):313–25. <a href=&quot;https://doi.org/10.1007/s10676-010-9227-5&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s10676-010-9227-5</a>.</p>
+">Zimmer (2010)</span></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</li></ol></div></div>
+</div>
+<div id="p17" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p17">17</a><div class="bb-body"><ol start="12"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] Putting yourself in everyone’s shoes includes your participants and the general public, not just your peers. This distinction is illustrated in the case of the Jewish Chronic Disease Hospital <span class="citation" data-ref-id="[&quot;#ref-katz_experimentation_1972&quot;,&quot;#ref-lerner_sins_2004&quot;,&quot;#ref-arras_jewish_2008&quot;]" data-ref-html="
+<p>Katz, Jay, Alexander Morgan Capron, and Eleanor Swift Glass. 1972. <em>Experimentation with Human Beings: The Authority of the Investigator, Subject, Professions, and State in the Human Experimentation Process</em>. Russell Sage Foundation. <a href=&quot;http://www.jstor.org/stable/10.7758/9781610448345&quot; class=&quot;uri&quot;>http://www.jstor.org/stable/10.7758/9781610448345</a>.</p>
+ 
+<p>Lerner, Barron H. 2004. “Sins of Omission Cancer Research Without Informed Consent.” <em>New England Journal of Medicine</em> 351 (7):628–30. <a href=&quot;https://doi.org/10.1056/NEJMp048108&quot; class=&quot;uri&quot;>https://doi.org/10.1056/NEJMp048108</a>.</p>
+ 
+<p>Arras, John D. 2008. “The Jewish Chronic Disease Hospital Case.” In <em>The Oxford Textbook of Clinical Research Ethics</em>, edited by E. J. Emanuel, R. A. Crouch, C. Grady, R. K. Lie, F. G. Miller, and D. Wendler, 73–79. Oxford: Oxford University Press.</p>
+">(Katz, Capron, and Glass 1972, chap. 1; Lerner 2004; Arras 2008)</span>.</p>
+<p>Dr.&nbsp;Chester M. Southam was a distinguished physician and researcher at the Sloan-Kettering Institute for Cancer Research and an Associate Professor of Medicine at the Cornell University Medical College. On July 16, 1963, Southam and two colleagues injected live cancer cells into the bodies of 22 debilitated patients at the Jewish Chronic Disease Hospital in New York. These injections were part of Southam’s research to understand the immune system of cancer patients. In earlier research, Southam had found that healthy volunteers were able to reject injected cancer cells in roughly four to six weeks, whereas it took patients who already had cancer much longer. Southam wondered whether the delayed response in the cancer patients was because they had cancer or because they were elderly and already debilitated. To address these possibilities, Southam decided to inject live cancer cells into a group of people who were elderly and debilitated but who did not have cancer. When word of the study spread, triggered in part by the resignation of three physicians who were asked to participate, some made comparisons to Nazi concentration camp Experiments, but others—based in part on assurances by Southam—found the research unproblematic. Eventually, the New York State Board of Regents reviewed the case in order to decide if Southam should be able to continue to practice medicine. Southam argued in his defense that he was acting in “the best tradition of responsible clinical practice.” His defense was based on a number of claims, which were all supported by several distinguished experts who testified on his behalf: (1) his research was of high scientific and social merit; (2) there were no appreciable risks to participants; a claim based in part of Southam’s 10 years of prior experience with more than 600 subjects; (3) the level of disclosure should be adjusted according to the level of risk posed by the researcher; (4) the research was in conformity with the standard of medical practice at that time. Ultimately, the Regent’s board found Southam guilty of fraud, deceit, and unprofessional conduct, and suspended his medical license for one year. Yet, just a few years later, Southam was elected president of the American Association of Cancer Researchers.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess Southam’s study using the four principles in this chapter.</li>
+<li>It appears that Southam took the perspective of his colleagues and correctly anticipated how they might respond to his work; in fact, many of them testified on his behalf. But he was unable or unwilling to understand how his research might be troubling to the public. What role do you think public opinion—which could be distinct from the opinions of participants or peers—should have in research ethics? What should happen if popular opinion and peer opinion differ?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p18" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p18">18</a><div class="bb-body"><ol start="13"><li><p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] In a paper titled “Crowdseeding in Eastern Congo: Using Cell Phones to Collect Conflict Events Data in Real Time”, Van der Windt and Humphreys <span class="citation" data-ref-id="[&quot;#ref-van_der_windt_crowdseeding_2016&quot;]" data-ref-html="
+<p>Windt, Peter Van der, and Macartan Humphreys. 2016. “Crowdseeding in Eastern Congo Using Cell Phones to Collect Conflict Events Data in Real Time.” <em>Journal of Conflict Resolution</em> 60 (4):748–81. <a href=&quot;https://doi.org/10.1177/0022002714553104&quot; class=&quot;uri&quot;>https://doi.org/10.1177/0022002714553104</a>.</p>
+">(2016)</span> describe a distributed data collection system (see chapter 5) that they created in Eastern Congo. Describe how the researchers dealt with the uncertainty about possible harms to participants.</p></li></ol></div></div>
+</div>
+<div id="p19" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p19">19</a><div class="bb-body"><ol start="14"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] In October 2014, three political scientists sent mailers to 102,780 registered voters in Montana—roughly 15% of registered voters in the state <span class="citation" data-ref-id="[&quot;#ref-willis_professors_2014&quot;]" data-ref-html="
+<p>Willis, Derek. 2014. “Professors Research Project Stirs Political Outrage in Montana.” <em>The New York Times</em>, October. <a href=&quot;http://www.nytimes.com/2014/10/29/upshot/professors-research-project-stirs-political-outrage-in-montana.html&quot; class=&quot;uri&quot;>http://www.nytimes.com/2014/10/29/upshot/professors-research-project-stirs-political-outrage-in-montana.html</a>.</p>
+">(Willis 2014)</span>—as part of an experiment to measure whether voters who are given more information are more likely to vote. The mailers—which were labeled “2014 Montana General Election Voter Information Guide”—placed Montana Supreme Court Justice candidates, in what is a nonpartisan election, on a scale from liberal to conservative, which included Barack Obama and Mitt Romney as comparisons. The mailer also included a reproduction of the Great Seal of the State of Montana (figure&nbsp;6.10).</p>
+<p>The mailers generated complaints from Montana voters, and they caused Linda McCulloch, Montana’s Secretary of State, to file a formal complaint with the Montana state government. The universities that employed the researchers—Dartmouth and Stanford—sent a letter to everyone who had received the mailer, apologizing for any potential confusion and making clear that the mailer “was not affiliated with any political party, candidate or organization, and was not intended to influence any race.” The letter also clarified that the ranking “relied upon public information about who had donated to each of the campaigns” (figure&nbsp;6.11).</p>
+<p>In May 2015, the Commissioner of Political Practices of the State of Montana, Jonathan Motl, determined that the researchers had violated Montana law: “The Commissioner determines that there are sufficient facts to show that Stanford, Dartmouth and/or its researchers violated Montana campaign practice laws requiring registration, reporting and disclosure of independent expenditures” (Sufficient Finding Number 3 in <span class="citation" data-ref-id="[&quot;#ref-motl_mcculloch_2015&quot;]" data-ref-html="
+<p>Motl, Jonathan R. 2015. “McCulloch V. Stanford and Dartmouth.” COPP 2014-CFP-046. Helena, MT: Commissioner of Political Practices of the State of Montana. <a href=&quot;http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision&quot; class=&quot;uri&quot;>http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision</a>.</p>
+">Motl (2015)</span>). The Commissioner also recommended that the County Attorney investigate whether the unauthorized use of the Great Seal of Montana violated Montana state law <span class="citation" data-ref-id="[&quot;#ref-motl_mcculloch_2015&quot;]" data-ref-html="
+<p>Motl, Jonathan R. 2015. “McCulloch V. Stanford and Dartmouth.” COPP 2014-CFP-046. Helena, MT: Commissioner of Political Practices of the State of Montana. <a href=&quot;http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision&quot; class=&quot;uri&quot;>http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision</a>.</p>
+">(Motl 2015)</span>.</p>
+<p>Stanford and Dartmouth disagreed with Motl’s ruling. A Stanford spokeswoman named Lisa Lapin said “Stanford … does not believe any election laws were violated” and that the mailing “did not contain any advocacy supporting or opposing any candidate.” She pointed out that the mailer explicitly stated that it “is nonpartisan and does not endorse any candidate or party” <span class="citation" data-ref-id="[&quot;#ref-richman_stanford_2015&quot;]" data-ref-html="
+<p>Richman, Josh. 2015. “Stanford and Dartmouth Researchers Broke Law with Election Mailer, Montana Official Says.” <em>San Jose Mercury News</em>, May. <a href=&quot;http://www.mercurynews.com/nation-world/ci_28100916/stanford-and-dartmouth-researchers-broke-law-election-mailer&quot; class=&quot;uri&quot;>http://www.mercurynews.com/nation-world/ci_28100916/stanford-and-dartmouth-researchers-broke-law-election-mailer</a>.</p>
+">(Richman 2015)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess this study using the four principles and two frameworks described in this chapter.</li>
+<li>Assuming that the mailers were sent to a random sample of voters (but more on this in a moment), under what conditions might this mailing have altered the outcome of the Supreme Court Justice election?</li>
+<li>In fact, the mailers were not sent to a random sample of voters. According to a report by Jeremy Johnson (a political scientists who assisted in the investigation), mailers “were sent to 64,265 voters identified as likely liberal to centrist leaning in Democratic leaning precincts and 39,515 voters identified as conservative to centrist in Republican leaning precincts. The researchers justified the disparity between Democratic and Republican numbers on grounds that they anticipated turnout to be significantly lower among Democratic voters.” Does this change your assessment of the research design? If so, how?</li>
+<li>In response to the investigation, the researchers said that they picked this election in part because “neither judicial race had been closely contested in the primary. Based on an analysis of the 2014 primary election results in the context of previous Montana judicial elections, the researchers determined that the research study as designed would not change the outcome of either contest” <span class="citation" data-ref-id="[&quot;#ref-motl_mcculloch_2015&quot;]" data-ref-html="
+<p>Motl, Jonathan R. 2015. “McCulloch V. Stanford and Dartmouth.” COPP 2014-CFP-046. Helena, MT: Commissioner of Political Practices of the State of Montana. <a href=&quot;http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision&quot; class=&quot;uri&quot;>http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision</a>.</p>
+">(Motl 2015)</span>. Does this change your assessment of the research? If so, how?</li>
+<li>In fact, the election turned out to be not particularly close (table&nbsp;6.6). Does this change your assessment of the research? If so, how?</li>
+<li>It turns out that a study was submitted to the Dartmouth IRB by one of the researchers, but the details differed substantially from those of the actual Montana study. The mailer used in Montana was never submitted to the IRB. The study was never submitted to the Stanford IRB. Does this change your assessment of the research? If so, how?</li>
+<li>It also turned out that the researchers had sent similar election materials to 143,000 voters in California and 66,000 in New Hampshire. As far as I know, there were no formal complaints triggered by these approximately 200,000 additional mailers. Does this change your assessment of the research? If so, how?</li>
+<li>What, if anything, would you have done differently if you were the principal investigators? How would you have designed the study if you were interested in exploring whether additional information increases voter turnout in nonpartisan races?</li>
+</ol>
+<div id="tbl:montana">
+
+<table class="caption-top table">
+<caption>Table 6.6: Results from the 2014 Montana Supreme Court Justice Elections (Source: Webpage of Montana Secretary of State)</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Candidates</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Votes received</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Supreme Court Justice #1</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>W. David Herbert</td>
+<td style="text-align: right;">65,404</td>
+<td style="text-align: right;">21.59%</td>
+</tr>
+<tr class="odd">
+<td>Jim Rice</td>
+<td style="text-align: right;">236,963</td>
+<td style="text-align: right;">78.22%</td>
+</tr>
+<tr class="even">
+<td>Supreme Court Justice #2</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Lawrence VanDyke</td>
+<td style="text-align: right;">134,904</td>
+<td style="text-align: right;">40.80%</td>
+</tr>
+<tr class="even">
+<td>Mike Wheat</td>
+<td style="text-align: right;">195,303</td>
+<td style="text-align: right;">59.06%</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter6/bitbybit6-10_montana_mailer.png" alt="Figure 6.10: Mailer sent by three political scientists to 102,780 registered voters in Montana as part of an experiment to measure whether voters who are given more information are more likely to vote. The sample size in this experiment was roughly 15% of eligible voters in the state (Willis 2014). Reproduced from Motl (2015)." id="fig:montana_mailer">
+<p class="caption">Figure 6.10: Mailer sent by three political scientists to 102,780 registered voters in Montana as part of an experiment to measure whether voters who are given more information are more likely to vote. The sample size in this experiment was roughly 15% of eligible voters in the state <span class="citation" data-ref-id="[&quot;#ref-willis_professors_2014&quot;]" data-ref-html="
+<p>Willis, Derek. 2014. “Professors Research Project Stirs Political Outrage in Montana.” <em>The New York Times</em>, October. <a href=&quot;http://www.nytimes.com/2014/10/29/upshot/professors-research-project-stirs-political-outrage-in-montana.html&quot; class=&quot;uri&quot;>http://www.nytimes.com/2014/10/29/upshot/professors-research-project-stirs-political-outrage-in-montana.html</a>.</p>
+">(Willis 2014)</span>. Reproduced from <span class="citation" data-ref-id="[&quot;#ref-motl_mcculloch_2015&quot;]" data-ref-html="
+<p>Motl, Jonathan R. 2015. “McCulloch V. Stanford and Dartmouth.” COPP 2014-CFP-046. Helena, MT: Commissioner of Political Practices of the State of Montana. <a href=&quot;http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision&quot; class=&quot;uri&quot;>http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision</a>.</p>
+">Motl (2015)</span>.</p>
+</div>
+<div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter6/bitbybit6-11_montana_apology.png" alt="Figure 6.11: Apology letter that was sent to the 102,780 registered voters in Montana who had received the mailer shown in figure&nbsp;6.10. The letter was sent by the Presidents of Dartmouth and Stanford, the universities that employed the researchers who sent the mailer. Reproduced from Motl (2015)." id="fig:montana_apology">
+<p class="caption">Figure 6.11: Apology letter that was sent to the 102,780 registered voters in Montana who had received the mailer shown in figure&nbsp;6.10. The letter was sent by the Presidents of Dartmouth and Stanford, the universities that employed the researchers who sent the mailer. Reproduced from <span class="citation" data-ref-id="[&quot;#ref-motl_mcculloch_2015&quot;]" data-ref-html="
+<p>Motl, Jonathan R. 2015. “McCulloch V. Stanford and Dartmouth.” COPP 2014-CFP-046. Helena, MT: Commissioner of Political Practices of the State of Montana. <a href=&quot;http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision&quot; class=&quot;uri&quot;>http://politicalpractices.mt.gov/content/2recentdecisions/McCullochvStanfordandDartmouthFinalDecision</a>.</p>
+">Motl (2015)</span>.</p>
+</div>
+</li></ol></div></div>
+</div>
+<div id="p20" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p20">20</a><div class="bb-body"><ol start="15"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] On May 8, 2016, two researchers—Emil Kirkegaard and Julius Bjerrekaer—scraped information from the online dating site OkCupid and publicly released a dataset of about 70,000 users, including variables such as username, age, gender, location, religion-related opinions, astrology-related opinions, dating interests, number of photos, etc., as well as answers given to the top 2,600 questions on the site. In a draft paper accompanying the released data, the authors stated that “Some may object to the ethics of gathering and releasing this data. However, all the data found in the dataset are or were already publicly available, so releasing this dataset merely presents it in a more useful form.”</p>
+<p>In response to the data release, one of the authors was asked on Twitter: “This dataset is highly re-identifiable. Even includes usernames? Was any work at all done to anonymize it?” His response was “No. Data is already public.” <span class="citation" data-ref-id="[&quot;#ref-zimmer_okcupid_2016&quot;,&quot;#ref-resnick_researchers_2016&quot;]" data-ref-html="
+<p>———. 2016. “OkCupid Study Reveals the Perils of Big-Data Science.” <em>Wired</em>. <a href=&quot;https://www.wired.com/2016/05/okcupid-study-reveals-perils-big-data-science/&quot; class=&quot;uri&quot;>https://www.wired.com/2016/05/okcupid-study-reveals-perils-big-data-science/</a>.</p>
+ 
+<p>Resnick, Brian. 2016. “Researchers Just Released Profile Data on 70,000 OkCupid Users Without Permission.” <em>Vox</em>. <a href=&quot;http://www.vox.com/2016/5/12/11666116/70000-okcupid-users-data-release&quot; class=&quot;uri&quot;>http://www.vox.com/2016/5/12/11666116/70000-okcupid-users-data-release</a>.</p>
+">(Zimmer 2016; Resnick 2016)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess this data release using the principles and ethical frameworks discussed in this chapter.</li>
+<li>Would you use these data for your own research?</li>
+<li>What if you scraped them yourself?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p21" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p21">21</a><div class="bb-body"><ol start="16"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] In 2010, an intelligence analyst with the US Army gave 250,000 classified diplomatic cables to the organization WikiLeaks, and they were subsequently posted online. <span class="citation" data-ref-id="[&quot;#ref-gill_estimating_2015&quot;]" data-ref-html="
+<p>Gill, Michael, and Arthur Spirling. 2015. “Estimating the Severity of the WikiLeaks U.S. Diplomatic Cables Disclosure.” <em>Political Analysis</em> 23 (2):299–305. <a href=&quot;https://doi.org/10.1093/pan/mpv005&quot; class=&quot;uri&quot;>https://doi.org/10.1093/pan/mpv005</a>.</p>
+">Gill and Spirling (2015)</span> argue that “the WikiLeaks disclosure potentially represents a trove of data that might be tapped to test subtle theories in international relations” and then statistically characterize the sample of leaked documents. For example, the authors estimate that they represent about 5% of all diplomatic cables during that time period, but that this proportion varies from embassy to embassy (see Figure 1 of their paper).</p>
+<ol style="list-style-type: lower-alpha">
+<li>Read the paper, and then write an ethical appendix to it.</li>
+<li>The authors did not analyze the content of any of the leaked documents. Is there any project using these cables that you would conduct? Is there any project using these cables that you would not conduct?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p22" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p22">22</a><div class="bb-body"><ol start="17"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-easy.svg" alt="easy">] In order to study how companies respond to complaints, a researcher sent fake complaint letters to 240 high-end restaurants in New York City. Here’s an excerpt from the fictitious letter.</p>
+<p>“I am writing this letter to you because I am outraged about a recent experience I had at your restaurant. Not long ago, my wife and I celebrated our first anniversary. … The evening became soured when the symptoms began to appear about four hours after eating. Extended nausea, vomiting, diarrhea, and abdominal cramps all pointed to one thing: food poisoning. It makes me furious just thinking that our special romantic evening became reduced to my wife watching me curl up in a fetal position on the tiled floor of our bathroom in between rounds of throwing up. … Although it is not my intention to file any reports with the Better Business Bureau or the Department of Health, I want you, [name of the restaurateur], to understand what I went through in anticipation that you will respond accordingly.”</p>
+<ol style="list-style-type: lower-alpha">
+<li>Evaluate this study using the principles and ethical frameworks described in this chapter. Given your assessment, would you do the study?</li>
+<li>Here’s how the restaurants who received the letter reacted <span class="citation" data-ref-id="[&quot;#ref-kifner_scholar_2001&quot;]" data-ref-html="
+<p>Kifner, John. 2001. “Scholar Sets Off Gastronomic False Alarm.” <em>The New York Times</em>, September. <a href=&quot;http://www.nytimes.com/2001/09/08/nyregion/scholar-sets-off-gastronomic-false-alarm.html&quot; class=&quot;uri&quot;>http://www.nytimes.com/2001/09/08/nyregion/scholar-sets-off-gastronomic-false-alarm.html</a>.</p>
+">(Kifner 2001)</span>: “It was culinary chaos as owners, managers and chefs searched through computers for [name redacted] reservations or credit card records, reviewed menus and produce deliveries for possibly spoiled food, and questioned kitchen workers about possible lapses, all spurred by what both the university and the professor now concede was the business school study from hell.” Does this information change how you assess the study?</li>
+<li>As far as I know, this study was not reviewed by an IRB or any other third party. Does that change how you assess the study? Why or why not?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p23" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p23">23</a><div class="bb-body"><ol start="18"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">] Building on the previous question, I’d like you to compare this study with a completely different study that also involved restaurants. In this other study, Neumark and colleagues <span class="citation" data-ref-id="[&quot;#ref-neumark_sex_1996&quot;]" data-ref-html="
+<p>Neumark, David, Roy J. Bank, and Kyle D. Van Nort. 1996. “Sex Discrimination in Restaurant Hiring: An Audit Study.” <em>Quarterly Journal of Economics</em> 111 (3):915–41. <a href=&quot;https://doi.org/10.2307/2946676&quot; class=&quot;uri&quot;>https://doi.org/10.2307/2946676</a>.</p>
+">(1996)</span> sent two male and two female college students with fabricated resumes to apply for jobs as waiters and waitresses at 65 restaurants in Philadelphia, in order to investigate sex discrimination in restaurant hiring. The 130 applications led to 54 interviews and 39 job offers. The study found statistically significant evidence of sex discrimination against women in high-price restaurants.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Write an ethical appendix for this study.</li>
+<li>Do you think this study is ethically different from the one described in the previous question. If so, how?</li>
+</ol>
+</li></ol></div></div>
+</div>
+<div id="p24" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p24">24</a><div class="bb-body"><ol start="19"><li>
+<p>[<img src="https://www.bitbybitbook.com/figures/icons/dif-med.svg" alt="medium">, <img src="https://www.bitbybitbook.com/figures/icons/favorite.svg" alt="my favorite">] Some time around 2010, 6,548 professors in the United States received emails similar to this one.</p>
+<blockquote class="blockquote">
+<p>“Dear Professor Salganik,</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I am writing you because I am a prospective Ph.D.&nbsp;student with considerable interest in your research. My plan is to apply to Ph.D.&nbsp;programs this coming fall, and I am eager to learn as much as I can about research opportunities in the meantime.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I will be on campus today, and although I know it is short notice, I was wondering if you might have 10 minutes when you would be willing to meet with me to briefly talk about your work and any possible opportunities for me to get involved in your research. Any time that would be convenient for you would be fine with me, as meeting with you is my first priority during this campus visit.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Thank you in advance for your consideration.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Sincerely, Carlos Lopez"</p>
+</blockquote>
+<p>These emails were fake; they were part of a field experiment to measure whether professors were more likely to respond to the email depending on (1) the time-frame (today versus next week) and (2) the name of the sender, which was varied to signal ethnicity and gender (Carlos Lopez, Meredith Roberts, Raj Singh, etc). The researchers found that when the requests were to meet in one week, Caucasian males were granted access to faculty members about 25% more often than were women and minorities. But when the fictitious students requested meetings that same day, these patterns were essentially eliminated <span class="citation" data-ref-id="[&quot;#ref-milkman_temporal_2012&quot;]" data-ref-html="
+<p>Milkman, Katherine L., Modupe Akinola, and Dolly Chugh. 2012. “Temporal Distance and Discrimination an Audit Study in Academia.” <em>Psychological Science</em> 23 (7):710–17. <a href=&quot;https://doi.org/10.1177/0956797611434539&quot; class=&quot;uri&quot;>https://doi.org/10.1177/0956797611434539</a>.</p>
+">(Milkman, Akinola, and Chugh 2012)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Assess this experiment according to the principles and frameworks in this chapter.</li>
+<li>After the study was over, the researchers sent the following debriefing email to all participants.</li>
+</ol>
+<blockquote class="blockquote">
+<p>“Recently, you received an email from a student asking for 10 minutes of your time to discuss your Ph.D.&nbsp;program (the body of the email appears below). We are emailing you today to debrief you on the actual purpose of that email, as it was part of a research study. We sincerely hope our study did not cause you any disruption and we apologize if you were at all inconvenienced. Our hope is that this letter will provide a sufficient explanation of the purpose and design of our study to alleviate any concerns you may have about your involvement. We want to thank you for your time and for reading further if you are interested in understanding why you received this message. We hope you will see the value of the knowledge we anticipate producing with this large academic study.”</p>
+</blockquote>
+<p>After explaining the purpose and design of the study, they further noted that:</p>
+<blockquote class="blockquote">
+<p>“As soon as the results of our research are available, we will post them on our websites. Please rest assured that no identifiable data will ever be reported from this study, and our between subject design ensures that we will only be able to identify email responsiveness patterns in aggregate—not at the individual level. No individual or university will be identifiable in any of the research or data we publish. Of course, any one individual email response is not meaningful as there are multiple reasons why an individual faculty member might accept or decline a meeting request. All data has already been de-identified and the identifiable email responses have already been deleted from our databases and related server. In addition, during the time when the data was identifiable, it was protected with strong and secure passwords. And as is always the case when academics conduct research involving human subjects, our research protocols were approved by our universities’ Institutional Review Boards (the Columbia University Morningside IRB and the University of Pennsylvania IRB).</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>If you have any questions about your rights as a research subject, you may contact the Columbia University Morningside Institutional Review Board at [redacted] or by email at [redacted] and/or the University of Pennsylvania Institutional Review Board at [redacted].</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Thank you again for your time and understanding of the work we are doing."</p>
+</blockquote>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>What are the arguments for debriefing in this case? What are the arguments against? Do you think that the researchers should have debriefed the participants in this case?</li>
+<li>In the supporting online materials, the researchers have a section titled “Human Subjects Protections.” Read this section. Is there anything that you would add or remove?</li>
+<li>What was the cost of this experiment to the researchers? What was the cost of this experiment to participants? Andrew Gelman <span class="citation" data-ref-id="[&quot;#ref-gelman_63000_2010&quot;]" data-ref-html="
+<p>———. 2010. “63,000 Worth of Abusive Research ... or Just a Really Stupid Waste of Time?” <em>Statistical Modeling, Causal Inference, and Social Science</em>. <a href=&quot;http://andrewgelman.com/2010/05/06/63000_worth_of/&quot; class=&quot;uri&quot;>http://andrewgelman.com/2010/05/06/63000_worth_of/</a>.</p>
+">(2010)</span> has argued that participants in this study could have been compensated for their time after the experiment was over. Do you agree? Try to make your argument using the principles and ethical frameworks in this chapter.</li>
+</ol>
+</li></ol></div></div>
+</div>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../06_ethics/notes/24_ethics-what-to-read-next.html" class="pagination-link" aria-label="What to read next">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What to read next</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../07_the-future/notes/01_looking-forward.html" class="pagination-link" aria-label="7.1 Looking forward">
+        <span class="nav-page-text">7.1 Looking forward</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

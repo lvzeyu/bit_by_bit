@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2.4.1 Counting things – 英語原書講読入門</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../02_observing-behavior/notes/16_forecasting.html" rel="next">
+<link href="../../02_observing-behavior/notes/14_strategies.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0aecec4fa854f4509179baef4aac6b11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// 本机预览(quarto preview 使用 localhost)时显示进度等仅供编辑者看的信息。
+if (["localhost", "127.0.0.1"].indexOf(location.hostname) >= 0) {
+  document.documentElement.classList.add("bb-dev");
+}
+</script>
+<script>
+// 原文在 raw HTML 块中,Quarto 不会为其中的 \( \) 公式加载 MathJax;页面出现公式时按需加载。
+window.MathJax = {
+  tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"], ["$$", "$$"]] },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".bb-en .math")) {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+    s.async = true;
+    document.head.appendChild(s);
+  }
+});
+
+// 阅读页工具栏:全部展开/折叠、只显示日本語訳或ノート。
+document.addEventListener("DOMContentLoaded", function () {
+  var main = document.querySelector("main.content");
+  if (!main || !main.querySelector(".bb-block")) return;
+
+  var KEY = "bb-mode";
+  function load() { try { return localStorage.getItem(KEY) || "all"; } catch (e) { return "all"; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function apply(mode) {
+    document.body.classList.toggle("bb-hide-ja", mode === "note" || mode === "none");
+    document.body.classList.toggle("bb-hide-note", mode === "ja" || mode === "none");
+  }
+
+  function setAll(open) {
+    main.querySelectorAll(".bb-block .callout").forEach(function (c) {
+      var body = c.querySelector(".callout-collapse");
+      var head = c.querySelector(".callout-header");
+      if (!body || !head || c.offsetParent === null) return;
+      if (body.classList.contains("show") !== open) head.click();
+    });
+  }
+
+  var bar = document.createElement("div");
+  bar.className = "bb-toolbar";
+  bar.innerHTML =
+    '<button type="button" data-a="open">すべて展開</button>' +
+    '<button type="button" data-a="close">すべて折りたたむ</button>' +
+    '<span>表示:' +
+    '<label><input type="radio" name="bbm" value="all"> 両方</label>' +
+    '<label><input type="radio" name="bbm" value="ja"> 日本語訳のみ</label>' +
+    '<label><input type="radio" name="bbm" value="note"> ノートのみ</label>' +
+    '<label><input type="radio" name="bbm" value="none"> すべて隠す</label></span>';
+  main.insertBefore(bar, main.firstChild.nextSibling || main.firstChild);
+
+  var mode = load();
+  bar.querySelector('input[value="' + mode + '"]').checked = true;
+  apply(mode);
+
+  bar.addEventListener("click", function (e) {
+    var a = e.target.getAttribute && e.target.getAttribute("data-a");
+    if (a) setAll(a === "open");
+  });
+  bar.addEventListener("change", function (e) {
+    if (e.target.name === "bbm") { save(e.target.value); apply(e.target.value); }
+  });
+});
+</script>
+<script>
+// 原文高亮:划选文字 → 色板;点击已有高亮 → 改色/删除。
+// 保存在 localStorage(按页面路径),只存段落编号 + 字符偏移 + 文字片段(用于校验)。
+// 偏移只统计 .math / mjx-container 之外的文本,因此不受 MathJax 渲染影响。
+(function () {
+  var COLORS = ["yellow", "green", "blue", "pink"];
+  var NAMES = { yellow: "黄", green: "緑", blue: "青", pink: "桃" };
+  var KEY = "bb-hl:" + location.pathname;
+  var list = [];
+  var pending = null; // {mode:"new", segs} | {mode:"edit", id}
+
+  function load() { try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { list = []; } }
+  function save() {
+    try { if (list.length) localStorage.setItem(KEY, JSON.stringify(list)); else localStorage.removeItem(KEY); } catch (e) {}
+  }
+
+  function textNodes(body) {
+    var w = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return n.parentElement && n.parentElement.closest(".math, mjx-container")
+          ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var out = [], n;
+    while ((n = w.nextNode())) out.push(n);
+    return out;
+  }
+  function plain(body) { return textNodes(body).map(function (n) { return n.data; }).join(""); }
+
+  // 容器内某个 DOM 位置对应的"纯文本偏移"
+  function offsetOf(body, container, off) {
+    var r = document.createRange();
+    r.setStart(body, 0);
+    r.setEnd(container, off);
+    var acc = 0, nodes = textNodes(body);
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i];
+      if (t === container) return acc + off;
+      if (r.comparePoint(t, 0) > 0) break;
+      acc += t.data.length;
+    }
+    return acc;
+  }
+
+  function wrap(body, h) {
+    var pos = 0;
+    textNodes(body).forEach(function (n) {
+      var len = n.data.length;
+      var a = Math.max(h.s, pos) - pos, b = Math.min(h.e, pos + len) - pos;
+      pos += len;
+      if (b <= a) return;
+      var mid = a > 0 ? n.splitText(a) : n;
+      if (b - a < mid.data.length) mid.splitText(b - a);
+      var m = document.createElement("mark");
+      m.className = "bb-hl bb-hl-" + h.c;
+      m.setAttribute("data-h", h.id);
+      mid.parentNode.replaceChild(m, mid);
+      m.appendChild(mid);
+    });
+  }
+
+  function renderBlock(block) {
+    var body = block.querySelector(".bb-body");
+    if (!body) return;
+    body.querySelectorAll("mark.bb-hl").forEach(function (m) {
+      var p = m.parentNode;
+      while (m.firstChild) p.insertBefore(m.firstChild, m);
+      p.removeChild(m);
+    });
+    body.normalize();
+    var text = plain(body);
+    list.forEach(function (h) {
+      if (h.p === block.id && text.slice(h.s, h.e) === h.t) wrap(body, h);
+    });
+  }
+  function renderAll() {
+    document.querySelectorAll(".bb-block").forEach(renderBlock);
+    updateClear();
+  }
+
+  // ---- 色板
+  var pop = document.createElement("div");
+  pop.className = "bb-pop";
+  pop.hidden = true;
+  pop.innerHTML = COLORS.map(function (c) {
+    return '<button type="button" class="bb-sw bb-hl-' + c + '" data-c="' + c + '" title="' + NAMES[c] + '"></button>';
+  }).join("") + '<button type="button" class="bb-del" data-a="del" title="ハイライトを削除">✕</button>';
+  pop.addEventListener("mousedown", function (e) { e.preventDefault(); }); // 保持选区
+
+  function showPop(rect, mode) {
+    pop.querySelector(".bb-del").style.display = mode === "edit" ? "" : "none";
+    pop.hidden = false;
+    pop.style.left = window.scrollX + rect.left + rect.width / 2 + "px";
+    pop.style.top = window.scrollY + rect.top - 6 + "px";
+  }
+  function hidePop() { pop.hidden = true; pending = null; }
+
+  function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  pop.addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn || !pending) return;
+    var c = btn.getAttribute("data-c"), touched = [];
+    if (pending.mode === "new" && c) {
+      pending.segs.forEach(function (s) {
+        list.push({ id: newId(), p: s.block.id, s: s.s, e: s.e, c: c, t: s.t });
+        touched.push(s.block);
+      });
+      var sel = window.getSelection();
+      if (sel) sel.removeAllRanges();
+    } else if (pending.mode === "edit") {
+      var i = list.findIndex(function (h) { return h.id === pending.id; });
+      if (i >= 0) {
+        var blk = document.getElementById(list[i].p);
+        if (c) list[i].c = c; else list.splice(i, 1);
+        if (blk) touched.push(blk);
+      }
+    }
+    touched.forEach(renderBlock);
+    save();
+    updateClear();
+    hidePop();
+  });
+
+  function onSelectEnd() {
+    setTimeout(function () {
+      var sel = window.getSelection();
+      if (!sel || !sel.rangeCount || sel.isCollapsed) return;
+      var r = sel.getRangeAt(0), segs = [];
+      document.querySelectorAll(".bb-body").forEach(function (b) {
+        if (!r.intersectsNode(b)) return;
+        var full = plain(b);
+        var s = b.contains(r.startContainer) ? offsetOf(b, r.startContainer, r.startOffset) : 0;
+        var e = b.contains(r.endContainer) ? offsetOf(b, r.endContainer, r.endOffset) : full.length;
+        var t = full.slice(s, e);
+        if (e > s && t.trim()) segs.push({ block: b.closest(".bb-block"), s: s, e: e, t: t });
+      });
+      if (!segs.length) return;
+      pending = { mode: "new", segs: segs };
+      showPop(r.getBoundingClientRect(), "new");
+    }, 0);
+  }
+
+  function onClick(e) {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    var m = e.target.closest && e.target.closest("mark.bb-hl");
+    if (!m) return;
+    pending = { mode: "edit", id: m.getAttribute("data-h") };
+    showPop(m.getBoundingClientRect(), "edit");
+  }
+
+  // ---- 工具栏上的"消去"按钮
+  var clearBtn = null;
+  function updateClear() {
+    if (clearBtn) clearBtn.textContent = "ハイライトを消去(" + list.length + ")";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = document.querySelector("main.content");
+    if (!main || !main.querySelector(".bb-block")) return;
+    load();
+    document.body.appendChild(pop);
+    var bar = main.querySelector(".bb-toolbar");
+    if (bar) {
+      clearBtn = document.createElement("button");
+      clearBtn.type = "button";
+      clearBtn.addEventListener("click", function () {
+        if (!list.length || !confirm("このページのハイライトをすべて消去しますか?")) return;
+        list = [];
+        save();
+        renderAll();
+      });
+      bar.appendChild(clearBtn);
+    }
+    renderAll();
+    document.addEventListener("mouseup", function (e) { if (!pop.contains(e.target)) onSelectEnd(); });
+    document.addEventListener("touchend", onSelectEnd);
+    document.addEventListener("keyup", function (e) { if (e.shiftKey) onSelectEnd(); });
+    document.addEventListener("click", onClick);
+    document.addEventListener("mousedown", function (e) { if (!pop.contains(e.target)) hidePop(); });
+    window.addEventListener("scroll", hidePop, { passive: true });
+  });
+})();
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/01_observing-intro.html">2 Observing behavior</a></li><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/14_strategies.html">2.4 Research strategies</a></li><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/15_counting-things.html">2.4.1 Counting things</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">英語原書講読入門</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">目次</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Preface</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../00_preface/notes/01_preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">1 Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/01_ink-blot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 An ink blot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/02_digital-age.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Welcome to the digital age</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/03_research-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Research design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/04_themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Themes of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/05_outline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Outline of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/06_intro-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">2 Observing behavior</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/01_observing-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/02_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Big data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/03_characteristics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Ten common characteristics of big data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/04_big.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.1 Big</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/05_always-on.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.2 Always-on</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/06_nonreactive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.3 Nonreactive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/07_incomplete.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.4 Incomplete</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/08_inaccessible.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.5 Inaccessible</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/09_non-representative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.6 Nonrepresentative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/10_drift.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.7 Drifting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/11_algorithmically-confounded.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.8 Algorithmically confounded</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/12_dirty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.9 Dirty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/13_sensitive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.10 Sensitive</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/14_strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Research strategies</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/15_counting-things.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2.4.1 Counting things</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/16_forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.2 Forecasting and nowcasting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/17_approximating-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.3 Approximating experiments</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/18_observing-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/19_observing-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/20_observing-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/21_observing-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">3 Asking questions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/01_asking-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/02_asking-vs-observing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Asking versus observing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/03_total-survey-error.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 The total survey error framework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/04_representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.1 Representation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/05_measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.2 Measurement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/06_cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.3 Cost</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/07_who.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Who to ask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/08_how.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 New ways of asking questions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/09_ema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.1 Ecological momentary assessments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/10_wiki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.2 Wiki surveys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/11_gamification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.3 Gamification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/12_linking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Surveys linked to big data sources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/13_enriched-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.1 Enriched asking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/14_amplified-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.2 Amplified asking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/15_sampling-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/16_sampling-mathematical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/17_asking-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/18_asking-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">4 Running experiments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/01_exp-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/02_what-exp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 What are experiments?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/03_lab-field.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Two dimensions of experiments: lab-field and analog-digital</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/04_beyond-simple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Moving beyond simple experiments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/05_validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.1 Validity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/06_hetero.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.2 Heterogeneity of treatment effects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/07_mechanisms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.3 Mechanisms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/08_making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Making it happen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/09_use-existing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.1 Use existing environments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/10_build-your-own-experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.2 Build your own experiment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/11_build-your-own-product.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.3 Build your own product</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/12_partner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.4 Partner with the powerful</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/13_exp-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Advice</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/14_zero-variable-cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.1 Create zero variable cost data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/15_3rs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.2 Build ethics into your design: replace, refine, and reduce</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/16_exp-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/17_exp-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/18_exp-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/19_exp-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
+ <span class="menu-text">5 Creating mass collaboration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/01_collab-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/02_human-computation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Human computation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/03_galaxy-zoo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.1 Galaxy Zoo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/04_crowd-manifesto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.2 Crowd-coding of political manifestos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/05_human-computation-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/06_open-calls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Open calls</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/07_netflix-prize.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.1 Netflix Prize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/08_foldit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.2 Foldit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/09_peer-to-patent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.3 Peer-to-Patent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/10_open-call-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.4 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/11_dist-data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Distributed data collection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/12_ebird.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.1 eBird</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/13_photocity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.2 PhotoCity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/14_dist-data-collection-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/15_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Designing your own</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/16_motivate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.1 Motivate participants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/17_heterogenity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.2 Leverage heterogeneity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/18_focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.3 Focus attention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/19_surprise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.4 Enable surprise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/20_be-ethical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.5 Be ethical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/21_design-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.6 Final design advice</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/22_collab-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/23_collab-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/24_collab-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true">
+ <span class="menu-text">6 Ethics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/01_ethics-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/02_three-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Three examples</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/03_ec-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.1 Emotional Contagion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/04_tastes-ties-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.2 Tastes, Ties, and Time</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/05_encore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.3 Encore</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/06_digital-is-diff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Digital is different</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/07_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Four principles</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/08_respect-for-persons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.1 Respect for Persons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/09_beneficence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.2 Beneficence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/10_justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.3 Justice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/11_respect-for-law.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.4 Respect for Law and Public Interest</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/12_frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Two ethical frameworks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/13_dilemmas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Areas of difficulty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/14_consent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.1 Informed consent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/15_info-risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.2 Understanding and managing informational risk</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/16_privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.3 Privacy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/17_uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.4 Making decisions in the face of uncertainty</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/18_tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7 Practical tips</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/19_irb-floor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.1 The IRB is a floor, not a ceiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/20_shoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.2 Put yourself in everyone else’s shoes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/21_continuous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.3 Think of research ethics as continuous, not discrete</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/22_ethics-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.8 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/23_ethics-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Historical appendix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/24_ethics-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/25_ethics-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true">
+ <span class="menu-text">7 The future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/01_looking-forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Looking forward</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../07_the-future/notes/02_future-themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Themes of the future</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/03_blending.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.1 The blending of readymades and custommades</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/04_participant-centered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.2 Participant-centered data collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/05_great-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.3 Ethics in research design</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/06_back.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.3 Back to the beginning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/01_observing-intro.html">2 Observing behavior</a></li><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/14_strategies.html">2.4 Research strategies</a></li><li class="breadcrumb-item"><a href="../../02_observing-behavior/notes/15_counting-things.html">2.4.1 Counting things</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2.4.1 Counting things</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="bb-meta">
+<p><a href="https://www.bitbybitbook.com/en/1st-ed/observing-behavior/strategies/counting-things/" target="_blank">原文を開く ↗</a> <span class="bb-progress">· 日本語訳 18/18 段落 · 審校済み 0</span></p>
+</div>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+<p><span class="header-section-number">2.4.1</span> Counting things</p>
+<div id="p1" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p1">1</a><div class="bb-body"><blockquote class="blockquote">
+<p><strong>Simple counting can be interesting if you combine a good question with good data.</strong></p>
+</blockquote></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>良い質問と良いデータを組み合わせれば、単純な数え上げも興味深いものになる。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:良い質問と良いデータがあれば、単純な数え上げも興味深い。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p2" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p2">2</a><div class="bb-body"><p>Although it is couched in sophisticated-sounding language, lots of social research is really just counting things. In the age of big data, researchers can count more than ever, but that does not mean that they should just start counting haphazardly. Instead, researchers should ask: What things are worth counting? This may seem like an entirely subjective matter, but there are some general patterns.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>尽管使用了听起来高深的语言，许多社会研究实际上只是在计数。在大数据时代，研究人员可以计数的东西比以往任何时候都多，但这并不意味着他们应该随意地开始计数。相反，研究人员应该问自己：哪些东西值得计数？这似乎是一个完全主观的问题，但实际上有一些普遍的模式。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:社会研究虽用复杂语言表达，但本质上是计数，大数据时代应审慎选择计数对象</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p3" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p3">3</a><div class="bb-body"><p>Often students motivate their counting research by saying: I’m going to count something that no-one has ever counted before. For example, a student might say that many people have studied migrants and many people have studied twins, but nobody has studied migrant twins. In my experience, this strategy, which I call <em>motivation by absence</em>, does not usually lead to good research. Motivation by absence is kind of like saying that there’s a hole over there, and I’m going to work very hard to fill it up. But not every hole needs to be filled.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>学生たちはしばしば、誰もカウントしたことがない何かをカウントするという動機付けで数え上げの研究を行う。例えば、多くの人が移民や双子について研究しているが、移民双子については誰も研究していないと主張する学生もいる。しかし、私の経験では、この欠如による動機付けは通常、良い研究にはつながらない。欠如による動機付けとは、そこに穴があるからそれを埋めるように頑張るようなものだが、すべての穴を埋める必要はないということだ。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:欠如による動機付けは必ずしも良い研究につながらない</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p4" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p4">4</a><div class="bb-body"><p>Instead of motivating by absence, I think a better strategy is to look for research questions that are <em>important</em> or <em>interesting</em> (or ideally both). Both of these terms a bit hard to define, but one way to think about important research is that it has some measurable impact or feeds into an important decision by policy makers. For example, measuring the rate of unemployment is important because it is an indicator of the economy that drives policy decisions. Generally, I think that researchers have a pretty good sense of what is important. So, in the rest of this section, I’m going to provide two examples where I think counting is interesting. In each case, the researchers were not counting haphazardly; rather, they were counting in very particular settings that revealed important insights into more general ideas about how social systems work. In other words, a lot of what makes these particular counting exercises interesting is not the data itself, it comes from these more general ideas.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>欠如による動機付けではなく、重要または興味深い研究課題を見つける方が良い戦略だと思います。重要な研究とは、測定可能な影響があるか、政策決定者による重要な意思決定に繋がるものを指します。例えば、失業率を測定することは、経済状況を示す指標であり、政策決定を左右するため重要です。一般に、研究者は何が重要かについて相当程度の理解を持っています。したがって、以下では私が面白いと思う2つのカウントの例を提供します。両方のケースにおいて、研究者は無秩序にカウントを行ったわけではなく、特定の状況でカウントを行い、社会システムの一般的な考え方に関する重要な洞察を明らかにしました。つまり、これらの特定のカウントが興味深いのはデータ自体ではなく、それらのより一般的な考え方に由来しています。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:重要な研究とは、測定可能な影響があるか、政策決定に影響を与えるものを指し、特定のカウントが興味深いのはその一般的な考え方に由来している。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p5" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p5">5</a><div class="bb-body"><p>One example of the simple power of counting comes from Henry Farber’s <span class="citation" data-ref-id="[&quot;#ref-farber_why_2015&quot;]" data-ref-html="
+<p>Farber, Henry S. 2015. “Why You Can’t Find a Taxi in the Rain and Other Labor Supply Lessons from Cab Drivers.” <em>Quarterly Journal of Economics</em> 130 (4):1975–2026. <a href=&quot;https://doi.org/10.1093/qje/qjv026&quot; class=&quot;uri&quot;>https://doi.org/10.1093/qje/qjv026</a>.</p>
+">(2015)</span> study of the behavior of New York City taxi drivers. Although this group might not sound inherently interesting, it is a <em>strategic research site</em> for testing two competing theories in labor economics. For the purposes of Farber’s research, there are two important features about the work environment of taxi drivers: (1) their hourly wage fluctuates from day to day, based in part on factors like the weather, and (2) the number of hours they work can fluctuate each day based on their decisions. These features lead to an interesting question about the relationship between hourly wages and hours worked. Neoclassical models in economics predict that taxi drivers will work more on days where they have higher hourly wages. Alternatively, models from behavioral economics predict exactly the opposite. If drivers set a particular income target—say $100 per day—and work until that target is met, then drivers will end up working fewer hours on days that they are earning more. For example, if you were a target earner, you might end up working four hours on a good day ($25 per hour) and five hours on a bad day ($20 per hour). So, do drivers work more hours on days with higher hourly wages (as predicted by the neoclassical models) or more hours on days with lower hourly wages (as predicted by behavioral economic models)?</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>「カウントの力」の一例は、ヘンリー・ファーバーの（2015）ニューヨーク市タクシー運転手の行動に関する研究から得られます。このグループは一見興味深いとは思われないかもしれませんが、労働経済学における二つの競合する理論を検証するための戦略的な研究場所となります。ファーバーの研究の目的では、タクシー運転手の仕事環境には二つの重要な特徴があります：（1）彼らの時給は天候などの要素に基づいて日によって変動します。（2）彼らが働く時間数は、彼らの決定に基づいて毎日変動します。これらの特徴は、時給と働いた時間数の関係について興味深い問いを提起します。経済学の新古典派モデルは、タクシー運転手が時給が高い日に働く時間が長くなると予測します。一方、行動経済学のモデルはその逆を予測します。もし運転手が特定の収入目標（例えば1日に100ドル）を設定し、その目標を達成するまで働く場合、彼らは収入が多い日に働く時間が短くなることになります。例えば、あなたが目標収入者であれば、良い日（時給25ドル）では4時間、悪い日（時給20ドル）では5時間働くかもしれません。したがって、運転手たちは時給が高い日に働く時間が長い（新古典派モデルの予測）か、または時給が低い日に働く時間が長い（行動経済学のモデルの予測）のでしょうか。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:ニューヨーク市タクシー運転手の行動を分析し、新古典派経済学と行動経済学の二つの理論を検証する研究が行われている。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p6" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p6">6</a><div class="bb-body"><p>To answer this question Farber obtained data on every taxi trip taken by New York City cabs from 2009 to 2013, data that are now publicly available. These data—which were collected by electronic meters that the city requires taxis to use—include information about each trip: start time, start location, end time, end location, fare, and tip (if the tip was paid with a credit card). Using this taxi meter data, Farber found that most drivers work more on days when wages are higher, consistent with the neoclassical theory.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>ファーバーは、2009年から2013年までのニューヨーク市タクシーのすべての乗車データを取得し、これらのデータは現在公開されています。これらのデータは、都市が使用を義務付けている電子メーターによって収集され、各乗車の開始時間、開始地点、終了時間、終了地点、運賃、そしてクレジットカードで支払われたチップに関する情報が含まれています。ファーバーは、このタクシーメーターのデータを使用して、賃金が高い日にはほとんどのドライバーがより多く働いていることを発見し、これは新古典派理論と一致しています。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:ファーバーはタクシー乗車データから、賃金が高い日にドライバーがより多く働くことを確認した。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p7" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p7">7</a><div class="bb-body"><p>In addition to this main finding, Farber was able to use the size of the data for a better understanding of heterogeneity and dynamics. He found that, over time, newer drivers gradually learn to work more hours on high-wage days (e.g., they learn to behave as the neoclassical model predicts). And new drivers who behave more like target earners are more likely to quit being taxi drivers. Both of these more subtle findings, which help explain the observed behavior of current drivers, were only possible because of the size of the dataset. They were impossible to detect in earlier studies that used paper trip sheets from a small number of taxi drivers over a short period of time <span class="citation" data-ref-id="[&quot;#ref-camerer_labor_1997&quot;]" data-ref-html="
+<p>Camerer, Colin, Linda Babcock, George Loewenstein, and Richard Thaler. 1997. “Labor Supply of New York City Cabdrivers: One Day at a Time.” <em>Quarterly Journal of Economics</em> 112 (2):407–41. <a href=&quot;https://doi.org/10.1162/003355397555244&quot; class=&quot;uri&quot;>https://doi.org/10.1162/003355397555244</a>.</p>
+">(Camerer et al. 1997)</span>.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>この主要な発見に加えて、ファーバーはデータの大きさを利用して、非均一性と動態的理解を深めることができた。彼は、時間とともに新しいドライバーが高賃金の日により多くの時間を働くよう徐々に学習することがわかった（つまり、彼らは新古典派モデルの予測通りに行動するようになる）。また、ターゲット収入を得ようとする新しいドライバーは、タクシードライバーを辞める可能性が高い。これらのより微妙な発見は、現在のドライバーの行動を説明するのに役立つが、以前の研究では紙の乗車記録を使用して短い期間に少数のタクシードライバーを調査したため、検出することは不可能だった（Camerer et al.&nbsp;1997）。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:ファーバーは大規模なデータセットにより、ドライバーの学習過程と行動変化を明らかにした。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p8" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p8">8</a><div class="bb-body"><p>Farber’s study was close to a best-case scenario for a research using a big data source because the data that were collected by the city were pretty close to the data that Farber would have collected (one difference is that Farber would have wanted data on total wages—fares plus tips—but the city data only included tips paid by credit card). However, the data alone were not enough. The key to Farber’s research was bringing an interesting question to the data, a question that has larger implications beyond just this specific setting.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>ファーバーの研究は、大規模データ源を使用した研究にとってほぼ最良のシナリオに近かったが、収集されたデータはファーバーが収集したいと考えていたデータ（例えば、料金とチップの合計額）とは異なっていた点があった。しかし、単にデータだけでは不十分であり、ファーバーの研究の鍵は、そのデータに興味深い問いを持ち込むことであり、その問いはこの特定の設定を超えた広範な意味を持つものであった。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:ファーバーの研究は、データに興味深い問いを持ち込むことが鍵であり、単なるデータ収集以上の価値を持つ。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p9" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p9">9</a><div class="bb-body"><p>A second example of counting things comes from research by Gary King, Jennifer Pan, and Molly Roberts <span class="citation" data-ref-id="[&quot;#ref-king_how_2013&quot;]" data-ref-html="
+<p>King, Gary, Jennifer Pan, and Margaret E. Roberts. 2013. “How Censorship in China Allows Government Criticism but Silences Collective Expression.” <em>American Political Science Review</em> 107 (2):326–43. <a href=&quot;https://doi.org/10.1017/S0003055413000014&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S0003055413000014</a>.</p>
+">(2013)</span> on online censorship by the Chinese government. In this case, however, the researchers had to collect their own big data and they had to deal with the fact that their data was incomplete.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>ガリー・キング、ジェニファー・パン、モリー・ロバーツの研究（2013年）によれば、中国政府によるオンライン上の検閲に関する研究では、研究者たちは独自の大規模データを収集し、そのデータが不完全であるという事実に対処する必要があった。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:中国政府によるオンライン検閲の研究では、研究者が独自の大規模データを収集し、不完全さを扱う必要があった。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p10" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p10">10</a><div class="bb-body"><p>King and colleagues were motivated by the fact that social media posts in China are censored by an enormous state apparatus that is thought to include tens of thousands of people. Researchers and citizens, however, have little sense of how these censors decide what content should be deleted. Scholars of China actually have conflicting expectations about which kinds of posts are most likely to get deleted. Some think that censors focus on posts that are critical of the state, while others think that they focus on posts that encourage collective behavior, such as protests. Figuring out which of these expectations is correct has implications for how researchers understand China and other authoritarian governments that engage in censorship. Therefore, King and colleagues wanted to compare posts that were published and subsequently deleted with posts that were published and never deleted.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>キングと同僚たちは、中国におけるソーシャルメディア投稿が国家機関によって検閲され、その規模は数万人いるとされる事実に動機づけられました。しかし、研究者や市民は、これらの検閲者がどのコンテンツを削除すべきとするのかについてほとんど理解していません。中国の専門家たちは、どの種類の投稿が最も削除される可能性が高いかについて対立する見解を持っており、一部は国家に対する批判的な投稿に焦点を当てると考え、他の一部は集団行動を促すような投稿、例えば抗議活動に関する投稿に焦点を当てると考えています。これらの期待のどちらが正しいかを明らかにすることは、研究者が中国やその他の検閲を行う権威主義政権を理解する方法に影響を与えます。そのため、キングと同僚たちは、削除された投稿と削除されなかった投稿を比較することにしました。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:中国のソーシャルメディア検閲について、研究者の間で対立する見解があるため、削除された投稿と削除されなかった投稿を比較することで、その仕組みを理解しようとしている。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p11" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p11">11</a><div class="bb-body"><p>Collecting these posts involved the amazing engineering feat of crawling more than 1,000 Chinese social media websites—each with different page layouts—finding relevant posts, and then revisiting these posts to see which were subsequently deleted. In addition to the normal engineering problems associated with large scale web-crawling, this project had the added challenge that it needed to be extremely fast because many censored posts are taken down in less than 24 hours. In other words, a slow crawler would miss lots of posts that were censored. Further, the crawlers had to do all this data collection while evading detection lest the social media websites block access or otherwise change their policies in response to the study.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>これらの投稿を集めるには、1,000以上の中国のソーシャルメディアサイト（それぞれ異なるページレイアウトを持つ）をクロールし、関連のある投稿を見つけ出し、その後削除されたものを特定するという驚異的なエンジニアリングの業績が必要だった。大規模なウェブクローリングに関連する通常のエンジニアリング問題に加えて、このプロジェクトは多くの検閲された投稿が24時間以内に削除されるため、非常に高速で行わなければならなかったという追加の課題があった。また、クローラーはデータ収集を行う際、アクセスがブロックされたり、ソーシャルメディアサイトがポリシーを変更したりしないように検出を避ける必要があった。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:1,000以上の中国のソーシャルメディアサイトから関連投稿を高速かつ非検出性でクロールし、24時間以内に削除される多くの検閲された投稿を特定するという驚異的なエンジニアリングの業績</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p12" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p12">12</a><div class="bb-body"><p>By the time that this massive engineering task had been completed, King and colleagues had obtained about 11 million posts on 85 different prespecified topics, each with an assumed level of sensitivity. For example, a topic of high sensitivity is Ai Weiwei, the dissident artist; a topic of middle sensitivity is appreciation and devaluation of the Chinese currency, and a topic of low sensitivity is the World Cup. Of these 11 million posts, about 2 million had been censored. Somewhat surprisingly, King and colleagues found that posts on highly sensitive topics were censored only slightly more often than posts on middle- and low-sensitivity topics. In other words, Chinese censors are about as likely to censor a post that mentions Ai Weiwei as a post that mentions the World Cup. These findings do not support the idea that the government censors all posts on sensitive topics.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>この大規模なエンジニアリングタスクが完了した時点で、キングと同僚たちは85の事前に特定されたトピックについて約1100万件の投稿を収集し、それぞれのトピックには想定される感受性レベルが設定されていた。例えば、高度な感受性を持つトピックは反政府的な芸術家のAi Weiwei、中程度の感受性を持つトピックは中国通貨の評価と軽視、低度の感受性を持つトピックはワールドカップである。これらの1100万件の投稿のうち、約200万件が検閲されていた。意外にも、キングと同僚たちは、高度に敏感なトピックに関する投稿は中程度や低度の敏感さを持つトピックに関する投稿よりも僅かに多く検閲されていることを発見した。つまり、中国政府はAi Weiweiに関する投稿をワールドカップに関する投稿と同じくらいの確率で検閲している。これらの発見は、政府がすべての敏感なトピックに関する投稿を検閲するという考えを支持していない。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:中国政府は高度に敏感なトピックに関する投稿を中程度や低度の敏感さを持つトピックに関する投稿とほぼ同じ確率で検閲している</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p13" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p13">13</a><div class="bb-body"><p>This simple calculation of censorship rate by topic could be misleading, however. For example, the government might censor posts that are supportive of Ai Weiwei, but leave posts that are critical of him. In order to distinguish between posts more carefully, the researchers needed to measure the <em>sentiment</em> of each post. Unfortunately, despite much work, fully automated methods of sentiment detection using pre-existing dictionaries are still not very good in many situations (think back to the problems creating an emotional timeline of September 11, 2001 described in section&nbsp;2.3.9). Therefore, King and colleagues needed a way to label their 11 million social media posts as to whether they were (1) critical of the state, (2) supportive of the state, or (3) irrelevant or factual reports about the events. This sounds like a massive job, but they solved it using a powerful trick that is common in data science but relatively rare in social science: <em>supervised learning</em>; see figure&nbsp;2.5.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>この特定トピックによる検閲率の単純な計算は誤解を招く可能性がある。例えば、政府はアイ・ウェイウェイを支持する投稿を検閲しても、彼を批判する投稿は放置するかもしれない。より慎重に投稿を区別するために、研究者は各投稿の感情を測定する必要があった。しかし、既存の辞書を使用した感情検出の完全自動化手法は、多くの状況でまだ十分に精度が高くない（2001年9月11日の感情タイムラインを作成する際の問題を思い出してほしい）。そのため、キングらは1100万件のソーシャルメディア投稿を（1）国家を批判するもの、（2）国家を支持するもの、または（3）事実に基づく報告としてラベル付けする方法が必要だった。これは大規模な作業に思えるが、彼らはデータサイエンスでは一般的だが社会科学では相対的に珍しい手法である監督学習を使って解決した；図2.5参照。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:研究者は監督学習を用いて、1100万件のソーシャルメディア投稿を国家を批判するもの、支持するもの、または事実に基づく報告として分類した。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p14" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p14">14</a><div class="bb-body"><p>First, in a step typically called <em>preprocessing</em>, the researchers converted the social media posts into a <em>document-term matrix</em>, where there was one row for each document and one column that recorded whether the post contained a specific word (e.g., protest or traffic). Next, a group of research assistants hand-labeled the sentiment of a sample of posts. Then, they used this hand-labeled data to create a machine learning model that could infer the sentiment of a post based on its characteristics. Finally, they used this model to estimate the sentiment of all 11 million posts.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>まず、通常は前処理と呼ばれるステップで、研究者はソーシャルメディアの投稿を文書-語彙行列に変換した。この行列では、各文書に対応する行があり、特定の単語（例えば、抗議や交通など）が投稿に含まれているかどうかを記録する列があった。次に、研究補助員の一団が投稿の一部を手動で感情ラベルを付けていった。その後、この手動でラベル付けされたデータを使用して、投稿の特性に基づいてその感情を推定できる機械学習モデルを作成した。最後に、このモデルを使用して、全1100万件の投稿の感情を推定した。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:研究者がソーシャルメディアの投稿を文書-語彙行列に変換し、一部の投稿を手動で感情ラベルを付けてから、全1100万件の投稿の感情を推定する機械学習モデルを作成した。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p15" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p15">15</a><div class="bb-body"><p>Thus, rather than manually reading and labeling 11 million posts—which would be logistically impossible—King and colleagues manually labeled a small number of posts and then used supervised learning to estimate the sentiment of all the posts. After completing this analysis, they were able to conclude that, somewhat surprisingly, the probability of a post being deleted was unrelated to whether it was critical of the state or supportive of the state.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>キングと同僚たちは1100万件の投稿を手動で読み、ラベルを付ける代わりに、小規模なサンプルを手動でラベル付けし、その後教師あり学習を利用して全投稿の感情を推定した。その結果、予想外にも投稿が削除される確率は、それが国家を批判的か支持的かに関わらず無関係であるという結論に達した。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:投稿が削除される確率は、それが国家を批判的か支持的かに関わらず無関係であるという結論に達した。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p16" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p16">16</a><div class="bb-body"><div class="figure">
+<img src="https://www.bitbybitbook.com/figures/chapter2/bitbybit2-5_king_how_2013_schematic.png" alt="Figure 2.5: Simplified schematic of the procedure used by King, Pan, and Roberts (2013) to estimate the sentiment of 11 million Chinese social media posts. First, in a preprocessing step, the researchers converted the social media posts into a document-term matrix (see Grimmer and Stewart (2013) for more information). Second, they hand-coded the sentiments of a small sample of posts. Third, they trained a supervised learning model to classify the sentiment of posts. Fourth, they used the supervised learning model to estimate the sentiment of all the posts. See King, Pan, and Roberts (2013), appendix B for a more detailed description." id="fig:king_how_2013_schematic">
+<p class="caption">Figure 2.5: Simplified schematic of the procedure used by <span class="citation" data-ref-id="[&quot;#ref-king_how_2013&quot;]" data-ref-html="
+<p>King, Gary, Jennifer Pan, and Margaret E. Roberts. 2013. “How Censorship in China Allows Government Criticism but Silences Collective Expression.” <em>American Political Science Review</em> 107 (2):326–43. <a href=&quot;https://doi.org/10.1017/S0003055413000014&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S0003055413000014</a>.</p>
+">King, Pan, and Roberts (2013)</span> to estimate the sentiment of 11 million Chinese social media posts. First, in a <em>preprocessing</em> step, the researchers converted the social media posts into a <em>document-term matrix</em> (see <span class="citation" data-ref-id="[&quot;#ref-grimmer_text_2013&quot;]" data-ref-html="
+<p>Grimmer, Justin, and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.” <em>Political Analysis</em> 21 (3):267–97. <a href=&quot;https://doi.org/10.1093/pan/mps028&quot; class=&quot;uri&quot;>https://doi.org/10.1093/pan/mps028</a>.</p>
+">Grimmer and Stewart (2013)</span> for more information). Second, they hand-coded the sentiments of a small sample of posts. Third, they trained a supervised learning model to classify the sentiment of posts. Fourth, they used the supervised learning model to estimate the sentiment of all the posts. See <span class="citation" data-ref-id="[&quot;#ref-king_how_2013&quot;]" data-ref-html="
+<p>King, Gary, Jennifer Pan, and Margaret E. Roberts. 2013. “How Censorship in China Allows Government Criticism but Silences Collective Expression.” <em>American Political Science Review</em> 107 (2):326–43. <a href=&quot;https://doi.org/10.1017/S0003055413000014&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S0003055413000014</a>.</p>
+">King, Pan, and Roberts (2013)</span>, appendix B for a more detailed description.</p>
+</div></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>図2.5：King, Pan, and Roberts (2013) が1100万件の中国のソーシャルメディア投稿の感情を推定するために使用した手順の簡略化された模式図。まず、事前処理ステップで研究者はソーシャルメディア投稿を文書-単語行列に変換し（Grimmer and Stewart (2013) 詳細参照）、次に投稿の感情を手動でコーディングした。第三に、感情分類のための監督学習モデルを訓練し、第四にこのモデルを使用してすべての投稿の感情を推定した。詳細はKing, Pan, and Roberts (2013) の付録Bを参照。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:King, Pan, and Roberts (2013) は1100万件の中国のソーシャルメディア投稿の感情を推定するための4段階の手順を用いた。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p17" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p17">17</a><div class="bb-body"><p>In the end, King and colleagues discovered that only three types of posts were regularly censored: pornography, criticism of censors, and those that had collective action potential (i.e., the possibility of leading to large-scale protests). By observing a huge number of posts that were deleted and posts that were not deleted, King and colleagues were able to learn how the censors work just by watching and counting. Further, foreshadowing a theme that will occur throughout this book, the supervised learning approach that they used—hand-labeling some outcomes and then building a machine learning model to label the rest—turns out to be very common in social research in the digital age. You will see pictures very similar to figure&nbsp;2.5 in chapters 3 (Asking questions) and 5 (Creating mass collaboration); this is one of the few ideas that appears in multiple chapters.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>結局、キングと同僚たちは、ポルノグラフィ、検閲者に対する批判、そして大規模な抗議行動につながる可能性のある投稿の3種類のみが定期的に検閲されていることを発見した。大量の削除された投稿と削除されなかった投稿を観察し、見て数えることで検閲者がどのように動くかを学んだ。また、この本全体を通じて繰り返されるテーマを予告するように、彼らが使用した監督学習アプローチ（一部の結果を手動でラベル付けし、その後機械学習モデルを構築して残りをラベル付けする）は、デジタル時代の社会研究で非常に一般的である。第3章（質問を立てる）と第5章（大衆協働を作り出す）で、図2.5と非常に似たような図を見ることができる。これは少数の複数の章で登場するアイデアの一つである。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:キングらは、ポルノグラフィ、検閲者への批判、大規模な抗議行動につながる可能性のある投稿が定期的に検閲されることを発見した。</p>
+</div>
+</div>
+</div>
+</div>
+<div id="p18" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p18">18</a><div class="bb-body"><p>These examples—the working behavior of taxi drivers in New York and the social media censorship behavior of the Chinese government—show that relatively simple counting of big data sources can, in some situations, lead to interesting and important research. In both cases, however, the researchers had to bring interesting questions to the big data source; the data by itself was not enough.</p></div></div>
+<div class="bb-ja callout callout-style-simple callout-tip callout-titled" lang="ja" title="日本語訳">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>日本語訳
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>これらの例、ニューヨークのタクシードライバーの働き方と中国政府のソーシャルメディア検閲行為は、一部の状況では、大規模データソースの比較的単純なカウントが興味深い重要な研究につながることを示している。しかし、両方のケースにおいて、研究者は大規模データソースに対して興味深い質問を持ち込む必要があり、データ自体だけでは十分ではなかった。</p>
+</div>
+</div>
+</div>
+<div class="bb-note callout callout-style-simple callout-note callout-titled" lang="ja" title="理解のポイント">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>理解のポイント
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>要点</strong>:大規模データソースの単純なカウントが興味深い研究につながるが、データ自体では不十分である</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../02_observing-behavior/notes/14_strategies.html" class="pagination-link" aria-label="2.4 Research strategies">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.4 Research strategies</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../02_observing-behavior/notes/16_forecasting.html" class="pagination-link" aria-label="2.4.2 Forecasting and nowcasting">
+        <span class="nav-page-text">2.4.2 Forecasting and nowcasting</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

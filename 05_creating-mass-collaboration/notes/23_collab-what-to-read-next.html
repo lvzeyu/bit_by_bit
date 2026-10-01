@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>What to read next – 英語原書講読入門</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../05_creating-mass-collaboration/notes/24_collab-activities.html" rel="next">
+<link href="../../05_creating-mass-collaboration/notes/22_collab-conclusion.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0aecec4fa854f4509179baef4aac6b11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+// 本机预览(quarto preview 使用 localhost)时显示进度等仅供编辑者看的信息。
+if (["localhost", "127.0.0.1"].indexOf(location.hostname) >= 0) {
+  document.documentElement.classList.add("bb-dev");
+}
+</script>
+<script>
+// 原文在 raw HTML 块中,Quarto 不会为其中的 \( \) 公式加载 MathJax;页面出现公式时按需加载。
+window.MathJax = {
+  tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"], ["$$", "$$"]] },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".bb-en .math")) {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+    s.async = true;
+    document.head.appendChild(s);
+  }
+});
+
+// 阅读页工具栏:全部展开/折叠、只显示日本語訳或ノート。
+document.addEventListener("DOMContentLoaded", function () {
+  var main = document.querySelector("main.content");
+  if (!main || !main.querySelector(".bb-block")) return;
+
+  var KEY = "bb-mode";
+  function load() { try { return localStorage.getItem(KEY) || "all"; } catch (e) { return "all"; } }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function apply(mode) {
+    document.body.classList.toggle("bb-hide-ja", mode === "note" || mode === "none");
+    document.body.classList.toggle("bb-hide-note", mode === "ja" || mode === "none");
+  }
+
+  function setAll(open) {
+    main.querySelectorAll(".bb-block .callout").forEach(function (c) {
+      var body = c.querySelector(".callout-collapse");
+      var head = c.querySelector(".callout-header");
+      if (!body || !head || c.offsetParent === null) return;
+      if (body.classList.contains("show") !== open) head.click();
+    });
+  }
+
+  var bar = document.createElement("div");
+  bar.className = "bb-toolbar";
+  bar.innerHTML =
+    '<button type="button" data-a="open">すべて展開</button>' +
+    '<button type="button" data-a="close">すべて折りたたむ</button>' +
+    '<span>表示:' +
+    '<label><input type="radio" name="bbm" value="all"> 両方</label>' +
+    '<label><input type="radio" name="bbm" value="ja"> 日本語訳のみ</label>' +
+    '<label><input type="radio" name="bbm" value="note"> ノートのみ</label>' +
+    '<label><input type="radio" name="bbm" value="none"> すべて隠す</label></span>';
+  main.insertBefore(bar, main.firstChild.nextSibling || main.firstChild);
+
+  var mode = load();
+  bar.querySelector('input[value="' + mode + '"]').checked = true;
+  apply(mode);
+
+  bar.addEventListener("click", function (e) {
+    var a = e.target.getAttribute && e.target.getAttribute("data-a");
+    if (a) setAll(a === "open");
+  });
+  bar.addEventListener("change", function (e) {
+    if (e.target.name === "bbm") { save(e.target.value); apply(e.target.value); }
+  });
+});
+</script>
+<script>
+// 原文高亮:划选文字 → 色板;点击已有高亮 → 改色/删除。
+// 保存在 localStorage(按页面路径),只存段落编号 + 字符偏移 + 文字片段(用于校验)。
+// 偏移只统计 .math / mjx-container 之外的文本,因此不受 MathJax 渲染影响。
+(function () {
+  var COLORS = ["yellow", "green", "blue", "pink"];
+  var NAMES = { yellow: "黄", green: "緑", blue: "青", pink: "桃" };
+  var KEY = "bb-hl:" + location.pathname;
+  var list = [];
+  var pending = null; // {mode:"new", segs} | {mode:"edit", id}
+
+  function load() { try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { list = []; } }
+  function save() {
+    try { if (list.length) localStorage.setItem(KEY, JSON.stringify(list)); else localStorage.removeItem(KEY); } catch (e) {}
+  }
+
+  function textNodes(body) {
+    var w = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return n.parentElement && n.parentElement.closest(".math, mjx-container")
+          ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var out = [], n;
+    while ((n = w.nextNode())) out.push(n);
+    return out;
+  }
+  function plain(body) { return textNodes(body).map(function (n) { return n.data; }).join(""); }
+
+  // 容器内某个 DOM 位置对应的"纯文本偏移"
+  function offsetOf(body, container, off) {
+    var r = document.createRange();
+    r.setStart(body, 0);
+    r.setEnd(container, off);
+    var acc = 0, nodes = textNodes(body);
+    for (var i = 0; i < nodes.length; i++) {
+      var t = nodes[i];
+      if (t === container) return acc + off;
+      if (r.comparePoint(t, 0) > 0) break;
+      acc += t.data.length;
+    }
+    return acc;
+  }
+
+  function wrap(body, h) {
+    var pos = 0;
+    textNodes(body).forEach(function (n) {
+      var len = n.data.length;
+      var a = Math.max(h.s, pos) - pos, b = Math.min(h.e, pos + len) - pos;
+      pos += len;
+      if (b <= a) return;
+      var mid = a > 0 ? n.splitText(a) : n;
+      if (b - a < mid.data.length) mid.splitText(b - a);
+      var m = document.createElement("mark");
+      m.className = "bb-hl bb-hl-" + h.c;
+      m.setAttribute("data-h", h.id);
+      mid.parentNode.replaceChild(m, mid);
+      m.appendChild(mid);
+    });
+  }
+
+  function renderBlock(block) {
+    var body = block.querySelector(".bb-body");
+    if (!body) return;
+    body.querySelectorAll("mark.bb-hl").forEach(function (m) {
+      var p = m.parentNode;
+      while (m.firstChild) p.insertBefore(m.firstChild, m);
+      p.removeChild(m);
+    });
+    body.normalize();
+    var text = plain(body);
+    list.forEach(function (h) {
+      if (h.p === block.id && text.slice(h.s, h.e) === h.t) wrap(body, h);
+    });
+  }
+  function renderAll() {
+    document.querySelectorAll(".bb-block").forEach(renderBlock);
+    updateClear();
+  }
+
+  // ---- 色板
+  var pop = document.createElement("div");
+  pop.className = "bb-pop";
+  pop.hidden = true;
+  pop.innerHTML = COLORS.map(function (c) {
+    return '<button type="button" class="bb-sw bb-hl-' + c + '" data-c="' + c + '" title="' + NAMES[c] + '"></button>';
+  }).join("") + '<button type="button" class="bb-del" data-a="del" title="ハイライトを削除">✕</button>';
+  pop.addEventListener("mousedown", function (e) { e.preventDefault(); }); // 保持选区
+
+  function showPop(rect, mode) {
+    pop.querySelector(".bb-del").style.display = mode === "edit" ? "" : "none";
+    pop.hidden = false;
+    pop.style.left = window.scrollX + rect.left + rect.width / 2 + "px";
+    pop.style.top = window.scrollY + rect.top - 6 + "px";
+  }
+  function hidePop() { pop.hidden = true; pending = null; }
+
+  function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  pop.addEventListener("click", function (e) {
+    var btn = e.target.closest("button");
+    if (!btn || !pending) return;
+    var c = btn.getAttribute("data-c"), touched = [];
+    if (pending.mode === "new" && c) {
+      pending.segs.forEach(function (s) {
+        list.push({ id: newId(), p: s.block.id, s: s.s, e: s.e, c: c, t: s.t });
+        touched.push(s.block);
+      });
+      var sel = window.getSelection();
+      if (sel) sel.removeAllRanges();
+    } else if (pending.mode === "edit") {
+      var i = list.findIndex(function (h) { return h.id === pending.id; });
+      if (i >= 0) {
+        var blk = document.getElementById(list[i].p);
+        if (c) list[i].c = c; else list.splice(i, 1);
+        if (blk) touched.push(blk);
+      }
+    }
+    touched.forEach(renderBlock);
+    save();
+    updateClear();
+    hidePop();
+  });
+
+  function onSelectEnd() {
+    setTimeout(function () {
+      var sel = window.getSelection();
+      if (!sel || !sel.rangeCount || sel.isCollapsed) return;
+      var r = sel.getRangeAt(0), segs = [];
+      document.querySelectorAll(".bb-body").forEach(function (b) {
+        if (!r.intersectsNode(b)) return;
+        var full = plain(b);
+        var s = b.contains(r.startContainer) ? offsetOf(b, r.startContainer, r.startOffset) : 0;
+        var e = b.contains(r.endContainer) ? offsetOf(b, r.endContainer, r.endOffset) : full.length;
+        var t = full.slice(s, e);
+        if (e > s && t.trim()) segs.push({ block: b.closest(".bb-block"), s: s, e: e, t: t });
+      });
+      if (!segs.length) return;
+      pending = { mode: "new", segs: segs };
+      showPop(r.getBoundingClientRect(), "new");
+    }, 0);
+  }
+
+  function onClick(e) {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    var m = e.target.closest && e.target.closest("mark.bb-hl");
+    if (!m) return;
+    pending = { mode: "edit", id: m.getAttribute("data-h") };
+    showPop(m.getBoundingClientRect(), "edit");
+  }
+
+  // ---- 工具栏上的"消去"按钮
+  var clearBtn = null;
+  function updateClear() {
+    if (clearBtn) clearBtn.textContent = "ハイライトを消去(" + list.length + ")";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = document.querySelector("main.content");
+    if (!main || !main.querySelector(".bb-block")) return;
+    load();
+    document.body.appendChild(pop);
+    var bar = main.querySelector(".bb-toolbar");
+    if (bar) {
+      clearBtn = document.createElement("button");
+      clearBtn.type = "button";
+      clearBtn.addEventListener("click", function () {
+        if (!list.length || !confirm("このページのハイライトをすべて消去しますか?")) return;
+        list = [];
+        save();
+        renderAll();
+      });
+      bar.appendChild(clearBtn);
+    }
+    renderAll();
+    document.addEventListener("mouseup", function (e) { if (!pop.contains(e.target)) onSelectEnd(); });
+    document.addEventListener("touchend", onSelectEnd);
+    document.addEventListener("keyup", function (e) { if (e.shiftKey) onSelectEnd(); });
+    document.addEventListener("click", onClick);
+    document.addEventListener("mousedown", function (e) { if (!pop.contains(e.target)) hidePop(); });
+    window.addEventListener("scroll", hidePop, { passive: true });
+  });
+})();
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../05_creating-mass-collaboration/notes/01_collab-introduction.html">5 Creating mass collaboration</a></li><li class="breadcrumb-item"><a href="../../05_creating-mass-collaboration/notes/23_collab-what-to-read-next.html">What to read next</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">英語原書講読入門</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">目次</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Preface</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../00_preface/notes/01_preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">1 Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/01_ink-blot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 An ink blot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/02_digital-age.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Welcome to the digital age</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/03_research-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Research design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/04_themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Themes of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/05_outline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.5 Outline of this book</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../01_introduction/notes/06_intro-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">2 Observing behavior</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/01_observing-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/02_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 Big data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/03_characteristics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Ten common characteristics of big data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/04_big.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.1 Big</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/05_always-on.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.2 Always-on</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/06_nonreactive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.3 Nonreactive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/07_incomplete.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.4 Incomplete</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/08_inaccessible.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.5 Inaccessible</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/09_non-representative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.6 Nonrepresentative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/10_drift.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.7 Drifting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/11_algorithmically-confounded.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.8 Algorithmically confounded</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/12_dirty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.9 Dirty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/13_sensitive.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3.10 Sensitive</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../02_observing-behavior/notes/14_strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Research strategies</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/15_counting-things.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.1 Counting things</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/16_forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.2 Forecasting and nowcasting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/17_approximating-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4.3 Approximating experiments</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/18_observing-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.5 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/19_observing-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/20_observing-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../02_observing-behavior/notes/21_observing-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">3 Asking questions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/01_asking-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/02_asking-vs-observing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.2 Asking versus observing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/03_total-survey-error.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 The total survey error framework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/04_representation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.1 Representation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/05_measurement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.2 Measurement</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/06_cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3.3 Cost</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/07_who.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Who to ask</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/08_how.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 New ways of asking questions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/09_ema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.1 Ecological momentary assessments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/10_wiki.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.2 Wiki surveys</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/11_gamification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5.3 Gamification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../03_asking-questions/notes/12_linking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6 Surveys linked to big data sources</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/13_enriched-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.1 Enriched asking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/14_amplified-asking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.6.2 Amplified asking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/15_sampling-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/16_sampling-mathematical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/17_asking-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../03_asking-questions/notes/18_asking-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">4 Running experiments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/01_exp-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/02_what-exp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 What are experiments?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/03_lab-field.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Two dimensions of experiments: lab-field and analog-digital</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/04_beyond-simple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Moving beyond simple experiments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/05_validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.1 Validity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/06_hetero.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.2 Heterogeneity of treatment effects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/07_mechanisms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4.3 Mechanisms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/08_making.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Making it happen</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/09_use-existing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.1 Use existing environments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/10_build-your-own-experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.2 Build your own experiment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/11_build-your-own-product.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.3 Build your own product</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/12_partner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5.4 Partner with the powerful</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../04_running-experiments/notes/13_exp-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Advice</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/14_zero-variable-cost.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.1 Create zero variable cost data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/15_3rs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6.2 Build ethics into your design: replace, refine, and reduce</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/16_exp-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.7 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/17_exp-math-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mathematical notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/18_exp-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../04_running-experiments/notes/19_exp-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true">
+ <span class="menu-text">5 Creating mass collaboration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/01_collab-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/02_human-computation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Human computation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/03_galaxy-zoo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.1 Galaxy Zoo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/04_crowd-manifesto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.2 Crowd-coding of political manifestos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/05_human-computation-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/06_open-calls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Open calls</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/07_netflix-prize.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.1 Netflix Prize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/08_foldit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.2 Foldit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/09_peer-to-patent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.3 Peer-to-Patent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/10_open-call-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3.4 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/11_dist-data-collection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4 Distributed data collection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/12_ebird.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.1 eBird</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/13_photocity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.2 PhotoCity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/14_dist-data-collection-conclusions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.4.3 Conclusion</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../05_creating-mass-collaboration/notes/15_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5 Designing your own</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/16_motivate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.1 Motivate participants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/17_heterogenity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.2 Leverage heterogeneity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/18_focus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.3 Focus attention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/19_surprise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.4 Enable surprise</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/20_be-ethical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.5 Be ethical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/21_design-advice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.5.6 Final design advice</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/22_collab-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.6 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/23_collab-what-to-read-next.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../05_creating-mass-collaboration/notes/24_collab-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true">
+ <span class="menu-text">6 Ethics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/01_ethics-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.1 Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/02_three-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2 Three examples</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/03_ec-ethics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.1 Emotional Contagion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/04_tastes-ties-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.2 Tastes, Ties, and Time</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/05_encore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.2.3 Encore</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/06_digital-is-diff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.3 Digital is different</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/07_principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4 Four principles</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/08_respect-for-persons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.1 Respect for Persons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/09_beneficence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.2 Beneficence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/10_justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.3 Justice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/11_respect-for-law.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.4.4 Respect for Law and Public Interest</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/12_frameworks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.5 Two ethical frameworks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/13_dilemmas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6 Areas of difficulty</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/14_consent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.1 Informed consent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/15_info-risk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.2 Understanding and managing informational risk</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/16_privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.3 Privacy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/17_uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.6.4 Making decisions in the face of uncertainty</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../06_ethics/notes/18_tips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7 Practical tips</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/19_irb-floor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.1 The IRB is a floor, not a ceiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/20_shoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.2 Put yourself in everyone else’s shoes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/21_continuous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.7.3 Think of research ethics as continuous, not discrete</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/22_ethics-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6.8 Conclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/23_ethics-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Historical appendix</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/24_ethics-what-to-read-next.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What to read next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../06_ethics/notes/25_ethics-activities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true">
+ <span class="menu-text">7 The future</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/01_looking-forward.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.1 Looking forward</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../07_the-future/notes/02_future-themes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2 Themes of the future</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/03_blending.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.1 The blending of readymades and custommades</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/04_participant-centered.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.2 Participant-centered data collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/05_great-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.2.3 Ethics in research design</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../07_the-future/notes/06_back.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7.3 Back to the beginning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../05_creating-mass-collaboration/notes/01_collab-introduction.html">5 Creating mass collaboration</a></li><li class="breadcrumb-item"><a href="../../05_creating-mass-collaboration/notes/23_collab-what-to-read-next.html">What to read next</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">What to read next</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="bb-meta">
+<p><a href="https://www.bitbybitbook.com/en/1st-ed/creating-mass-collaboration/collab-what-to-read-next/" target="_blank">原文を開く ↗</a> <span class="bb-progress">· 日本語訳 0/31 段落 · 審校済み 0</span></p>
+</div>
+<div id="p1" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p1">1</a><div class="bb-body"><ul>
+<li><strong>Introduction (section&nbsp;5.1)</strong></li>
+</ul></div></div>
+</div>
+<div id="p2" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p2">2</a><div class="bb-body"><p>Mass collaboration blends ideas from <em>citizen science</em>, <em>crowdsourcing</em>, and <em>collective intelligence</em>. Citizen science usually means involving “citizens” (i.e., nonscientists) in the scientific process; for more, see <span class="citation" data-ref-id="[&quot;#ref-crain_citizen_2014&quot;]" data-ref-html="
+<p>Crain, Rhiannon, Caren Cooper, and Janis L. Dickinson. 2014. “Citizen Science: A Tool for Integrating Studies of Human and Natural Systems.” <em>Annual Review of Environment and Resources</em> 39 (1):641–65. <a href=&quot;https://doi.org/10.1146/annurev-environ-030713-154609&quot; class=&quot;uri&quot;>https://doi.org/10.1146/annurev-environ-030713-154609</a>.</p>
+">Crain, Cooper, and Dickinson (2014)</span> and <span class="citation" data-ref-id="[&quot;#ref-bonney_next_2014&quot;]" data-ref-html="
+<p>Bonney, Rick, Jennifer L. Shirk, Tina B. Phillips, Andrea Wiggins, Heidi L. Ballard, Abraham J. Miller-Rushing, and Julia K. Parrish. 2014. “Next Steps for Citizen Science.” <em>Science</em> 343 (6178):1436–7. <a href=&quot;https://doi.org/10.1126/science.1251554&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.1251554</a>.</p>
+">Bonney et al. (2014)</span>. Crowdsourcing usually means taking a problem ordinarily solved within an organization and instead outsourcing it to a crowd; for more, see <span class="citation" data-ref-id="[&quot;#ref-howe_crowdsourcing:_2009&quot;]" data-ref-html="
+<p>Howe, Jeff. 2009. <em>Crowdsourcing: Why the Power of the Crowd Is Driving the Future of Business</em>. New York: Crown Business.</p>
+">Howe (2009)</span>. Collective intelligence usually means groups of individuals acting collectively in ways that seem intelligent; for more, see <span class="citation" data-ref-id="[&quot;#ref-malone_handbook_2015&quot;]" data-ref-html="
+<p>Malone, Thomas W., and Michael S. Bernstein. 2015. <em>Handbook of Collective Intelligence</em>. Cambridge, MA: MIT Press.</p>
+">Malone and Bernstein (2015)</span>. <span class="citation" data-ref-id="[&quot;#ref-nielsen_reinventing_2012&quot;]" data-ref-html="
+<p>Nielsen, Michael. 2012. <em>Reinventing Discovery: The New Era of Networked Science</em>. Princeton, NJ: Princeton University Press.</p>
+">Nielsen (2012)</span> is a book-length introduction to the power of mass collaboration for scientific research.</p></div></div>
+</div>
+<div id="p3" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p3">3</a><div class="bb-body"><p>There are many types of mass collaboration that don’t fit neatly into the three categories that I have proposed, and I think three of these deserve special attention because they might be useful in social research. One example is prediction markets, where participants buy and trade contracts that are redeemable based on outcomes that occur in the world. Predicting markets are often used by firms and governments for forecasting, and they have also been used by social researchers to predict the replicability of published studies in psychology <span class="citation" data-ref-id="[&quot;#ref-dreber_using_2015&quot;]" data-ref-html="
+<p>Dreber, Anna, Thomas Pfeiffer, Johan Almenberg, Siri Isaksson, Brad Wilson, Yiling Chen, Brian A. Nosek, and Magnus Johannesson. 2015. “Using Prediction Markets to Estimate the Reproducibility of Scientific Research.” <em>Proceedings of the National Academy of Sciences of the USA</em> 112 (50):15343–7. <a href=&quot;https://doi.org/10.1073/pnas.1516179112&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.1516179112</a>.</p>
+">(Dreber et al. 2015)</span>. For an overview of prediction markets, see <span class="citation" data-ref-id="[&quot;#ref-wolfers_prediction_2004&quot;]" data-ref-html="
+<p>Wolfers, Justin, and Eric Zitzewitz. 2004. “Prediction Markets.” <em>Journal of Economic Perspectives</em> 18 (2):107–26. <a href=&quot;http://www.jstor.org/stable/3216893&quot; class=&quot;uri&quot;>http://www.jstor.org/stable/3216893</a>.</p>
+">Wolfers and Zitzewitz (2004)</span> and <span class="citation" data-ref-id="[&quot;#ref-arrow_promise_2008&quot;]" data-ref-html="
+<p>Arrow, Kenneth J., Robert Forsythe, Michael Gorham, Robert Hahn, Robin Hanson, John O. Ledyard, Saul Levmore, et al. 2008. “The Promise of Prediction Markets.” <em>Science</em> 320 (5878):877–78. <a href=&quot;https://doi.org/10.1126/science.1157679&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.1157679</a>.</p>
+">Arrow et al. (2008)</span>.</p></div></div>
+</div>
+<div id="p4" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p4">4</a><div class="bb-body"><p>A second example that does not fit well into my categorization scheme is the PolyMath project, where researchers collaborated using blogs and wikis to prove new math theorems. The PolyMath project is in some ways similar to the Netflix Prize, but in this project participants more actively built on the partial solutions of others. For more on the PolyMath project, see <span class="citation" data-ref-id="[&quot;#ref-gowers_massively_2009&quot;]" data-ref-html="
+<p>Gowers, Timothy, and Michael Nielsen. 2009. “Massively Collaborative Mathematics.” <em>Nature</em> 461 (7266):879–81. <a href=&quot;https://doi.org/10.1038/461879a&quot; class=&quot;uri&quot;>https://doi.org/10.1038/461879a</a>.</p>
+">Gowers and Nielsen (2009)</span>, <span class="citation" data-ref-id="[&quot;#ref-cranshaw_polymath_2011&quot;]" data-ref-html="
+<p>Cranshaw, Justin, and Aniket Kittur. 2011. “The Polymath Project: Lessons from a Successful Online Collaboration in Mathematics.” In <em>Proceedings of the 2011 Annual Conference on Human Factors in Computing Systems</em>, 1865–74. CHI ’11. New York: ACM. <a href=&quot;https://doi.org/10.1145/1978942.1979213&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1978942.1979213</a>.</p>
+">Cranshaw and Kittur (2011)</span>, <span class="citation" data-ref-id="[&quot;#ref-nielsen_reinventing_2012&quot;]" data-ref-html="
+<p>Nielsen, Michael. 2012. <em>Reinventing Discovery: The New Era of Networked Science</em>. Princeton, NJ: Princeton University Press.</p>
+">Nielsen (2012)</span>, and <span class="citation" data-ref-id="[&quot;#ref-kloumann_internet_2016&quot;]" data-ref-html="
+<p>Kloumann, Isabel Mette, Chenhao Tan, Jon Kleinberg, and Lillian Lee. 2016. “Internet Collaboration on Extremely Difficult Problems: Research Versus Olympiad Questions on the Polymath Site.” In <em>Proceedings of the 25th International Conference on World Wide Web</em>, 1283–92. WWW ’16. Republic and Canton of Geneva, Switzerland: International World Wide Web Conferences Steering Committee. <a href=&quot;https://doi.org/10.1145/2872427.2883023&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2872427.2883023</a>.</p>
+">Kloumann et al. (2016)</span>.</p></div></div>
+</div>
+<div id="p5" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p5">5</a><div class="bb-body"><p>A third example that does not fit well into my categorization scheme is that of time-dependent mobilizations such as the Defense Advanced Research Projects Agency (DARPA) Network Challenge (i.e., the Red Balloon Challenge). For more on these time-sensitive mobilizations see <span class="citation" data-ref-id="[&quot;#ref-pickard_time-critical_2011&quot;]" data-ref-html="
+<p>Pickard, Galen, Wei Pan, Iyad Rahwan, Manuel Cebrian, Riley Crane, Anmol Madan, and Alex Pentland. 2011. “Time-Critical Social Mobilization.” <em>Science</em> 334 (6055):509–12. <a href=&quot;https://doi.org/10.1126/science.1205869&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.1205869</a>.</p>
+">Pickard et al. (2011)</span>, <span class="citation" data-ref-id="[&quot;#ref-tang_reflecting_2011&quot;]" data-ref-html="
+<p>Tang, John C., Manuel Cebrian, Nicklaus A. Giacobe, Hyun-Woo Kim, Taemie Kim, and Douglas “Beaker” Wickert. 2011. “Reflecting on the DARPA Red Balloon Challenge.” <em>Communications of the ACM</em> 54 (4):78–85. <a href=&quot;https://doi.org/10.1145/1924421.1924441&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1924421.1924441</a>.</p>
+">Tang et al. (2011)</span>, and <span class="citation" data-ref-id="[&quot;#ref-rutherford_limits_2013&quot;]" data-ref-html="
+<p>Rutherford, Alex, Manuel Cebrian, Sohan Dsouza, Esteban Moro, Alex Pentland, and Iyad Rahwan. 2013. “Limits of Social Mobilization.” <em>Proceedings of the National Academy of Sciences of the USA</em> 110 (16):6281–6. <a href=&quot;https://doi.org/10.1073/pnas.1216338110&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.1216338110</a>.</p>
+">Rutherford et al. (2013)</span>.</p></div></div>
+</div>
+<div id="p6" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p6">6</a><div class="bb-body"><ul>
+<li><strong>Human computation (section&nbsp;5.2)</strong></li>
+</ul></div></div>
+</div>
+<div id="p7" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p7">7</a><div class="bb-body"><p>The term “human computation” comes out of work done by computer scientists, and understanding the context behind this research will improve your ability to pick out problems that might be suitable for it. For certain tasks, computers are incredibly powerful, with capabilities far exceeding those of even expert humans. For example, in chess, computers can beat even the best grandmasters. But—and this is less well appreciated by social scientists—for other tasks, computers are actually much worse than people. In other words, right now you are better than even the most sophisticated computer at certain tasks involving processing of images, video, audio, and text. Computer scientists working on these hard-for-computers-easy-for-human tasks therefore realized that they could include humans in their computational process. Here’s how Luis von Ahn <span class="citation" data-ref-id="[&quot;#ref-von_ahn_human_2005&quot;]" data-ref-html="
+<p>Ahn, Luis von. 2005. “Human Computation.” Ph.D. Thesis, Carnegie Mellon University.</p>
+">(2005)</span> described human computation when he first coined the term in his dissertation: “a paradigm for utilizing human processing power to solve problems that computers cannot yet solve.” For a book-length treatment of human computation, in the most general sense of the term, see <span class="citation" data-ref-id="[&quot;#ref-law_human_2011&quot;]" data-ref-html="
+<p>Law, Edith, and Luis von Ahn. 2011. <em>Human Computation</em>. Synthesis Lectures on Artificial Intelligence and Machine Learning. Morgan &amp;amp; Claypool. <a href=&quot;http://dx.doi.org/10.2200/S00371ED1V01Y201107AIM013&quot; class=&quot;uri&quot;>http://dx.doi.org/10.2200/S00371ED1V01Y201107AIM013</a>.</p>
+">Law and Ahn (2011)</span>.</p></div></div>
+</div>
+<div id="p8" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p8">8</a><div class="bb-body"><p>According to the definition proposed in <span class="citation" data-ref-id="[&quot;#ref-von_ahn_human_2005&quot;]" data-ref-html="
+<p>Ahn, Luis von. 2005. “Human Computation.” Ph.D. Thesis, Carnegie Mellon University.</p>
+">Ahn (2005)</span> Foldit—which I described in the section on open calls—could be considered a human computation project. However, I choose to categorize Foldit as an open call because it requires specialized skills (although not necessarily formal training) and it takes the best solution contributed, rather than using a split-apply-combine strategy.</p></div></div>
+</div>
+<div id="p9" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p9">9</a><div class="bb-body"><p>The term “split-apply-combine” was used by <span class="citation" data-ref-id="[&quot;#ref-wickham_split-apply-combine_2011&quot;]" data-ref-html="
+<p>Wickham, H. 2011. “The Split-Apply-Combine Strategy for Data Analysis.” <em>Journal of Statistical Software</em> 40 (1):1–29.</p>
+">Wickham (2011)</span> to describe a strategy for statistical computing, but it perfectly captures the process of many human computation projects. The split-apply-combine strategy is similar to the MapReduce framework developed at Google; for more on MapReduce, see <span class="citation" data-ref-id="[&quot;#ref-dean_mapreduce:_2004&quot;]" data-ref-html="
+<p>Dean, Jeffrey, and Sanjay Ghemawat. 2004. “MapReduce: Simplified Data Processing on Large Clusters.” In <em>Proceedings of the 6th Conference on Symposium on Opearting Systems Design &amp;amp; Implementation - Volume 6</em>, 10–10. Berkeley, CA: USENIX Association. <a href=&quot;https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf&quot; class=&quot;uri&quot;>https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf</a>.</p>
+">Dean and Ghemawat (2004)</span> and <span class="citation" data-ref-id="[&quot;#ref-dean_mapreduce:_2008&quot;]" data-ref-html="
+<p>Dean, J., and S. Ghemawat. 2008. “MapReduce: Simplified Data Processing on Large Clusters.” <em>Communications of the ACM</em> 51 (1):107–13.</p>
+">Dean and Ghemawat (2008)</span>. For more on other distributed computing architectures, see <span class="citation" data-ref-id="[&quot;#ref-vo_programming_2016&quot;]" data-ref-html="
+<p>Vo, Huy, and Claudio Silvia. 2016. “Programming with Big Data.” In <em>Big Data and Social Science: A Practical Guide to Methods and Tools</em>, edited by Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, and Julia Lane, 125–43. Boca Raton, FL: CRC Press.</p>
+">Vo and Silvia (2016)</span>. Chapter 3 of <span class="citation" data-ref-id="[&quot;#ref-law_human_2011&quot;]" data-ref-html="
+<p>Law, Edith, and Luis von Ahn. 2011. <em>Human Computation</em>. Synthesis Lectures on Artificial Intelligence and Machine Learning. Morgan &amp;amp; Claypool. <a href=&quot;http://dx.doi.org/10.2200/S00371ED1V01Y201107AIM013&quot; class=&quot;uri&quot;>http://dx.doi.org/10.2200/S00371ED1V01Y201107AIM013</a>.</p>
+">Law and Ahn (2011)</span> has a discussion of projects with more complex combine steps than those in this chapter.</p></div></div>
+</div>
+<div id="p10" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p10">10</a><div class="bb-body"><p>In the human computation projects that I have discussed in the chapter, participants were aware of what was happening. Some other projects, however, seek to capture “work” that is already happening (similar to eBird) and without participant awareness. See, for example, the ESP Game <span class="citation" data-ref-id="[&quot;#ref-von_ahn_labeling_2004&quot;]" data-ref-html="
+<p>Ahn, Luis von, and Laura Dabbish. 2004. “Labeling Images with a Computer Game.” In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 319–26. CHI ’04. New York. <a href=&quot;https://doi.org/10.1145/985692.985733&quot; class=&quot;uri&quot;>https://doi.org/10.1145/985692.985733</a>.</p>
+">(Ahn and Dabbish 2004)</span> and reCAPTCHA <span class="citation" data-ref-id="[&quot;#ref-von_ahn_recaptcha:_2008&quot;]" data-ref-html="
+<p>Ahn, Luis von, Benjamin Maurer, Colin McMillen, David Abraham, and Manuel Blum. 2008. “reCAPTCHA: Human-Based Character Recognition via Web Security Measures.” <em>Science</em> 321 (5895):1465–8. <a href=&quot;https://doi.org/10.1126/science.1160379&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.1160379</a>.</p>
+">(Ahn et al. 2008)</span>. However, both of these projects also raise ethical questions because participants did not know how their data were being used <span class="citation" data-ref-id="[&quot;#ref-zittrain_ubiquitous_2008&quot;,&quot;#ref-lung_ethical_2012&quot;]" data-ref-html="
+<p>Zittrain, Jonathan. 2008. “Ubiquitous Human Computing.” <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 366 (1881):3813–21. <a href=&quot;https://doi.org/10.1098/rsta.2008.0116&quot; class=&quot;uri&quot;>https://doi.org/10.1098/rsta.2008.0116</a>.</p>
+ 
+<p>Lung, J. 2012. “Ethical and Legal Considerations of reCAPTCHA.” In <em>2012 Tenth Annual International Conference on Privacy, Security and Trust (PST)</em>, 211–16. <a href=&quot;https://doi.org/10.1109/PST.2012.6297942&quot; class=&quot;uri&quot;>https://doi.org/10.1109/PST.2012.6297942</a>.</p>
+">(Zittrain 2008; Lung 2012)</span>.</p></div></div>
+</div>
+<div id="p11" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p11">11</a><div class="bb-body"><p>Inspired by the ESP Game, many researchers have attempted to develop other “games with a purpose” <span class="citation" data-ref-id="[&quot;#ref-von_ahn_designing_2008&quot;]" data-ref-html="
+<p>———. 2008. “Designing Games with a Purpose.” <em>Communications of the ACM</em> 51 (8):58–67. <a href=&quot;https://doi.org/10.1145/1378704.1378719&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1378704.1378719</a>.</p>
+">(Ahn and Dabbish 2008)</span> (i.e., “human-based computation games” <span class="citation" data-ref-id="[&quot;#ref-pe-than_typology_2015&quot;]" data-ref-html="
+<p>Pe-Than, Ei Pa Pa, Dion Hoe-Lian Goh, and Chei Sian Lee. 2015. “A Typology of Human Computation Games: An Analysis and a Review of Current Games.” <em>Behaviour &amp;amp; Information Technology</em> 34 (8):809–24. <a href=&quot;https://doi.org/10.1080/0144929X.2013.862304&quot; class=&quot;uri&quot;>https://doi.org/10.1080/0144929X.2013.862304</a>.</p>
+">(Pe-Than, Goh, and Lee 2015)</span>) that can be used to solve a variety of other problems. What these “games with a purpose” have in common is that they try to make the tasks involved in human computation enjoyable. Thus, while the ESP Game shares the same split-apply-combine structure with Galaxy Zoo, it differs in how participants are motivated—fun versus desire to help science. For more on games with a purpose, see <span class="citation" data-ref-id="[&quot;#ref-von_ahn_designing_2008&quot;]" data-ref-html="
+<p>———. 2008. “Designing Games with a Purpose.” <em>Communications of the ACM</em> 51 (8):58–67. <a href=&quot;https://doi.org/10.1145/1378704.1378719&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1378704.1378719</a>.</p>
+">Ahn and Dabbish (2008)</span>.</p></div></div>
+</div>
+<div id="p12" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p12">12</a><div class="bb-body"><p>My description of Galaxy Zoo draws on <span class="citation" data-ref-id="[&quot;#ref-nielsen_reinventing_2012&quot;]" data-ref-html="
+<p>Nielsen, Michael. 2012. <em>Reinventing Discovery: The New Era of Networked Science</em>. Princeton, NJ: Princeton University Press.</p>
+">Nielsen (2012)</span>, <span class="citation" data-ref-id="[&quot;#ref-adams_galaxy_2012&quot;]" data-ref-html="
+<p>Adams, Tim. 2012. “Galaxy Zoo and the New Dawn of Citizen Science.” <em>The Guardian</em>, March. <a href=&quot;http://www.guardian.co.uk/science/2012/mar/18/galaxy-zoo-crowdsourcing-citizen-scientists&quot; class=&quot;uri&quot;>http://www.guardian.co.uk/science/2012/mar/18/galaxy-zoo-crowdsourcing-citizen-scientists</a>.</p>
+">Adams (2012)</span>, <span class="citation" data-ref-id="[&quot;#ref-clery_galaxy_2011&quot;]" data-ref-html="
+<p>Clery, Daniel. 2011. “Galaxy Zoo Volunteers Share Pain and Glory of Research.” <em>Science</em> 333 (6039):173–75. <a href=&quot;https://doi.org/10.1126/science.333.6039.173&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.333.6039.173</a>.</p>
+">Clery (2011)</span>, and <span class="citation" data-ref-id="[&quot;#ref-hand_citizen_2010&quot;]" data-ref-html="
+<p>Hand, Eric. 2010. “Citizen Science: People Power.” <em>Nature News</em> 466 (7307):685–87. <a href=&quot;https://doi.org/10.1038/466685a&quot; class=&quot;uri&quot;>https://doi.org/10.1038/466685a</a>.</p>
+">Hand (2010)</span>, and my presentation of the research goals of Galaxy Zoo was simplified. For more on the history of galaxy classification in astronomy and how Galaxy Zoo continues this tradition, see <span class="citation" data-ref-id="[&quot;#ref-masters_zoo_2012&quot;]" data-ref-html="
+<p>Masters, Karen L. 2012. “A Zoo of Galaxies.” <em>Proceedings of the International Astronomical Union</em> 10 (H16):1–15. <a href=&quot;https://doi.org/10.1017/S1743921314004608&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S1743921314004608</a>.</p>
+">Masters (2012)</span> and <span class="citation" data-ref-id="[&quot;#ref-marshall_ideas_2015&quot;]" data-ref-html="
+<p>Marshall, Philip J., Chris J. Lintott, and Leigh N. Fletcher. 2015. “Ideas for Citizen Science in Astronomy.” <em>Annual Review of Astronomy and Astrophysics</em> 53 (1):247–78. <a href=&quot;https://doi.org/10.1146/annurev-astro-081913-035959&quot; class=&quot;uri&quot;>https://doi.org/10.1146/annurev-astro-081913-035959</a>.</p>
+">Marshall, Lintott, and Fletcher (2015)</span>. Building on Galaxy Zoo, the researchers completed Galaxy Zoo 2 which collected more than 60 million more complex morphological classifications from volunteers <span class="citation" data-ref-id="[&quot;#ref-masters_galaxy_2011&quot;]" data-ref-html="
+<p>Masters, Karen L, Robert C Nichol, Ben Hoyle, Chris Lintott, Steven P Bamford, Edward M Edmondson, Lucy Fortson, et al. 2011. “Galaxy Zoo: Bars in Disc Galaxies.” <em>Monthly Notices of the Royal Astronomical Society</em> 411 (3):2026–34. <a href=&quot;https://doi.org/10.1111/j.1365-2966.2010.17834.x&quot; class=&quot;uri&quot;>https://doi.org/10.1111/j.1365-2966.2010.17834.x</a>.</p>
+">(Masters et al. 2011)</span>. Further, they branched out into problems outside of galaxy morphology, including exploring the surface of the Moon, searching for planets, and transcribing old documents. Currently, all their projects are collected at the Zooniverse website <span class="citation" data-ref-id="[&quot;#ref-cox_defining_2015&quot;]" data-ref-html="
+<p>Cox, J., E. Y. Oh, B. Simmons, C. Lintott, K. Masters, A. Greenhill, G. Graham, and K. Holmes. 2015. “Defining and Measuring Success in Online Citizen Science: A Case Study of Zooniverse Projects.” <em>Computing in Science Engineering</em> 17 (4):28–41. <a href=&quot;https://doi.org/10.1109/MCSE.2015.65&quot; class=&quot;uri&quot;>https://doi.org/10.1109/MCSE.2015.65</a>.</p>
+">(Cox et al. 2015)</span>. One of the projects—Snapshot Serengeti—provides evidence that Galaxy Zoo-type image classification projects can also be done for environmental research <span class="citation" data-ref-id="[&quot;#ref-swanson_generalized_2016&quot;]" data-ref-html="
+<p>Swanson, Alexandra, Margaret Kosmala, Chris Lintott, and Craig Packer. 2016. “A Generalized Approach for Producing, Quantifying, and Validating Citizen Science Data from Wildlife Images.” <em>Conservation Biology</em> 30 (3):520–31. <a href=&quot;https://doi.org/10.1111/cobi.12695&quot; class=&quot;uri&quot;>https://doi.org/10.1111/cobi.12695</a>.</p>
+">(Swanson et al. 2016)</span>.</p></div></div>
+</div>
+<div id="p13" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p13">13</a><div class="bb-body"><p>For researchers planning to use a microtask labor market (e.g., Amazon Mechanical Turk) for a human computation project, <span class="citation" data-ref-id="[&quot;#ref-chandler_risks_2013&quot;]" data-ref-html="
+<p>Chandler, Jesse, Gabriele Paolacci, and Pam Mueller. 2013. “Risks and Rewards of Crowdsourcing Marketplaces.” In <em>Handbook of Human Computation</em>, edited by Pietro Michelucci, 377–92. New York: Springer. <a href=&quot;http://link.springer.com/chapter/10.1007/978-1-4614-8806-4_30&quot; class=&quot;uri&quot;>http://link.springer.com/chapter/10.1007/978-1-4614-8806-4_30</a>.</p>
+">Chandler, Paolacci, and Mueller (2013)</span> and <span class="citation" data-ref-id="[&quot;#ref-wang_cost-effective_2015&quot;]" data-ref-html="
+<p>Wang, Jing, Panagiotis G. Ipeirotis, and Foster Provost. 2015. “Cost-Effective Quality Assurance in Crowd Labeling.” SSRN Scholarly Paper ID 2479845. Rochester, NY: Social Science Research Network. <a href=&quot;http://papers.ssrn.com/abstract=2479845&quot; class=&quot;uri&quot;>http://papers.ssrn.com/abstract=2479845</a>.</p>
+">J. Wang, Ipeirotis, and Provost (2015)</span> offer good advice on task design and other related issues. <span class="citation" data-ref-id="[&quot;#ref-porter_big_2016&quot;]" data-ref-html="
+<p>Porter, Nathaniel D., Ashton M. Verdery, and S. Michael Gaddis. 2016. “Big Data’s Little Brother: Enhancing Big Data in the Social Sciences with Micro-Task Marketplaces.” <em>arXiv:1609.08437 [Cs]</em>, September. <a href=&quot;http://arxiv.org/abs/1609.08437&quot; class=&quot;uri&quot;>http://arxiv.org/abs/1609.08437</a>.</p>
+">Porter, Verdery, and Gaddis (2016)</span> offer examples and advice focused specifically on uses of microtask labor markets for what they call “data augmentation.” The line between data augmentation and data collection is somewhat blurry. For more on collecting and using labels for supervised learning for text, see <span class="citation" data-ref-id="[&quot;#ref-grimmer_text_2013&quot;]" data-ref-html="
+<p>Grimmer, Justin, and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts.” <em>Political Analysis</em> 21 (3):267–97. <a href=&quot;https://doi.org/10.1093/pan/mps028&quot; class=&quot;uri&quot;>https://doi.org/10.1093/pan/mps028</a>.</p>
+">Grimmer and Stewart (2013)</span>.</p></div></div>
+</div>
+<div id="p14" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p14">14</a><div class="bb-body"><p>Researchers interested in creating what I’ve called computer-assisted human computation systems (e.g., systems that use human labels to train a machine learning model) might be interested in <span class="citation" data-ref-id="[&quot;#ref-shamir_classification_2014&quot;]" data-ref-html="
+<p>Shamir, Lior, Carol Yerby, Robert Simpson, Alexander M. von Benda-Beckmann, Peter Tyack, Filipa Samarra, Patrick Miller, and John Wallin. 2014. “Classification of Large Acoustic Datasets Using Machine Learning and Crowdsourcing: Application to Whale Calls.” <em>Journal of the Acoustical Society of America</em> 135 (2):953–62. <a href=&quot;https://doi.org/10.1121/1.4861348&quot; class=&quot;uri&quot;>https://doi.org/10.1121/1.4861348</a>.</p>
+">Shamir et al. (2014)</span> (for an example using audio) and <span class="citation" data-ref-id="[&quot;#ref-cheng_flock:_2015&quot;]" data-ref-html="
+<p>Cheng, Justin, and Michael S. Bernstein. 2015. “Flock: Hybrid Crowd-Machine Learning Classifiers.” In <em>Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work &amp;amp; Social Computing</em>, 600–611. CSCW ’15. New York: ACM. <a href=&quot;https://doi.org/10.1145/2675133.2675214&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2675133.2675214</a>.</p>
+">Cheng and Bernstein (2015)</span>. Also, the machine learning models in these projects can be solicited with open calls, whereby researchers compete to create machine learning models with the greatest predictive performance. For example, the Galaxy Zoo team ran an open call and found a new approach that outperformed the one developed in <span class="citation" data-ref-id="[&quot;#ref-banerji_galaxy_2010&quot;]" data-ref-html="
+<p>Banerji, Manda, Ofer Lahav, Chris J. Lintott, Filipe B. Abdalla, Kevin Schawinski, Steven P. Bamford, Dan Andreescu, et al. 2010. “Galaxy Zoo: Reproducing Galaxy Morphologies via Machine Learning.” <em>Monthly Notices of the Royal Astronomical Society</em> 406 (1):342–53. <a href=&quot;https://doi.org/10.1111/j.1365-2966.2010.16713.x&quot; class=&quot;uri&quot;>https://doi.org/10.1111/j.1365-2966.2010.16713.x</a>.</p>
+">Banerji et al. (2010)</span>; see <span class="citation" data-ref-id="[&quot;#ref-dieleman_rotation-invariant_2015&quot;]" data-ref-html="
+<p>Dieleman, Sander, Kyle W. Willett, and Joni Dambre. 2015. “Rotation-Invariant Convolutional Neural Networks for Galaxy Morphology Prediction.” <em>Monthly Notices of the Royal Astronomical Society</em> 450 (2):1441–59. <a href=&quot;https://doi.org/10.1093/mnras/stv632&quot; class=&quot;uri&quot;>https://doi.org/10.1093/mnras/stv632</a>.</p>
+">Dieleman, Willett, and Dambre (2015)</span> for details.</p></div></div>
+</div>
+<div id="p15" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p15">15</a><div class="bb-body"><ul>
+<li><strong>Open calls (section&nbsp;5.3)</strong></li>
+</ul></div></div>
+</div>
+<div id="p16" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p16">16</a><div class="bb-body"><p>Open calls are not new. In fact, one of the most well-known open calls dates back to 1714 when Britain’s Parliament created The Longitude Prize for anyone that could develop a way to determine the longitude of a ship at sea. The problem stumped many of the greatest scientists of the days, including Isaac Newton, and the winning solution was eventually submitted by John Harrison, a clockmaker from the countryside who approached the problem differently from scientists who were focused on a solution that would somehow involve astronomy; for more information, see <span class="citation" data-ref-id="[&quot;#ref-sobel_longitude:_1996&quot;]" data-ref-html="
+<p>Sobel, Dava. 1996. <em>Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time</em>. Harmondsworth, UK: Penguin.</p>
+">Sobel (1996)</span>. As this example illustrates, one reason that open calls are thought to work so well is that they provide access to people with different perspectives and skills <span class="citation" data-ref-id="[&quot;#ref-boudreau_using_2013&quot;]" data-ref-html="
+<p>Boudreau, Kevin J., and Karim R. Lakhani. 2013. “Using the Crowd as an Innovation Partner.” <em>Harvard Business Review</em> 91 (4):60–69, 140.</p>
+">(Boudreau and Lakhani 2013)</span>. See <span class="citation" data-ref-id="[&quot;#ref-hong_groups_2004&quot;]" data-ref-html="
+<p>Hong, Lu, and Scott E. Page. 2004. “Groups of Diverse Problem Solvers Can Outperform Groups of High-Ability Problem Solvers.” <em>Proceedings of the National Academy of Sciences of the USA</em> 101 (46):16385–9. <a href=&quot;https://doi.org/10.1073/pnas.0403723101&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.0403723101</a>.</p>
+">Hong and Page (2004)</span> and <span class="citation" data-ref-id="[&quot;#ref-page_difference:_2008&quot;]" data-ref-html="
+<p>Page, Scott E. 2008. <em>The Difference: How the Power of Diversity Creates Better Groups, Firms, Schools, and Societies</em>. Princeton, NJ: Princeton University Press.</p>
+">Page (2008)</span> for more on the value of diversity in problem solving.</p></div></div>
+</div>
+<div id="p17" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p17">17</a><div class="bb-body"><p>Each of the open call cases in the chapter requires a bit of further explanation for why it belongs in this category. First, one way that I distinguish between human computation and open call projects is whether the output is an average of all the solutions (human computation) or the best solution (open call). The Netflix Prize is somewhat tricky in this regard because the best solution turned out to be a sophisticated average of individual solutions, an approach called an ensemble solution <span class="citation" data-ref-id="[&quot;#ref-bell_all_2010&quot;,&quot;#ref-feuerverger_statistical_2012&quot;]" data-ref-html="
+<p>Bell, Robert M., Yehuda Koren, and Chris Volinsky. 2010. “All Together Now: A Perspective on the Netflix Prize.” <em>Chance</em> 23 (1):24–24. <a href=&quot;https://doi.org/10.1007/s00144-010-0005-2&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s00144-010-0005-2</a>.</p>
+ 
+<p>Feuerverger, Andrey, Yu He, and Shashi Khatri. 2012. “Statistical Significance of the Netflix Challenge.” <em>Statistical Science</em> 27 (2):202–31. <a href=&quot;http://www.jstor.org/stable/41714795&quot; class=&quot;uri&quot;>http://www.jstor.org/stable/41714795</a>.</p>
+">(Bell, Koren, and Volinsky 2010; Feuerverger, He, and Khatri 2012)</span>. From the perspective of Netflix, however, all they had to do was pick the best solution. For more on the Netflix Prize, see <span class="citation" data-ref-id="[&quot;#ref-bennett_netflix_2007&quot;]" data-ref-html="
+<p>Bennett, James, and Stan Lanning. 2007. “The Netflix Prize.” In <em>Proceedings of KDD Cup and Workshop</em>, 2007:35.</p>
+">Bennett and Lanning (2007)</span>, <span class="citation" data-ref-id="[&quot;#ref-thompson_if_2008&quot;]" data-ref-html="
+<p>Thompson, Clive. 2008. “If You Liked This, You’re Sure to Love That - Winning the Netflix Prize.” <em>New York Times Magazine</em>, November. <a href=&quot;http://www.nytimes.com/2008/11/23/magazine/23Netflix-t.html&quot; class=&quot;uri&quot;>http://www.nytimes.com/2008/11/23/magazine/23Netflix-t.html</a>.</p>
+">Thompson (2008)</span>, <span class="citation" data-ref-id="[&quot;#ref-bell_all_2010&quot;]" data-ref-html="
+<p>Bell, Robert M., Yehuda Koren, and Chris Volinsky. 2010. “All Together Now: A Perspective on the Netflix Prize.” <em>Chance</em> 23 (1):24–24. <a href=&quot;https://doi.org/10.1007/s00144-010-0005-2&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s00144-010-0005-2</a>.</p>
+">Bell, Koren, and Volinsky (2010)</span>, and <span class="citation" data-ref-id="[&quot;#ref-feuerverger_statistical_2012&quot;]" data-ref-html="
+<p>Feuerverger, Andrey, Yu He, and Shashi Khatri. 2012. “Statistical Significance of the Netflix Challenge.” <em>Statistical Science</em> 27 (2):202–31. <a href=&quot;http://www.jstor.org/stable/41714795&quot; class=&quot;uri&quot;>http://www.jstor.org/stable/41714795</a>.</p>
+">Feuerverger, He, and Khatri (2012)</span>.</p></div></div>
+</div>
+<div id="p18" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p18">18</a><div class="bb-body"><p>Second, by some definitions of human computation (e.g., <span class="citation" data-ref-id="[&quot;#ref-von_ahn_human_2005&quot;]" data-ref-html="
+<p>Ahn, Luis von. 2005. “Human Computation.” Ph.D. Thesis, Carnegie Mellon University.</p>
+">Ahn (2005)</span>), Foldit should be considered a human computation project. However, I choose to categorize it as an open call because it requires specialized skills (although not necessarily specialized training) and it takes the best solution, rather than using a split-apply-combine strategy. For more on Foldit see, <span class="citation" data-ref-id="[&quot;#ref-cooper_predicting_2010&quot;]" data-ref-html="
+<p>Cooper, Seth, Firas Khatib, Adrien Treuille, Janos Barbero, Jeehyung Lee, Michael Beenen, Andrew Leaver-Fay, David Baker, Zoran Popovic, and Foldit players. 2010. “Predicting Protein Structures with a Multiplayer Online Game.” <em>Nature</em> 466 (7307):756–60. <a href=&quot;https://doi.org/10.1038/nature09304&quot; class=&quot;uri&quot;>https://doi.org/10.1038/nature09304</a>.</p>
+">Cooper et al. (2010)</span>, <span class="citation" data-ref-id="[&quot;#ref-khatib_algorithm_2011&quot;]" data-ref-html="
+<p>Khatib, Firas, Seth Cooper, Michael D. Tyka, Kefan Xu, Ilya Makedon, Zoran Popović, David Baker, and Foldit Players. 2011. “Algorithm Discovery by Protein Folding Game Players.” <em>Proceedings of the National Academy of Sciences of the USA</em> 108 (47):18949–53. <a href=&quot;https://doi.org/10.1073/pnas.1115898108&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.1115898108</a>.</p>
+">Khatib et al. (2011)</span>, and <span class="citation" data-ref-id="[&quot;#ref-andersen_impact_2012&quot;]" data-ref-html="
+<p>Andersen, Erik, Eleanor O’Rourke, Yun-En Liu, Rich Snider, Jeff Lowdermilk, David Truong, Seth Cooper, and Zoran Popovic. 2012. “The Impact of Tutorials on Games of Varying Complexity.” In <em>Proceedings of the 2012 ACM Annual Conference on Human Factors in Computing Systems</em>, 59–68. CHI ’12. New York: ACM. <a href=&quot;https://doi.org/10.1145/2207676.2207687&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2207676.2207687</a>.</p>
+">Andersen et al. (2012)</span>; my description of Foldit draws on descriptions in <span class="citation" data-ref-id="[&quot;#ref-bohannon_gamers_2009&quot;]" data-ref-html="
+<p>Bohannon, John. 2009. “Gamers Unravel the Secret Life of Protein.” <em>Wired</em>, April.</p>
+">Bohannon (2009)</span>,<span class="citation" data-ref-id="[&quot;#ref-hand_citizen_2010&quot;]" data-ref-html="
+<p>Hand, Eric. 2010. “Citizen Science: People Power.” <em>Nature News</em> 466 (7307):685–87. <a href=&quot;https://doi.org/10.1038/466685a&quot; class=&quot;uri&quot;>https://doi.org/10.1038/466685a</a>.</p>
+">Hand (2010)</span>, and <span class="citation" data-ref-id="[&quot;#ref-nielsen_reinventing_2012&quot;]" data-ref-html="
+<p>Nielsen, Michael. 2012. <em>Reinventing Discovery: The New Era of Networked Science</em>. Princeton, NJ: Princeton University Press.</p>
+">Nielsen (2012)</span>.</p></div></div>
+</div>
+<div id="p19" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p19">19</a><div class="bb-body"><p>Finally, one could argue that Peer-to-Patent is an example of distributed data collection. I choose to include it as an open call because it has a contest-like structure and only the best contributions are used, whereas with distributed data collection, the idea of good and bad contributions is less clear. For more on Peer-to-Patent, see <span class="citation" data-ref-id="[&quot;#ref-noveck_peer_2006&quot;]" data-ref-html="
+<p>Noveck, Beth Simone. 2006. “Peer to Patent: Collective Intelligence, Open Review, and Patent Reform.” <em>Harvard Journal of Law and Technology</em> 20 (1):123–62.</p>
+">Noveck (2006)</span>, <span class="citation" data-ref-id="[&quot;#ref-ledford_patent_2007&quot;]" data-ref-html="
+<p>Ledford, Heidi. 2007. “Patent Examiners Call in the Jury.” <em>Nature</em> 448 (7151):239. <a href=&quot;https://doi.org/10.1038/448239a&quot; class=&quot;uri&quot;>https://doi.org/10.1038/448239a</a>.</p>
+">Ledford (2007)</span>, <span class="citation" data-ref-id="[&quot;#ref-noveck_wiki_2009&quot;]" data-ref-html="
+<p>———. 2009. <em>Wiki Government: How Technology Can Make Government Better, Democracy Stronger, and Citizens More Powerful</em>. Washington, DC: Brookings Institution Press.</p>
+">Noveck (2009)</span>, and <span class="citation" data-ref-id="[&quot;#ref-bestor_peer_2010&quot;]" data-ref-html="
+<p>Bestor, Daniel R., and Eric Hamp. 2010. “Peer to Patent: A Cure for Our Ailing Patent Examination System.” <em>Northwestern Journal of Technology and Intellectual Property</em> 9 (2):16–28. <a href=&quot;http://scholarlycommons.law.northwestern.edu/njtip/vol9/iss2/1&quot; class=&quot;uri&quot;>http://scholarlycommons.law.northwestern.edu/njtip/vol9/iss2/1</a>.</p>
+">Bestor and Hamp (2010)</span>.</p></div></div>
+</div>
+<div id="p20" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p20">20</a><div class="bb-body"><p>In terms of using open calls in social research, results similar to those of <span class="citation" data-ref-id="[&quot;#ref-glaeser_crowdsourcing_2016&quot;]" data-ref-html="
+<p>Glaeser, Edward L., Andrew Hillis, Scott Duke Kominers, and Michael Luca. 2016. “Crowdsourcing City Government: Using Tournaments to Improve Inspection Accuracy.” Working Paper 22124. National Bureau of Economic Research. <a href=&quot;http://www.nber.org/papers/w22124&quot; class=&quot;uri&quot;>http://www.nber.org/papers/w22124</a>.</p>
+">Glaeser et al. (2016)</span>, are reported in chapter 10 of <span class="citation" data-ref-id="[&quot;#ref-mayer-schonberger_big_2013&quot;]" data-ref-html="
+<p>Mayer-Schönberger, Viktor, and Kenneth Cukier. 2013. <em>Big Data: A Revolution That Will Transform How We Live, Work, and Think</em>. Boston: Eamon Dolan/Houghton Mifflin Harcourt.</p>
+">Mayer-Schönberger and Cukier (2013)</span> whereby New York City was able to use predictive modeling to produce large gains in the productivity of housing inspectors. In New York City, these predictive models were built by city employees, but in other cases, one could imagine that they could be created or improved with open calls (e.g., <span class="citation" data-ref-id="[&quot;#ref-glaeser_crowdsourcing_2016&quot;]" data-ref-html="
+<p>Glaeser, Edward L., Andrew Hillis, Scott Duke Kominers, and Michael Luca. 2016. “Crowdsourcing City Government: Using Tournaments to Improve Inspection Accuracy.” Working Paper 22124. National Bureau of Economic Research. <a href=&quot;http://www.nber.org/papers/w22124&quot; class=&quot;uri&quot;>http://www.nber.org/papers/w22124</a>.</p>
+">Glaeser et al. (2016)</span>). However, one major concern with predictive models being used to allocate resources is that these models have the potential to reinforce existing biases. Many researchers already know “garbage in, garbage out,” and with predictive models it can be “bias in, bias out.” See <span class="citation" data-ref-id="[&quot;#ref-barocas_big_2016&quot;]" data-ref-html="
+<p>Barocas, Solon, and Andrew D. Selbst. 2016. “Big Data’s Disparate Impact.” <em>California Law Review</em> 104:671–732. <a href=&quot;https://doi.org/10.15779/Z38BG31&quot; class=&quot;uri&quot;>https://doi.org/10.15779/Z38BG31</a>.</p>
+">Barocas and Selbst (2016)</span> and <span class="citation" data-ref-id="[&quot;#ref-oneil_weapons_2016&quot;]" data-ref-html="
+<p>O’Neil, Cathy. 2016. <em>Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy</em>. New York: Crown.</p>
+">O’Neil (2016)</span> for more on the dangers of predictive models built with biased training data.</p></div></div>
+</div>
+<div id="p21" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p21">21</a><div class="bb-body"><p>One problem that might prevent governments from using open contests is that this requires data release, which could lead to privacy violations. For more about privacy and data release in open calls, see <span class="citation" data-ref-id="[&quot;#ref-narayanan_precautionary_2016&quot;]" data-ref-html="
+<p>Narayanan, Arvind, Joanna Huey, and Edward W. Felten. 2016. “A Precautionary Approach to Big Data Privacy.” In <em>Data Protection on the Move</em>, edited by Serge Gutwirth, Ronald Leenes, and Paul De Hert, 357–85. Law, Governance and Technology Series 24. Dordrecht: Springer Netherlands. <a href=&quot;http://link.springer.com/chapter/10.1007/978-94-017-7376-8_13&quot; class=&quot;uri&quot;>http://link.springer.com/chapter/10.1007/978-94-017-7376-8_13</a>.</p>
+">Narayanan, Huey, and Felten (2016)</span> and the discussion in chapter 6.</p></div></div>
+</div>
+<div id="p22" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p22">22</a><div class="bb-body"><p>For more on the differences and similarities between prediction and explanation, see <span class="citation" data-ref-id="[&quot;#ref-breiman_statistical_2001&quot;]" data-ref-html="
+<p>Breiman, Leo. 2001. “Statistical Modeling: The Two Cultures (with Comments and a Rejoinder by the Author).” <em>Statistical Science</em> 16 (3):199–231. <a href=&quot;https://doi.org/10.1214/ss/1009213726&quot; class=&quot;uri&quot;>https://doi.org/10.1214/ss/1009213726</a>.</p>
+">Breiman (2001)</span>, <span class="citation" data-ref-id="[&quot;#ref-shmueli_explain_2010&quot;]" data-ref-html="
+<p>Shmueli, Galit. 2010. “To Explain or to Predict?” <em>Statistical Science</em> 25 (3):289–310. <a href=&quot;https://doi.org/10.1214/10-STS330&quot; class=&quot;uri&quot;>https://doi.org/10.1214/10-STS330</a>.</p>
+">Shmueli (2010)</span>, <span class="citation" data-ref-id="[&quot;#ref-watts_common_2014&quot;]" data-ref-html="
+<p>———. 2014. “Common Sense and Sociological Explanations.” <em>American Journal of Sociology</em> 120 (2):313–51. <a href=&quot;https://doi.org/10.1086/678271&quot; class=&quot;uri&quot;>https://doi.org/10.1086/678271</a>.</p>
+">Watts (2014)</span>, and <span class="citation" data-ref-id="[&quot;#ref-kleinberg_prediction_2015&quot;]" data-ref-html="
+<p>Kleinberg, Jon, Jens Ludwig, Sendhil Mullainathan, and Ziad Obermeyer. 2015. “Prediction Policy Problems.” <em>American Economic Review</em> 105 (5):491–95. <a href=&quot;https://doi.org/10.1257/aer.p20151023&quot; class=&quot;uri&quot;>https://doi.org/10.1257/aer.p20151023</a>.</p>
+">Kleinberg et al. (2015)</span>. For more on the role of prediction in social research, see <span class="citation" data-ref-id="[&quot;#ref-athey_beyond_2017&quot;]" data-ref-html="
+<p>Athey, Susan. 2017. “Beyond Prediction: Using Big Data for Policy Problems.” <em>Science</em> 355 (6324):483–85. <a href=&quot;https://doi.org/10.1126/science.aal4321&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.aal4321</a>.</p>
+">Athey (2017)</span>, <span class="citation" data-ref-id="[&quot;#ref-cederman_predicting_2017&quot;]" data-ref-html="
+<p>Cederman, Lars-Erik, and Nils B. Weidmann. 2017. “Predicting Armed Conflict: Time to Adjust Our Expectations?” <em>Science</em> 355 (6324):474–76. <a href=&quot;https://doi.org/10.1126/science.aal4483&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.aal4483</a>.</p>
+">Cederman and Weidmann (2017)</span>, <span class="citation" data-ref-id="[&quot;#ref-hofman_prediction_2017&quot;]" data-ref-html="
+<p>Hofman, Jake M., Amit Sharma, and Duncan J. Watts. 2017. “Prediction and Explanation in Social Systems.” <em>Science</em> 355 (6324):486–88. <a href=&quot;https://doi.org/10.1126/science.aal3856&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.aal3856</a>.</p>
+">Hofman, Sharma, and Watts (2017)</span>, <span class="citation" data-ref-id="[]" data-ref-html="">(<span class="citeproc-not-found" data-reference-id="subrahmaniian_predicting_2017"><strong>???</strong></span>)</span>, and <span class="citation" data-ref-id="[&quot;#ref-yarkoni_choosing_2017&quot;]" data-ref-html="
+<p>Yarkoni, Tal, and Jacob Westfall. 2017. “Choosing Prediction over Explanation in Psychology: Lessons from Machine Learning.” <em>Perspectives on Psychological Science</em>, in press.</p>
+">Yarkoni and Westfall (2017)</span>.</p></div></div>
+</div>
+<div id="p23" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p23">23</a><div class="bb-body"><p>For a review of open call projects in biology, including design advice, see <span class="citation" data-ref-id="[&quot;#ref-saez-rodriguez_crowdsourcing_2016&quot;]" data-ref-html="
+<p>Saez-Rodriguez, Julio, James C. Costello, Stephen H. Friend, Michael R. Kellen, Lara Mangravite, Pablo Meyer, Thea Norman, and Gustavo Stolovitzky. 2016. “Crowdsourcing Biomedical Research: Leveraging Communities as Innovation Engines.” <em>Nature Reviews Genetics</em> 17 (8):470–86. <a href=&quot;https://doi.org/10.1038/nrg.2016.69&quot; class=&quot;uri&quot;>https://doi.org/10.1038/nrg.2016.69</a>.</p>
+">Saez-Rodriguez et al. (2016)</span>.</p></div></div>
+</div>
+<div id="p24" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p24">24</a><div class="bb-body"><ul>
+<li><strong>Distributed data collection (section&nbsp;5.4)</strong></li>
+</ul></div></div>
+</div>
+<div id="p25" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p25">25</a><div class="bb-body"><p>My description of eBird draws on descriptions in <span class="citation" data-ref-id="[&quot;#ref-bhattacharjee_citizen_2005&quot;]" data-ref-html="
+<p>Bhattacharjee, Yudhijit. 2005. “Citizen Scientists Supplement Work of Cornell Researchers.” <em>Science</em> 308 (5727):1402–3. <a href=&quot;https://doi.org/10.1126/science.308.5727.1402&quot; class=&quot;uri&quot;>https://doi.org/10.1126/science.308.5727.1402</a>.</p>
+">Bhattacharjee (2005)</span>, <span class="citation" data-ref-id="[&quot;#ref-robbins_crowdsourcing_2013&quot;]" data-ref-html="
+<p>Robbins, Jim. 2013. “Crowdsourcing, for the Birds.” <em>New York Times</em>, August. <a href=&quot;http://www.nytimes.com/2013/08/20/science/earth/crowdsourcing-for-the-birds.html&quot; class=&quot;uri&quot;>http://www.nytimes.com/2013/08/20/science/earth/crowdsourcing-for-the-birds.html</a>.</p>
+">Robbins (2013)</span>, and <span class="citation" data-ref-id="[&quot;#ref-sullivan_ebird_2014&quot;]" data-ref-html="
+<p>Sullivan, Brian L., Jocelyn L. Aycrigg, Jessie H. Barry, Rick E. Bonney, Nicholas Bruns, Caren B. Cooper, Theo Damoulas, et al. 2014. “The eBird Enterprise: An Integrated Approach to Development and Application of Citizen Science.” <em>Biological Conservation</em> 169 (January):31–40. <a href=&quot;https://doi.org/10.1016/j.biocon.2013.11.003&quot; class=&quot;uri&quot;>https://doi.org/10.1016/j.biocon.2013.11.003</a>.</p>
+">Sullivan et al. (2014)</span>. For more on how researchers use statistical models to analyze eBird data see <span class="citation" data-ref-id="[&quot;#ref-fink_spatiotemporal_2010&quot;]" data-ref-html="
+<p>Fink, Daniel, Wesley M. Hochachka, Benjamin Zuckerberg, David W. Winkler, Ben Shaby, M. Arthur Munson, Giles Hooker, Mirek Riedewald, Daniel Sheldon, and Steve Kelling. 2010. “Spatiotemporal Exploratory Models for Broad-Scale Survey Data.” <em>Ecological Applications</em> 20 (8):2131–47. <a href=&quot;https://doi.org/10.1890/09-1340.1&quot; class=&quot;uri&quot;>https://doi.org/10.1890/09-1340.1</a>.</p>
+">Fink et al. (2010)</span> and <span class="citation" data-ref-id="[&quot;#ref-hurlbert_spatiotemporal_2012&quot;]" data-ref-html="
+<p>Hurlbert, Allen H., and Zhongfei Liang. 2012. “Spatiotemporal Variation in Avian Migration Phenology: Citizen Science Reveals Effects of Climate Change.” <em>PLoS ONE</em> 7 (2):e31662. <a href=&quot;https://doi.org/10.1371/journal.pone.0031662&quot; class=&quot;uri&quot;>https://doi.org/10.1371/journal.pone.0031662</a>.</p>
+">Hurlbert and Liang (2012)</span>. For more on estimating the skill of eBird participants, see <span class="citation" data-ref-id="[&quot;#ref-kelling_can_2015&quot;]" data-ref-html="
+<p>Kelling, Steve, Alison Johnston, Wesley M. Hochachka, Marshall Iliff, Daniel Fink, Jeff Gerbracht, Carl Lagoze, et al. 2015. “Can Observation Skills of Citizen Scientists Be Estimated Using Species Accumulation Curves?” <em>PLoS ONE</em> 10 (10):e0139600. <a href=&quot;https://doi.org/10.1371/journal.pone.0139600&quot; class=&quot;uri&quot;>https://doi.org/10.1371/journal.pone.0139600</a>.</p>
+">Kelling, Johnston, et al. (2015)</span>. For more on the history of citizen science in ornithology, see <span class="citation" data-ref-id="[&quot;#ref-greenwood_citizens_2007&quot;]" data-ref-html="
+<p>Greenwood, Jeremy J. D. 2007. “Citizens, Science and Bird Conservation.” <em>Journal of Ornithology</em> 148 (S1):77–124. <a href=&quot;https://doi.org/10.1007/s10336-007-0239-9&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s10336-007-0239-9</a>.</p>
+">Greenwood (2007)</span>.</p></div></div>
+</div>
+<div id="p26" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p26">26</a><div class="bb-body"><p>For more on the Malawi Journals Project, see <span class="citation" data-ref-id="[&quot;#ref-watkins_hearsay_2009&quot;]" data-ref-html="
+<p>Watkins, Susan Cotts, and Ann Swidler. 2009. “Hearsay Ethnography: Conversational Journals as a Method for Studying Culture in Action.” <em>Poetics</em> 37 (2):162–84. <a href=&quot;https://doi.org/10.1016/j.poetic.2009.03.002&quot; class=&quot;uri&quot;>https://doi.org/10.1016/j.poetic.2009.03.002</a>.</p>
+">Watkins and Swidler (2009)</span> and <span class="citation" data-ref-id="[&quot;#ref-kaler_making_2015&quot;]" data-ref-html="
+<p>Kaler, Amy, Susan Cotts Watkins, and Nicole Angotti. 2015. “Making Meaning in the Time of AIDS: Longitudinal Narratives from the Malawi Journals Project.” <em>African Journal of AIDS Research</em> 14 (4):303–14. <a href=&quot;https://doi.org/10.2989/16085906.2015.1084342&quot; class=&quot;uri&quot;>https://doi.org/10.2989/16085906.2015.1084342</a>.</p>
+">Kaler, Watkins, and Angotti (2015)</span>. For more on a related project in South Africa, see <span class="citation" data-ref-id="[&quot;#ref-angotti_implementing_2015&quot;]" data-ref-html="
+<p>Angotti, Nicole, and Christie Sennott. 2015. “Implementing Insider Ethnography: Lessons from the Public Conversations About HIV/AIDS Project in Rural South Africa.” <em>Qualitative Research</em> 15 (4):437–53. <a href=&quot;https://doi.org/10.1177/1468794114543402&quot; class=&quot;uri&quot;>https://doi.org/10.1177/1468794114543402</a>.</p>
+">Angotti and Sennott (2015)</span>. For more examples of research using data from the Malawi Journals Project see <span class="citation" data-ref-id="[&quot;#ref-kaler_aids-talk_2004&quot;]" data-ref-html="
+<p>Kaler, Amy. 2004. “AIDS-Talk in Everyday Life: The Presence of HIV/AIDS in Men’s Informal Conversation in Southern Malawi.” <em>Social Science &amp;amp; Medicine</em> 59 (2):285–97. <a href=&quot;https://doi.org/10.1016/j.socscimed.2003.10.023&quot; class=&quot;uri&quot;>https://doi.org/10.1016/j.socscimed.2003.10.023</a>.</p>
+">Kaler (2004)</span> and <span class="citation" data-ref-id="[&quot;#ref-angotti_popular_2014&quot;]" data-ref-html="
+<p>Angotti, Nicole, Margaret Frye, Amy Kaler, Michelle Poulin, Susan Cotts Watkins, and Sara Yeatman. 2014. “Popular Moralities and Institutional Rationalities in Malawi’s Struggle Against AIDS.” <em>Population and Development Review</em> 40 (3):447–73. <a href=&quot;https://doi.org/10.1111/j.1728-4457.2014.00693.x&quot; class=&quot;uri&quot;>https://doi.org/10.1111/j.1728-4457.2014.00693.x</a>.</p>
+">Angotti et al. (2014)</span>.</p></div></div>
+</div>
+<div id="p27" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p27">27</a><div class="bb-body"><ul>
+<li><strong>Designing your own (section&nbsp;5.5)</strong></li>
+</ul></div></div>
+</div>
+<div id="p28" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p28">28</a><div class="bb-body"><p>My approach to offering design advice was inductive, based on the examples of successful and failed mass collaboration projects that I’ve heard about. There has also been a stream of research attempts to apply more general social psychological theories to designing online communities that is relevant to the design of mass collaboration projects, see, for example, <span class="citation" data-ref-id="[&quot;#ref-kraut_building_2012&quot;]" data-ref-html="
+<p>Kraut, Robert E., Paul Resnick, Sara Kiesler, Moira Burke, Yan Chen, Niki Kittur, Joseph Konstan, Yuqing Ren, and John Riedl. 2012. <em>Building Successful Online Communities: Evidence-Based Social Design</em>. Cambridge, MA: MIT Press.</p>
+">Kraut et al. (2012)</span>.</p></div></div>
+</div>
+<div id="p29" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p29">29</a><div class="bb-body"><p>Regarding motivating participants, it is actually quite tricky to figure out exactly why people participate in mass collaboration projects <span class="citation" data-ref-id="[&quot;#ref-cooper_predicting_2010&quot;,&quot;#ref-nov_dusting_2011&quot;,&quot;#ref-tuite_photocity:_2011&quot;,&quot;#ref-raddick_galaxy_2013&quot;,&quot;#ref-preist_competing_2014&quot;]" data-ref-html="
+<p>Cooper, Seth, Firas Khatib, Adrien Treuille, Janos Barbero, Jeehyung Lee, Michael Beenen, Andrew Leaver-Fay, David Baker, Zoran Popovic, and Foldit players. 2010. “Predicting Protein Structures with a Multiplayer Online Game.” <em>Nature</em> 466 (7307):756–60. <a href=&quot;https://doi.org/10.1038/nature09304&quot; class=&quot;uri&quot;>https://doi.org/10.1038/nature09304</a>.</p>
+ 
+<p>Nov, Oded, Ofer Arazy, and David Anderson. 2011. “Dusting for Science: Motivation and Participation of Digital Citizen Science Volunteers.” In <em>Proceedings of the 2011 iConference</em>, 68–74. iConference ’11. New York: ACM. <a href=&quot;https://doi.org/10.1145/1940761.1940771&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1940761.1940771</a>.</p>
+ 
+<p>Tuite, Kathleen, Noah Snavely, Dun-yu Hsiao, Nadine Tabing, and Zoran Popovic. 2011. “PhotoCity: Training Experts at Large-Scale Image Acquisition Through a Competitive Game.” In <em>Proceedings of the 2011 Annual Conference on Human Factors in Computing Systems</em>, 1383–92. CHI ’11. New York: ACM. <a href=&quot;https://doi.org/10.1145/1978942.1979146&quot; class=&quot;uri&quot;>https://doi.org/10.1145/1978942.1979146</a>.</p>
+ 
+<p>Raddick, M. Jordan, Georgia Bracey, Pamela L. Gay, Chris J. Lintott, Carie Cardamone, Phil Murray, Kevin Schawinski, Alexander S. Szalay, and Jan Vandenberg. 2013. “Galaxy Zoo: Motivations of Citizen Scientists.” <em>Astronomy Education Review</em> 12 (1). <a href=&quot;https://doi.org/10.3847/AER2011021&quot; class=&quot;uri&quot;>https://doi.org/10.3847/AER2011021</a>.</p>
+ 
+<p>Preist, Chris, Elaine Massung, and David Coyle. 2014. “Competing or Aiming to Be Average?: Normification as a Means of Engaging Digital Volunteers.” In <em>Proceedings of the 17th ACM Conference on Computer Supported Cooperative Work &amp;amp; Social Computing</em>, 1222–33. CSCW ’14. New York: ACM. <a href=&quot;https://doi.org/10.1145/2531602.2531615&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2531602.2531615</a>.</p>
+">(Cooper et al. 2010; Nov, Arazy, and Anderson 2011; Tuite et al. 2011; Raddick et al. 2013; Preist, Massung, and Coyle 2014)</span>. If you plan to motivate participants with payment on a microtask labor market (e.g., Amazon Mechanical Turk), <span class="citation" data-ref-id="[&quot;#ref-kittur_future_2013&quot;]" data-ref-html="
+<p>Kittur, Aniket, Jeffrey V. Nickerson, Michael Bernstein, Elizabeth Gerber, Aaron Shaw, John Zimmerman, Matt Lease, and John Horton. 2013. “The Future of Crowd Work.” In <em>Proceedings of the 2013 Conference on Computer Supported Cooperative Work</em>, 1301–18. CSCW ’13. New York: ACM. <a href=&quot;https://doi.org/10.1145/2441776.2441923&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2441776.2441923</a>.</p>
+">Kittur et al. (2013)</span> offers some advice.</p></div></div>
+</div>
+<div id="p30" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p30">30</a><div class="bb-body"><p>Regarding enabling surprise, for more examples of unexpected discoveries coming out of Zooiverse projects, see <span class="citation" data-ref-id="[&quot;#ref-marshall_ideas_2015&quot;]" data-ref-html="
+<p>Marshall, Philip J., Chris J. Lintott, and Leigh N. Fletcher. 2015. “Ideas for Citizen Science in Astronomy.” <em>Annual Review of Astronomy and Astrophysics</em> 53 (1):247–78. <a href=&quot;https://doi.org/10.1146/annurev-astro-081913-035959&quot; class=&quot;uri&quot;>https://doi.org/10.1146/annurev-astro-081913-035959</a>.</p>
+">Marshall, Lintott, and Fletcher (2015)</span>.</p></div></div>
+</div>
+<div id="p31" class="bb-block">
+<div class="bb-en"><a class="bb-num" href="#p31">31</a><div class="bb-body"><p>Regarding being ethical, some good general introductions to the issues involved are <span class="citation" data-ref-id="[&quot;#ref-gilbert_participants_2015&quot;]" data-ref-html="
+<p>Gilbert, Sarah. 2015. “Participants in the Crowd: Deliberations on the Ethical Use of Crowdsourcing in Research.” In <em>CSCW 15 Workshop on Ethics at the 2015 Conference on Computer Supported Cooperative Work</em>. <a href=&quot;https://cscwethics2015.files.wordpress.com/2015/02/gilbert.pdf&quot; class=&quot;uri&quot;>https://cscwethics2015.files.wordpress.com/2015/02/gilbert.pdf</a>.</p>
+">Gilbert (2015)</span>, <span class="citation" data-ref-id="[&quot;#ref-salehi_we_2015&quot;]" data-ref-html="
+<p>Salehi, Niloufar, Lilly C. Irani, Michael S. Bernstein, Ali Alkhatib, Eva Ogbe, Kristy Milland, and Clickhappier. 2015. “We Are Dynamo: Overcoming Stalling and Friction in Collective Action for Crowd Workers.” In <em>Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems</em>, 1621–30. CHI ’15. New York: ACM. <a href=&quot;https://doi.org/10.1145/2702123.2702508&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2702123.2702508</a>.</p>
+">Salehi et al. (2015)</span>, <span class="citation" data-ref-id="[&quot;#ref-schmidt_good_2013&quot;]" data-ref-html="
+<p>Schmidt, F. A. 2013. “The Good, the Bad and the Ugly: Why Crowdsourcing Needs Ethics.” In <em>2013 Third International Conference on Cloud and Green Computing (CGC)</em>, 531–35. <a href=&quot;https://doi.org/10.1109/CGC.2013.89&quot; class=&quot;uri&quot;>https://doi.org/10.1109/CGC.2013.89</a>.</p>
+">Schmidt (2013)</span>, <span class="citation" data-ref-id="[&quot;#ref-williamson_ethics_2016&quot;]" data-ref-html="
+<p>Williamson, Vanessa. 2016. “On the Ethics of Crowdsourced Research.” <em>PS: Political Science &amp;amp; Politics</em> 49 (1):77–81. <a href=&quot;https://doi.org/10.1017/S104909651500116X&quot; class=&quot;uri&quot;>https://doi.org/10.1017/S104909651500116X</a>.</p>
+">Williamson (2016)</span>, <span class="citation" data-ref-id="[&quot;#ref-resnik_framework_2015&quot;]" data-ref-html="
+<p>Resnik, David B., Kevin C. Elliott, and Aubrey K. Miller. 2015. “A Framework for Addressing Ethical Issues in Citizen Science.” <em>Environmental Science &amp;amp; Policy</em> 54 (December):475–81. <a href=&quot;https://doi.org/10.1016/j.envsci.2015.05.008&quot; class=&quot;uri&quot;>https://doi.org/10.1016/j.envsci.2015.05.008</a>.</p>
+">Resnik, Elliott, and Miller (2015)</span>, and <span class="citation" data-ref-id="[&quot;#ref-zittrain_ubiquitous_2008&quot;]" data-ref-html="
+<p>Zittrain, Jonathan. 2008. “Ubiquitous Human Computing.” <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 366 (1881):3813–21. <a href=&quot;https://doi.org/10.1098/rsta.2008.0116&quot; class=&quot;uri&quot;>https://doi.org/10.1098/rsta.2008.0116</a>.</p>
+">Zittrain (2008)</span>. For issues specifically related to legal issues with crowd employees, see <span class="citation" data-ref-id="[&quot;#ref-felstiner_working_2011&quot;]" data-ref-html="
+<p>Felstiner, Alek. 2011. “Working the Crowd: Employment and Labor Law in the Crowdsourcing Industry.” <em>Berkeley Journal of Employment and Labor Law</em> 32 (1):143–203. <a href=&quot;http://www.jstor.org/stable/24052509&quot; class=&quot;uri&quot;>http://www.jstor.org/stable/24052509</a>.</p>
+">Felstiner (2011)</span>. <span class="citation" data-ref-id="[&quot;#ref-oconnor_apomediated_2013&quot;]" data-ref-html="
+<p>O’Connor, Dan. 2013. “The Apomediated World: Regulating Research When Social Media Has Changed Research.” <em>Journal of Law, Medicine &amp;amp; Ethics</em> 41 (2):470–83. <a href=&quot;https://doi.org/10.1111/jlme.12056&quot; class=&quot;uri&quot;>https://doi.org/10.1111/jlme.12056</a>.</p>
+">O’Connor (2013)</span> addresses questions about ethical oversight of research when the roles of researchers and participants blur. For issues related to sharing data while protecting participants in citizen science projects, see <span class="citation" data-ref-id="[&quot;#ref-bowser_sharing_2014&quot;]" data-ref-html="
+<p>Bowser, Anne, Andrea Wiggins, Lea Shanley, Jennifer Preece, and Sandra Henderson. 2014. “Sharing Data While Protecting Privacy in Citizen Science.” <em>Interactions</em> 21 (1):70–73. <a href=&quot;https://doi.org/10.1145/2540032&quot; class=&quot;uri&quot;>https://doi.org/10.1145/2540032</a>.</p>
+">Bowser et al. (2014)</span>. Both <span class="citation" data-ref-id="[&quot;#ref-purdam_citizen_2014&quot;]" data-ref-html="
+<p>Purdam, Kingsley. 2014. “Citizen Social Science and Citizen Data? Methodological and Ethical Challenges for Social Research.” <em>Current Sociology</em> 62 (3):374–92. <a href=&quot;https://doi.org/10.1177/0011392114527997&quot; class=&quot;uri&quot;>https://doi.org/10.1177/0011392114527997</a>.</p>
+">Purdam (2014)</span> and <span class="citation" data-ref-id="[&quot;#ref-van_der_windt_crowdseeding_2016&quot;]" data-ref-html="
+<p>Windt, Peter Van der, and Macartan Humphreys. 2016. “Crowdseeding in Eastern Congo Using Cell Phones to Collect Conflict Events Data in Real Time.” <em>Journal of Conflict Resolution</em> 60 (4):748–81. <a href=&quot;https://doi.org/10.1177/0022002714553104&quot; class=&quot;uri&quot;>https://doi.org/10.1177/0022002714553104</a>.</p>
+">Windt and Humphreys (2016)</span> have some discussion about the ethical issues in distributed data collection. Finally, most projects acknowledge contributions but do not give authorship credit to participants. In Foldit, the players are often listed as an author <span class="citation" data-ref-id="[&quot;#ref-cooper_predicting_2010&quot;,&quot;#ref-khatib_algorithm_2011&quot;]" data-ref-html="
+<p>Cooper, Seth, Firas Khatib, Adrien Treuille, Janos Barbero, Jeehyung Lee, Michael Beenen, Andrew Leaver-Fay, David Baker, Zoran Popovic, and Foldit players. 2010. “Predicting Protein Structures with a Multiplayer Online Game.” <em>Nature</em> 466 (7307):756–60. <a href=&quot;https://doi.org/10.1038/nature09304&quot; class=&quot;uri&quot;>https://doi.org/10.1038/nature09304</a>.</p>
+ 
+<p>Khatib, Firas, Seth Cooper, Michael D. Tyka, Kefan Xu, Ilya Makedon, Zoran Popović, David Baker, and Foldit Players. 2011. “Algorithm Discovery by Protein Folding Game Players.” <em>Proceedings of the National Academy of Sciences of the USA</em> 108 (47):18949–53. <a href=&quot;https://doi.org/10.1073/pnas.1115898108&quot; class=&quot;uri&quot;>https://doi.org/10.1073/pnas.1115898108</a>.</p>
+">(Cooper et al. 2010; Khatib et al. 2011)</span>. In other open call projects, the winning contributor can often write a paper describing their solutions (e.g., <span class="citation" data-ref-id="[&quot;#ref-bell_all_2010&quot;]" data-ref-html="
+<p>Bell, Robert M., Yehuda Koren, and Chris Volinsky. 2010. “All Together Now: A Perspective on the Netflix Prize.” <em>Chance</em> 23 (1):24–24. <a href=&quot;https://doi.org/10.1007/s00144-010-0005-2&quot; class=&quot;uri&quot;>https://doi.org/10.1007/s00144-010-0005-2</a>.</p>
+">Bell, Koren, and Volinsky (2010)</span> and <span class="citation" data-ref-id="[&quot;#ref-dieleman_rotation-invariant_2015&quot;]" data-ref-html="
+<p>Dieleman, Sander, Kyle W. Willett, and Joni Dambre. 2015. “Rotation-Invariant Convolutional Neural Networks for Galaxy Morphology Prediction.” <em>Monthly Notices of the Royal Astronomical Society</em> 450 (2):1441–59. <a href=&quot;https://doi.org/10.1093/mnras/stv632&quot; class=&quot;uri&quot;>https://doi.org/10.1093/mnras/stv632</a>.</p>
+">Dieleman, Willett, and Dambre (2015)</span>).</p></div></div>
+</div>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../05_creating-mass-collaboration/notes/22_collab-conclusion.html" class="pagination-link" aria-label="5.6 Conclusion">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">5.6 Conclusion</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../05_creating-mass-collaboration/notes/24_collab-activities.html" class="pagination-link" aria-label="Activities">
+        <span class="nav-page-text">Activities</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
