@@ -46,3 +46,6 @@ lectures/*/notes/*.qmd
 lectures/index.html
 lectures/*/notes/*.html
 lectures/**/*_files/
+
+/.quarto/
+**/*.quarto_ipynb
