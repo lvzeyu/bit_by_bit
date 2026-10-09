@@ -4,267 +4,578 @@
 # 可选字段(按需添加): vocab([{term, gloss}])、syntax、background
 blocks: 66   # 原文段落数,build 时校验
 paragraphs:
-  - id: 1
-    status: todo
-    ja: ""
-    point: ""
-  - id: 2
-    status: todo
-    ja: ""
-    point: ""
-  - id: 3
-    status: todo
-    ja: ""
-    point: ""
-  - id: 4
-    status: todo
-    ja: ""
-    point: ""
-  - id: 5
-    status: todo
-    ja: ""
-    point: ""
-  - id: 6
-    status: todo
-    ja: ""
-    point: ""
-  - id: 7
-    status: todo
-    ja: ""
-    point: ""
-  - id: 8
-    status: todo
-    ja: ""
-    point: ""
-  - id: 9
-    status: todo
-    ja: ""
-    point: ""
-  - id: 10
-    status: todo
-    ja: ""
-    point: ""
-  - id: 11
-    status: todo
-    ja: ""
-    point: ""
-  - id: 12
-    status: todo
-    ja: ""
-    point: ""
-  - id: 13
-    status: todo
-    ja: ""
-    point: ""
-  - id: 14
-    status: todo
-    ja: ""
-    point: ""
-  - id: 15
-    status: todo
-    ja: ""
-    point: ""
-  - id: 16
-    status: todo
-    ja: ""
-    point: ""
-  - id: 17
-    status: todo
-    ja: ""
-    point: ""
-  - id: 18
-    status: todo
-    ja: ""
-    point: ""
-  - id: 19
-    status: todo
-    ja: ""
-    point: ""
-  - id: 20
-    status: todo
-    ja: ""
-    point: ""
-  - id: 21
-    status: todo
-    ja: ""
-    point: ""
-  - id: 22
-    status: todo
-    ja: ""
-    point: ""
-  - id: 23
-    status: todo
-    ja: ""
-    point: ""
-  - id: 24
-    status: todo
-    ja: ""
-    point: ""
-  - id: 25
-    status: todo
-    ja: ""
-    point: ""
-  - id: 26
-    status: todo
-    ja: ""
-    point: ""
-  - id: 27
-    status: todo
-    ja: ""
-    point: ""
-  - id: 28
-    status: todo
-    ja: ""
-    point: ""
-  - id: 29
-    status: todo
-    ja: ""
-    point: ""
-  - id: 30
-    status: todo
-    ja: ""
-    point: ""
-  - id: 31
-    status: todo
-    ja: ""
-    point: ""
-  - id: 32
-    status: todo
-    ja: ""
-    point: ""
-  - id: 33
-    status: todo
-    ja: ""
-    point: ""
-  - id: 34
-    status: todo
-    ja: ""
-    point: ""
-  - id: 35
-    status: todo
-    ja: ""
-    point: ""
-  - id: 36
-    status: todo
-    ja: ""
-    point: ""
-  - id: 37
-    status: todo
-    ja: ""
-    point: ""
-  - id: 38
-    status: todo
-    ja: ""
-    point: ""
-  - id: 39
-    status: todo
-    ja: ""
-    point: ""
-  - id: 40
-    status: todo
-    ja: ""
-    point: ""
-  - id: 41
-    status: todo
-    ja: ""
-    point: ""
-  - id: 42
-    status: todo
-    ja: ""
-    point: ""
-  - id: 43
-    status: todo
-    ja: ""
-    point: ""
-  - id: 44
-    status: todo
-    ja: ""
-    point: ""
-  - id: 45
-    status: todo
-    ja: ""
-    point: ""
-  - id: 46
-    status: todo
-    ja: ""
-    point: ""
-  - id: 47
-    status: todo
-    ja: ""
-    point: ""
-  - id: 48
-    status: todo
-    ja: ""
-    point: ""
-  - id: 49
-    status: todo
-    ja: ""
-    point: ""
-  - id: 50
-    status: todo
-    ja: ""
-    point: ""
-  - id: 51
-    status: todo
-    ja: ""
-    point: ""
-  - id: 52
-    status: todo
-    ja: ""
-    point: ""
-  - id: 53
-    status: todo
-    ja: ""
-    point: ""
-  - id: 54
-    status: todo
-    ja: ""
-    point: ""
-  - id: 55
-    status: todo
-    ja: ""
-    point: ""
-  - id: 56
-    status: todo
-    ja: ""
-    point: ""
-  - id: 57
-    status: todo
-    ja: ""
-    point: ""
-  - id: 58
-    status: todo
-    ja: ""
-    point: ""
-  - id: 59
-    status: todo
-    ja: ""
-    point: ""
-  - id: 60
-    status: todo
-    ja: ""
-    point: ""
-  - id: 61
-    status: todo
-    ja: ""
-    point: ""
-  - id: 62
-    status: todo
-    ja: ""
-    point: ""
-  - id: 63
-    status: todo
-    ja: ""
-    point: ""
-  - id: 64
-    status: todo
-    ja: ""
-    point: ""
-  - id: 65
-    status: todo
-    ja: ""
-    point: ""
-  - id: 66
-    status: todo
-    ja: ""
-    point: ""
+- id: 1
+  status: draft
+  ja: |
+    序論（第2.1節）
+  point: |
+    第2.1節「序論」に関する追加文献の見出しである。
+- id: 2
+  status: draft
+  ja: |
+    この章では、エスノグラフィーの観察が含まれていません。デジタル空間におけるエスノグラフィーについては、Boellstorff et al. (2012)を参照してください。デジタルと物理の両方の空間におけるエスノグラフィーについては、Lane (2016)を参照してください。
+  point: |
+    この章ではエスノグラフィーが含まれていない。
+    「エスノグラフィー」は現場での観察などを通じて人々の生活や文化を調べる方法である。
+  vocab:
+    - {term: "ethnography", gloss: "エスノグラフィー"}
+- id: 3
+  status: draft
+  ja: |
+    ビッグデータ（第2.2節）
+  point: |
+    第2.2節「ビッグデータ」に関する追加文献の見出しである。
+- id: 4
+  status: draft
+  ja: |
+    「ビッグデータ」の定義は一元的ではないが、多くの定義は「3V」、つまりボリューム、バリエーション、およびVelocityに焦点を当てている（例えば、Japec et al. (2015)）。De Mauro et al. (2015)は、その定義のレビューを提供している。
+  point: |
+    「ビッグデータ」の定義は「3V」に焦点を当てることが多いが、一元的な定義はない。
+  vocab:
+    - {term: "velocity", gloss: "生成・更新の速さ"}
+    - {term: "variety", gloss: "多様性"}
+    - {term: "volume", gloss: "データ量"}
+- id: 5
+  status: draft
+  ja: |
+    私の大規模データのカテゴリーに政府行政データを含めるのは少し異例ですが、Legewie（2015）、Connellyら（2016）、EinavとLevin（2014）も同様の主張をしています。政府行政データの研究における価値については、Cardら（2010）、Administrative Data Taskforce（2012）、Grusky、Smeeding、Snipp（2015）を参照してください。
+  point: |
+    政府行政データが大規模データの一部として扱われることがあり、その研究価値は多くの研究で指摘されている。
+    「行政データ」は行政機関が業務のために作成・保存するデータである。
+  vocab:
+    - {term: "administrative data", gloss: "行政データ"}
+- id: 6
+  status: draft
+  ja: |
+    政府統計システム内、特に米国国勢調査局からの行政研究の視点については、JarminとO'Hara (2016)を参照してください。スウェーデン統計庁における行政記録研究に関する書籍の取り扱いについては、WallgrenとWallgren (2007)を参照してください。
+  point: |
+    米国の国勢調査局やスウェーデン統計庁における行政研究についての文献が紹介されている。
+  vocab:
+    - {term: "administrative records", gloss: "行政記録"}
+- id: 7
+  status: draft
+  ja: |
+    この章では、一般的社会調査（GSS）のような伝統的な調査と、Twitterのようなソーシャルメディアデータ源を簡単に比較した。伝統的な調査とソーシャルメディアデータの詳細かつ慎重な比較については、Schoberら（2016）を参照のこと。
+  point: |
+    伝統的な調査とソーシャルメディアデータの比較を行った。
+  vocab:
+    - {term: "General Social Survey", gloss: "一般社会調査（GSS）"}
+- id: 8
+  status: draft
+  ja: |
+    大規模データの一般的な特性（第2.3節）
+  point: |
+    第2.3節「ビッグデータ源に共通する特性」に関する追加文献の見出しである。
+- id: 9
+  status: draft
+  ja: |
+    これらのビッグデータの10の特徴は、様々な著者が異なる方法で説明してきました。これらの問題に関する私の考えに影響を与えた文献には、Lazer et al. (2009)、Groves (2011)、Howison, Wiggins, and Crowston (2011)、boyd and Crawford (2012)、S. J. Taylor (2013)、Mayer-Schönberger and Cukier (2013)、Golder and Macy (2014)、Ruths and Pfeffer (2014)、Tufekci (2014)、Sampson and Small (2015)、K. Lewis (2015b)、Lazer (2015)、Horton and Tambe (2015)、Japec et al. (2015)、およびGoldstone and Lupyan (2016)が含まれます。
+  point: |
+    ビッグデータの10の特徴について、多くの著者の文献が言及されている。
+- id: 10
+  status: draft
+  ja: |
+    この章では、相対的に中立的な「デジタル痕跡」という用語を使用してきました。デジタル痕跡のもう一つの一般的な呼び方はデジタル足跡ですが、Hal Abelson、Ken Ledeen、Harry Lewis（2008）は、デジタル痕跡はむしろデジタル指紋と呼ぶべきだと指摘しています。足跡は自分が何をしているか認識しており、通常個人に特定することはできませんが、デジタル痕跡はその限りではありません。実際、自分がほとんど知らないまま痕跡を常に残しています。これらの痕跡には名前が記載されていませんが、しばしば個人に結びつけられます。つまり、それらは指紋のように見えないかつ個人を特定できるものです。
+  point: |
+    デジタル痕跡は個人を特定できるため、デジタル指紋と呼ぶべきである。
+    「デジタル痕跡」は日常のデジタルな活動に伴って残る行動記録である。
+  vocab:
+    - {term: "digital traces", gloss: "デジタル痕跡"}
+    - {term: "digital fingerprints", gloss: "デジタル指紋"}
+    - {term: "digital footprints", gloss: "デジタル足跡"}
+- id: 11
+  status: draft
+  ja: |
+    大きな（セクション2.3.1）
+  point: |
+    第2.3.1節「大規模」に関する追加文献の見出しである。
+- id: 12
+  status: draft
+  ja: |
+    より大きなデータセットが統計的検定を問題にする理由については、M. Lin, Lucas, および Shmueli (2013) と McFarland および McFarland (2015) を参照してください。これらの問題は、研究者が統計的有意性ではなく実践的有意性に焦点を当てるべきであることを示しています。
+  point: |
+    研究者が実践的有意性に注目すべきである。
+  vocab:
+    - {term: "statistical significance", gloss: "統計的有意性"}
+    - {term: "practical significance", gloss: "実質的な重要性"}
+    - {term: "large datasets", gloss: "大規模データセット"}
+- id: 13
+  status: draft
+  ja: |
+    詳細については、Mervis (2014) を参照してください。
+  point: |
+    Raj Chettyと同僚が税務記録へのアクセスを得る方法について述べている。
+  vocab:
+    - {term: "tax records", gloss: "税務記録"}
+- id: 14
+  status: draft
+  ja: |
+    大規模なデータセットは、一般的に単一のコンピュータの能力を超える計算上の問題を引き起こすことがあります。そのため、大規模なデータセット上で計算を行う研究者は、その作業を多くのコンピュータに分散させることがよくあり、このプロセスは平行プログラミングと呼ばれることもあります。平行プログラミング、特にHadoopという言語についての入門については、VoとSilvia（2016）を参照してください。
+  point: |
+    大規模データセットの計算を多くのコンピュータに分散させる平行プログラミングがある。
+    「大規模データセット」は多くの観測値を含むデータの集合である。
+  vocab:
+    - {term: "parallel programming", gloss: "並列プログラミング"}
+    - {term: "computational", gloss: "計算に関する"}
+- id: 15
+  status: draft
+  ja: |
+    常にオンである（第2.3.2節）
+  point: |
+    第2.3.2節「常時稼働」に関する追加文献の見出しである。
+  vocab:
+    - {term: "always-on", gloss: "常時稼働の"}
+- id: 16
+  status: draft
+  ja: |
+    常に利用可能なデータを考える際には、同じ人々の経時的な比較を行っているのか、それとも変化する人々のグループを比較しているのかを考慮することが重要である；例えば、Diaz et al. (2016)を参照のこと。
+  point: |
+    常に利用可能なデータを分析する際、同一人物の経時的変化と異なるグループ間の比較を区別することが重要である。
+  vocab:
+    - {term: "always-on", gloss: "常時稼働の"}
+- id: 17
+  status: draft
+  ja: |
+    非反応的（第¿sec:non-reactive?節）
+  point: |
+    第2.3.3節「非反応的」に関する追加文献の見出しである。非反応的とは、観察されることで行動が変わりにくい性質を指す。
+  vocab:
+    - {term: "nonreactive", gloss: "非反応的な"}
+- id: 18
+  status: draft
+  ja: |
+    ウェブら（1966）は非反応的測定に関する古典的な書籍であり、その書籍中の例はデジタル時代以前のものだが、依然として示唆的である。大規模監視の存在により人々の行動が変化する例については、ペンニー（2016）とブレイン（2014）を参照されたい。
+  point: |
+    非反応的測定に関する古典的な書籍の例はデジタル時代以前のものだが示唆的であり、大規模監視の存在により人々の行動が変化する例もある。
+    「非反応的」は測定されること自体で人々の行動が変わりにくい性質である。
+  vocab:
+    - {term: "nonreactive", gloss: "非反応的な"}
+- id: 19
+  status: draft
+  ja: |
+    反応性は、研究者が要求効果（Orne 1962; Zizzo 2010）とハーサム効果（Adair 1984; Levitt and List 2011）と呼ぶ現象と密接に関連しています。
+  point: |
+    反応性は要求効果とハーサム効果と密接に関連している。
+    「反応性」は観察・測定されることで対象の行動が変わることである。
+  vocab:
+    - {term: "reactivity", gloss: "反応性"}
+    - {term: "Hawthorne effect", gloss: "ホーソン効果"}
+    - {term: "demand effects", gloss: "要求特性による影響"}
+- id: 20
+  status: draft
+  ja: |
+    不完全（第2.3.4節）
+  point: |
+    第2.3.4節「不完全」に関する追加文献の見出しである。ここでの不完全とは、研究に必要な情報がデータに欠けていることを指す。
+  vocab:
+    - {term: "incomplete", gloss: "不完全な"}
+- id: 21
+  status: draft
+  ja: |
+    レコードリンクについては、Dunn (1946)、Fellegi and Sunter (1969)（歴史的）、Larsen and Winkler (2014)（現代的）を参照してください。コンピュータサイエンス分野では、データデダプリケーション、インスタンス識別、名前照合、重複検出、重複レコード検出などという名称で同様のアプローチが開発されています（Elmagarmid, Ipeirotis, and Verykios 2007）。また、個人を特定できる情報を送信することなくレコードをリンクするプライバシー保護型の手法もあります（Schnell 2013）。Facebookは、投票行動と関連付けるためのレコードリンクプロセスを開発し、これは第4章で述べる実験の評価のために行われました（Bond et al. 2012; Jones et al. 2013）。
+  point: |
+    レコードリンクに関する歴史的・現代的手法と、Facebookが投票行動と関連付けるためのレコードリンクプロセスを開発したことが述べられている。
+    「レコードリンク」は異なるデータ源の同一人物などの記録を結びつけることである。
+  vocab:
+    - {term: "record linkage", gloss: "記録の照合・連結"}
+    - {term: "matching", gloss: "マッチング"}
+    - {term: "privacy", gloss: "プライバシー"}
+- id: 22
+  status: draft
+  ja: |
+    構成妥当性については、Shadish, Cook, and Campbell (2001) の第3章を参照してください。
+  point: |
+    構成妥当性についての詳細はShadish, Cook, and Campbell (2001)の第3章に記載されている。
+  vocab:
+    - {term: "construct validity", gloss: "構成概念妥当性"}
+- id: 23
+  status: draft
+  ja: |
+    アクセス不能（第2.3.5節）
+  point: |
+    第2.3.5節「アクセス不能」に関する追加文献の見出しである。
+  vocab:
+    - {term: "inaccessible", gloss: "アクセス困難な"}
+- id: 24
+  status: draft
+  ja: |
+    AOL検索ログ問題については、Ohm (2010)を参照してください。第4章で実験について説明する際に、企業や政府との提携に関する助言を提供します。アクセス不可能なデータに依存した研究に対する懸念を表明した著者は複数おり、Huberman (2012)およびboydとCrawford (2012)を参照してください。
+  point: |
+    AOL検索ログ問題とアクセス不可能なデータに依存した研究に対する懸念が指摘されている。
+  vocab:
+    - {term: "inaccessible", gloss: "アクセス困難な"}
+- id: 25
+  status: draft
+  ja: |
+    大学の研究者がデータアクセスを得る一つの良い方法は、インターンや訪問研究者の形で企業で働くことです。このプロセスはデータアクセスを可能にするとともに、分析において重要な役割を果たすデータの生成方法について研究者がより多く学ぶのにも役立ちます。
+  point: |
+    大学の研究者がデータアクセスを得るとともに、データ生成の理解を深めるために企業でインターンや訪問研究者として働くことが推奨される。
+  vocab:
+    - {term: "data access", gloss: "データへのアクセス"}
+- id: 26
+  status: draft
+  ja: |
+    政府データへのアクセスに関して、Mervis（2014）は、Raj Chettyと同僚が社会移動性に関する研究で使用した税務記録へのアクセスを得る方法について述べている。
+  point: |
+    Raj Chettyと同僚が社会移動性に関する研究で使用した税務記録へのアクセスを得る方法について説明している。
+    「社会移動」は親の所得や地位と比べて子の所得や地位が変わることである。
+  vocab:
+    - {term: "social mobility", gloss: "社会移動"}
+- id: 27
+  status: draft
+  ja: |
+    非代表的な（非代表的：sec:non-representative）
+  point: |
+    第2.3.6節「非代表的」に関する追加文献の見出しである。
+  vocab:
+    - {term: "non-representative", gloss: "代表性のない"}
+- id: 28
+  status: draft
+  ja: |
+    「代表的」という概念の歴史については、Kruskal and Mosteller (1979a)、Kruskal and Mosteller (1979b)、Kruskal and Mosteller (1979c)、およびKruskal and Mosteller (1980)を参照してください。
+  point: |
+    「代表性」は標本が母集団の特徴をどの程度反映するかを指す。この概念の歴史を扱う文献を紹介している。
+  vocab:
+    - {term: "representativeness", gloss: "代表性"}
+- id: 29
+  status: draft
+  ja: |
+    私のスノウのコレラに関する研究の要約と、ドールとヒルの英国医師研究の要約は短かった。スノウのコレラに関する研究については、フリードマン（1991）を参照のこと。英国医師研究については、ドールら（2004）とキーティング（2014）を参照のこと。
+  point: |
+    スノウのコレラ研究と英国医師研究の詳細はそれぞれフリードマン（1991）、ドールら（2004）とキーティング（2014）に記載されている。
+  vocab:
+    - {term: "cholera", gloss: "コレラ"}
+- id: 30
+  status: draft
+  ja: |
+    多くの研究者は、ドールとヒルが女性医師や35歳未満の医師から収集したデータを最初の分析には使用しなかったことを知ることになるでしょう。彼らは次のように主張しました。「肺がんは女性や35歳未満の男性では相対的に珍しいため、これらのグループから有用なデータを得るには数年かかるだろう。この初報では、したがって35歳以上の男性に焦点を絞った。」ロスマン、ギャラチャー、ハッチ（2013）は、「代表性を避けるべき理由」という挑発的なタイトルで、意図的に非代表的なデータを作成することの価値についてより一般的な議論を行っています。
+  point: |
+    ドールとヒルは女性や若年層のデータを無視し、35歳以上の男性に焦点を絞った。
+  vocab:
+    - {term: "nonrepresentative", gloss: "代表性のない"}
+- id: 31
+  status: draft
+  ja: |
+    非代表性は、全体の人口について声明を出す研究者や政府にとって大きな問題です。これは、ユーザーに焦点を当てている企業にとってはそれほど心配する必要はありません。オランダ統計局がビジネスビッグデータの非代表性についてどのように考えているかについては、Buelens et al. (2014)を参照してください。
+  point: |
+    非代表性は研究者や政府にとって問題だが、企業にはそれほど心配ではない。
+  vocab:
+    - {term: "population", gloss: "母集団"}
+- id: 32
+  status: draft
+  ja: |
+    boydとCrawford（2012）、K. Lewis（2015b）、Hargittai（2015）などの研究者が、大規模データソースの代表性の欠如に対する懸念を表明しています。
+  point: |
+    研究者が大規模データソースの非代表的な性質への懸念を表明している。
+  vocab:
+    - {term: "non-representative", gloss: "代表性のない"}
+- id: 33
+  status: draft
+  ja: |
+    詳細な比較については、KeidingとLouis（2016）を参照してください。
+  point: |
+    社会調査の目的と疫学研究の目的の詳細な比較についてはKeidingとLouis（2016）を参照。
+  vocab:
+    - {term: "social surveys", gloss: "社会調査"}
+    - {term: "epidemiological research", gloss: "疫学研究"}
+- id: 34
+  status: draft
+  ja: |
+    ツイッターを使用して投票者の外挙的な一般化を行う試みについて詳しく知りたい場合は、2009年のドイツ選挙の事例を含めて、Jungherr (2013)およびJungherr (2015)を参照してください。Tumasjan et al. (2010)の研究に続く世界各地の研究者は、より洗練された手法—例えば、政党に対する肯定的または否定的な言及を区別するために感情分析を使用する—を利用して、ツイッターのデータが様々な種類の選挙を予測する能力を向上させようとしました（Gayo-Avello 2013; Jungherr 2015, chap. 7）。Huberty (2015)はこれらの選挙予測の試みの結果を次のように要約しました。
+  point: |
+    Huberty (2015)が要約したように、世界中の研究者がツイッターのデータを様々な選挙の予測に利用しようと試みている。
+  vocab:
+    - {term: "sentiment analysis", gloss: "感情分析"}
+    - {term: "out-of-sample", gloss: "標本外の"}
+    - {term: "mentions", gloss: "言及数"}
+- id: 35
+  status: draft
+  ja: |
+    すべての既知のソーシャルメディアに基づく予測手法は、真の先行的選挙予測の要求にさらされると失敗します。これらの失敗は、ソーシャルメディアの基本的な性質によるものであり、方法論的またはアルゴリズム的な困難によるものではありません。要するに、ソーシャルメディアは、安定的で偏りのない代表的な有権者の写真を提供せず、おそらく今後も提供しないでしょう。また、ソーシャルメディアの便宜サンプルには、これらの問題を事後的に修正するのに十分なデータがありません。
+  point: |
+    ソーシャルメディアは有効な選挙予測に適していない。
+  vocab:
+    - {term: "representative", gloss: "代表性のある"}
+    - {term: "forecasting", gloss: "予測"}
+- id: 36
+  status: draft
+  ja: |
+    第3章では、サンプリングと推定についてより詳細に説明します。データが非代表的であっても、特定の条件下では重み付けを行うことで良い推定を得ることが可能です。
+  point: |
+    非代表的なデータでも特定条件下では良い推定が得られる。
+  vocab:
+    - {term: "sampling", gloss: "標本抽出"}
+- id: 37
+  status: draft
+  ja: |
+    流動化（第¿sec:drifting?節）
+  point: |
+    第2.3.7節「ドリフト」に関する追加文献の見出しである。ドリフトとは、利用者・行動・システムの経時変化を指す。
+- id: 38
+  status: draft
+  ja: |
+    システムのずれは外部からは非常に見づらいが、MovieLensプロジェクト（第4章で詳しく議論される）は、学術研究グループによって15年以上にわたって運営されており、その結果、システムの時間経過による変化とその分析への影響について記録し、情報を共有することが可能となっている（ハーパーおよびコナストン 2015）。
+  point: |
+    MovieLensプロジェクトは15年以上の運営により、システムの変化とその分析への影響を記録・共有している。
+  vocab:
+    - {term: "system drift", gloss: "システムの経時変化"}
+- id: 39
+  status: draft
+  ja: |
+    数多くの学者がTwitterにおける「ドリフト」に焦点を当ててきました：Liu, Kliman-Silver, およびMislove (2014)、Tufekci (2014)。
+  point: |
+    Twitterにおける「ドリフト」に複数の研究者が注目している。
+  vocab:
+    - {term: "drift", gloss: "経時的なずれ"}
+- id: 40
+  status: draft
+  ja: |
+    人口流出に対処する一つの方法は、同じ人々を時間をかけて研究できるユーザーパネルを作成することであり、Diaz et al. (2016) を参照のこと。
+  point: |
+    ユーザーパネルを作成して同じ人々を時間をかけて研究することが人口流出対策として提唱されている。
+  vocab:
+    - {term: "population drift", gloss: "集団構成の経時変化"}
+- id: 41
+  status: draft
+  ja: |
+    アルゴリズムによって混同される（第¿sec:algorthmically-confounded?節）
+  point: |
+    第2.3.8節「アルゴリズム的交絡」に関する追加文献の見出しである。
+  vocab:
+    - {term: "algorithmically confounded", gloss: "アルゴリズムによる交絡がある"}
+- id: 42
+  status: draft
+  ja: |
+    最初に「アルゴリズム的に混乱した」という用語をJon Kleinberg氏の講演で聞いたが、その講演がいつ行われたのか、どこで行われたのかは覚えていない。印刷物で初めてこの用語を見たのはAndersonら(2015)であり、これはデートサイトで使用されるアルゴリズムが、これらのウェブサイトから得られるデータを使って社会的好みを研究する研究者の能力を複雑にする可能性についての興味深い議論である。この懸念はK. Lewis(2015a)によってAndersonら(2014)に対する反応として提起された。
+  point: |
+    Jon Kleinberg氏が提唱し、Andersonら(2015)が議論した「アルゴリズム的に混乱した」は、デートサイトのアルゴリズムが社会的好みの研究を複雑にする可能性を指摘している。
+  vocab:
+    - {term: "algorithms", gloss: "アルゴリズム"}
+- id: 43
+  status: draft
+  ja: |
+    さらに、Facebookに加えて、Twitterも三元閉鎖の概念に基づいてユーザーがフォローすべき人を推奨しており、その詳細についてはSu, Sharma, およびGoel (2016)を参照してください。したがって、Twitterにおける三元閉鎖のレベルは、人間の三元閉鎖への傾向と、三元閉鎖を促進するアルゴリズムの傾向の両方が組み合わさったものとなっている。
+  point: |
+    Twitterの三元閉鎖のレベルは人間とアルゴリズムの両方の傾向によるものである。
+  vocab:
+    - {term: "triadic closure", gloss: "三者閉鎖"}
+- id: 44
+  status: draft
+  ja: |
+    より詳しい情報については、パフォーマティビティ—特に社会科学の理論が「エンジンではなくカメラ」（つまり、世界を形成するのではなく、単にそれを描写するもの）というアイデアについては、Mackenzie (2008) を参照してください。
+  point: |
+    パフォーマティビティとは、社会科学の理論が世界を形成する「エンジン」であるというアイデアである。
+  vocab:
+    - {term: "performativity", gloss: "遂行性"}
+    - {term: "social science", gloss: "社会科学"}
+- id: 45
+  status: draft
+  ja: |
+    汚れた（第2.3.9節）
+  point: |
+    第2.3.9節「汚れたデータ」に関する追加文献の見出しである。
+  vocab:
+    - {term: "dirty", gloss: "汚れた"}
+- id: 46
+  status: draft
+  ja: |
+    政府統計機関は、データクリーニングを統計データ編集と呼んでいる。De Waal, Puts, およびDaas (2014) は、調査データ向けに開発された統計データ編集技術について述べ、それらが大規模データソースに対してどの程度適用可能であるかを検討している。また、Puts, Daas, およびWaal (2015) は、より広い読者層に向けて同様のアイデアを提示している。
+  point: |
+    統計データ編集技術が大規模データソースへの適用可能性について検討している。
+  vocab:
+    - {term: "data cleaning", gloss: "データのクリーニング"}
+    - {term: "survey data", gloss: "調査データ"}
+- id: 47
+  status: draft
+  ja: |
+    社会的ボットについての概要はFerraraら（2016）を参照してください。Twitter上のスパムを見つけることに焦点を当てた研究の例については、Clarkら（2016）とChuら（2012）を参照してください。最後に、Subrahmanianら（2016）はDARPA Twitterボットチャレンジの結果を記述しており、これはTwitter上のボットを検出するためのアプローチを比較する大規模な協力プロジェクトです。
+  point: |
+    DARPA TwitterボットチャレンジがTwitter上のボット検出アプローチを比較する大規模なプロジェクトとして行われた。
+    「ボット」は人の操作なしに投稿や編集を行う自動プログラムである。
+  vocab:
+    - {term: "bots", gloss: "ボット"}
+    - {term: "mass collaboration", gloss: "大規模協働"}
+    - {term: "spam", gloss: "スパム"}
+- id: 48
+  status: draft
+  ja: |
+    感受性（第2.3.10節）
+  point: |
+    第2.3.10節「機微なデータ」に関する追加文献の見出しである。
+  vocab:
+    - {term: "sensitive", gloss: "機微な・扱いに注意が必要な"}
+- id: 49
+  status: draft
+  ja: |
+    オーム（2015）は、機密情報に関する以前の研究をレビューし、多因子テストを提案しています。彼が提唱する4つの要素は、危害の程度、危害の確率、秘密保持の関係の存在、そしてリスクが多数派の懸念を反映しているかどうかです。
+  point: |
+    オームは機密情報の概念について、危害の程度や確率、秘密保持の関係の存在、多数派の懸念を反映しているかどうかという4つの要素からなるテストを提案した。
+  vocab:
+    - {term: "sensitive", gloss: "機微な・扱いに注意が必要な"}
+- id: 50
+  status: draft
+  ja: |
+    事物を数える（第2.4.1節）
+  point: |
+    第2.4.1節「数え上げ」に関する追加文献の見出しである。
+  vocab:
+    - {term: "counting", gloss: "数え上げ"}
+- id: 51
+  status: draft
+  ja: |
+    ファーバーのニューヨークのタクシーに関する研究は、カマーラーら（1997）による以前の研究に基づいており、この以前の研究では3つの異なる利便性サンプルの紙の乗車記録を使用しました。この以前の研究では、ドライバーが目標収入を得ようとしており、給与が高い日には働かなかったことが示されました。
+  point: |
+    「便宜標本」は入手しやすい対象から集めた標本である。先行研究では紙の乗車記録から集めた便宜標本を用い、運転手の目標収入行動を論じた。
+  vocab:
+    - {term: "convenience samples", gloss: "便宜標本"}
+    - {term: "target earners", gloss: "目標収入に達するまで働く人"}
+- id: 52
+  status: draft
+  ja: |
+    その後の研究では、キングと同僚は中国でのオンライン検閲についてさらに調査を行った（King, Pan, and Roberts 2014, [@king_how_2016]）。中国でのオンライン検閲を測定する関連アプローチについては、Bamman, O’Connor, and Smith (2012) を参照のこと。1100万件の投稿の感情を推定するためにKing, Pan, and Roberts (2013) で使用された統計的手法について詳しく知りたい場合は、Hopkins and King (2010) を参照のこと。監督学習について詳しく知りたい場合は、技術的な解説が少ないJames et al. (2013) と技術的な解説が多いHastie, Tibshirani, and Friedman (2009) を参照のこと。
+  point: |
+    キングらによる中国でのオンライン検閲の調査と、その手法に関する関連文献を紹介している。
+    「検閲」は政府などが情報の公開や流通を制限することである。
+  vocab:
+    - {term: "censorship", gloss: "検閲"}
+    - {term: "supervised learning", gloss: "教師あり学習"}
+    - {term: "sentiment", gloss: "感情・意見の傾向"}
+- id: 53
+  status: draft
+  ja: |
+    予測と現在キャスト（第2.4.2節）
+  point: |
+    第2.4.2節「予測と現在推計」に関する追加文献の見出しである。現在推計とは、速報性の高いデータから現在の状態を推定することである。
+  vocab:
+    - {term: "nowcasting", gloss: "現在推計"}
+- id: 54
+  status: draft
+  ja: |
+    予測は産業データサイエンスの重要な部分を占めており（Mayer-Schönberger and Cukier 2013; Provost and Fawcett 2013）、社会研究者がよく行う予測の一つは人口動態予測であり、例えばRaftery et al. (2012)を参照してください。
+  point: |
+    予測は産業データサイエンスの重要な部分を占め、社会研究者がよく行う人口動態予測がある。
+  vocab:
+    - {term: "demographic", gloss: "人口統計的な"}
+    - {term: "data science", gloss: "データサイエンス"}
+- id: 55
+  status: draft
+  ja: |
+    グーグル・フリータンズは、検索データを使用してインフルエンザの発生状況をリアルタイムで推定する最初のプロジェクトではありませんでした。実際、アメリカ（ポールグリーンら2008年、ジンスバーグら2009年）とスウェーデン（ヒルト、リデビック、リンデ2009年）の研究者は、「インフルエンザ」などの特定の検索語句が、公衆衛生監視データの公開前にその予測をしていたことを発見しました。その後、多くのプロジェクトがデジタル痕跡データを使用して疾病監視を試みており、そのレビューはアルトハウスら2015年を参照してください。
+  point: |
+    検索データを用いた疾病監視は、グーグル・フリータンズ以前から行われていた。
+  vocab:
+    - {term: "Google Flu Trends", gloss: "Googleインフルトレンド"}
+    - {term: "digital trace", gloss: "デジタル痕跡"}
+    - {term: "influenza", gloss: "インフルエンザ"}
+- id: 56
+  status: draft
+  ja: |
+    デジタルトレースデータを使用して健康結果を予測するだけでなく、ツイッターのデータを使用して選挙結果を予測する多くの研究が行われている。ガヨ・アヴェロ（2011）、ガヨ・アヴェロ（2013）、ユンヘラ（2015）の第7章、およびハバーティ（2015）を参照のこと。また、中央銀行では国内総生産（GDP）などの経済指標のナウキャストも一般的であり、バンブーラ等（2013）を参照のこと。表2.8には、世界の出来事を予測するために何らかのデジタルトレースを使用したいくつかの研究例が含まれている。
+  point: |
+    デジタルトレースデータを用いた健康や選挙結果、経済指標の予測に関する多数の研究が行われており、その例は表2.8に示されている。
+  vocab:
+    - {term: "digital trace", gloss: "デジタル痕跡"}
+    - {term: "nowcasting", gloss: "現在推計"}
+- id: 57
+  status: draft
+  ja: |
+    表2.8：大規模データ源を使用して予測を行う研究
+    デジタル痕跡
+    結果
+    出典
+    Twitter
+    アメリカの映画の興行収入
+    Asur and Huberman (2010)
+    検索ログ
+    アメリカの映画、音楽、本、ビデオゲームの販売
+    Goel et al. (2010)
+    Twitter
+    ダウ・ジョーンズ工業株30種平均（アメリカの株式市場）
+    Bollen, Mao, and Zeng (2011)
+    ソーシャルメディアと検索ログ
+    アメリカ、イギリス、カナダ、中国の投資家気分調査と株式市場
+    Mao et al. (2015)
+    検索ログ
+    シンガポールとバンコクのデング熱の発生率
+    Althouse, Ng, and Cummings (2011)
+  point: |
+    大規模データ源を用いて、様々なイベントを予測する研究が行われている。
+  vocab:
+    - {term: "stock market", gloss: "株式市場"}
+- id: 58
+  status: draft
+  ja: |
+    最後に、Jon Kleinberg と同僚たちは（2015年）、予測問題が微妙に異なる二つのカテゴリーに分類されることを指摘し、社会学者が片方のカテゴリーに焦点を当て、もう一方を無視しがちであることを述べている。Annaという政策決定者は旱魃に直面しており、雨を増やすためにシャーマンに踊らせるかどうかを決める必要がある。一方、Bettyという政策決定者は帰りの道で濡れないように傘を持参するかどうかを決める必要がある。両者とも天候を理解することでより良い決定を下すことができるが、必要な情報は異なる。Annaは雨踊りが雨を引き起こすかどうかを理解する必要がある。一方、Bettyは因果関係を理解する必要はなく、正確な予報さえあればよい。社会研究者はAnnaのような問題——Kleinbergらはこれを「雨踊りのような」政策問題と呼ぶ——に焦点を当てることが多く、これは因果関係に関する質問を含んでいるためである。Bettyのような問題——Kleinbergらはこれを「傘のような」政策問題と呼ぶ——も非常に重要であるが、社会研究者の注目はそれほど多くない。
+  point: |
+    社会学者は因果関係を扱う「雨踊りのような」政策問題に注目し、「傘のような」政策問題はあまり注目されていない。
+  vocab:
+    - {term: "forecasting", gloss: "予測"}
+- id: 59
+  status: draft
+  ja: |
+    近似実験（第2.4.3節）
+  point: |
+    第2.4.3節「実験の近似」に関する追加文献の見出しである。
+- id: 60
+  status: draft
+  ja: |
+    P.S. 政治科学誌では大規模データ、因果推論、形式理論に関するシンポジウムが開催され、Clark と Golder (2015) が各寄稿を要約している。アメリカ合衆国国立科学院紀要誌でも因果推論と大規模データに関するシンポジウムが開催され、Shiffrin (2016) が各寄稿を要約している。大規模データソース内で自然実験を自動的に発見しようとする機械学習アプローチについては、Jensen ら (2008)、Sharma, Hofman, および Watts (2015)、Sharma, Hofman, および Watts (2016) を参照のこと。
+  point: |
+    大規模データと因果推論に関する複数のシンポジウムと関連文献が紹介されている。
+    「因果推論」はある働きかけが結果を変えたかを推定することである。
+  vocab:
+    - {term: "causal inference", gloss: "因果推論"}
+    - {term: "natural experiments", gloss: "自然実験"}
+    - {term: "machine learning", gloss: "機械学習"}
+- id: 61
+  status: draft
+  ja: |
+    自然実験に関しては、Dunning（2012）が多くの例を挙げた入門的な書籍を提供している。自然実験に対する懐疑的な見方については、経済学のRosenzweigとWolpin（2000）や政治学のSekhonとTitiunik（2012）を参照されたい。Deaton（2010）とHeckmanおよびUrzúa（2010）は、自然実験に焦点を当てる研究者が重要でない因果効果の推定に集中する可能性があると主張している。これに対してImbens（2010）は、自然実験の価値に対するより楽観的な見方を提示している。
+  point: |
+    自然実験の価値と限界について異なる見解が存在する。
+    「自然実験」は研究者以外が生んだ偶然に近い条件差を利用する研究である。
+  vocab:
+    - {term: "natural experiments", gloss: "自然実験"}
+- id: 62
+  status: draft
+  ja: |
+    研究者が徴兵の影響から兵役の影響を推定する方法を説明する際、私が述べた手法は、インストルメンタル変数と呼ばれる技術です。ImbensとRubin（2015）は、第23章と第24章で導入を行い、徴兵抽選を例としています。インストルメンタル変数が使用される場合、コンプライアーにおける兵役の影響は、しばしばコンプライアー平均因果効果（CACE）または局所平均処置効果（LATE）と呼ばれます。SoveyとGreen（2011）、AngristとKrueger（2001）、Bollen（2012）は、政治学、経済学、社会学におけるインストルメンタル変数の使用についてレビューを提供し、SoveyとGreen（2011）はインストルメンタル変数を使用した研究を評価するための「読者のチェックリスト」を提供しています。
+  point: |
+    インストルメンタル変数の使用と評価に関するレビューとチェックリストが提供されている。
+  vocab:
+    - {term: "complier average causal effect", gloss: "遵守者平均因果効果（CACE）"}
+    - {term: "average treatment effect", gloss: "平均処置効果（ATE）"}
+    - {term: "instrumental variables", gloss: "操作変数"}
+- id: 63
+  status: draft
+  ja: |
+    実際、1970年の抽選は完全にランダム化されたわけではなく、純粋なランダム性から小さな逸脱があったことが分かった（Fienberg 1971）。BerinskyとChatfield（2015）は、この小さな逸脱が実質的には重要ではないと主張し、適切に実施されたランダム化の重要性について議論している。
+  point: |
+    1970年の抽選は完全にランダムではなかったが、その逸脱は実質的には重要ではないとされる。
+  vocab:
+    - {term: "randomization", gloss: "無作為化"}
+- id: 64
+  status: draft
+  ja: |
+    マッチングに関しては、Stuart (2010) が楽観的なレビューを提供し、Sekhon (2009) が悲観的なレビューを提供している。マッチングが一種の剪定であるという点については、Ho et al. (2007) を参照のこと。個々の人に完全なマッチを見つけることはしばしば困難であり、これが複数の複雑さを引き起こす。まず、正確なマッチが利用できない場合、研究者は二つの単位間の距離をどのように測定するか、そして特定の距離が十分に近いかどうかを決定する必要がある。処置群の各事例に対して複数のマッチを使用したい場合、これはより正確な推定をもたらす可能性があるため、さらなる複雑さが生じる。これらの問題の詳細は、Imbens and Rubin (2015) の第18章で詳しく説明されている。また、(???) の第2部も参照のこと。
+  point: |
+    マッチングの難しさと複雑さ、特に完全なマッチの見つけにくさと複数マッチ使用の問題が述べられている。
+    「マッチング」は観測できる特徴が似た対象どうしを比べる方法である。
+  vocab:
+    - {term: "treatment group", gloss: "処置群"}
+- id: 65
+  status: draft
+  ja: |
+    デヘジアとワハバ（1999）では、マッチング手法がランダム化制御試験と同様の推定値を生成できた例が示されています。しかし、アルセノー、ガーバー、グリーン（2006）およびアルセノー、ガーバー、グリーン（2010）では、マッチング手法が実験の基準を再現できなかった例が示されています。
+  point: |
+    マッチング手法がランダム化制御試験の結果を再現できる場合とできない場合がある。
+    「マッチング」は観測できる特徴が似た対象どうしを比べる方法である。
+  vocab:
+    - {term: "randomized controlled experiment", gloss: "無作為化比較実験"}
+    - {term: "benchmark", gloss: "比較基準"}
+- id: 66
+  status: draft
+  ja: |
+    Rosenbaum (2015)およびHernánとRobins (2016)は、大規模データソース内で有用な比較を見つけるための他の助言を提供している。
+  point: |
+    Rosenbaum (2015)およびHernánとRobins (2016)が大規模データソース内で有用な比較を見つけ出すための助言を提供していること。
