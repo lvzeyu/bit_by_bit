@@ -1365,6 +1365,12 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:大規模データソースには研究に有益な特性と問題となる特性があり、これらはデータソースが研究目的で作成されたものではないことによる</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>algorithmically confounded — アルゴリズムによる交絡がある</li>
+<li>nonrepresentative — 代表性のない</li>
+<li>inaccessible — アクセス困難な</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1410,6 +1416,12 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:大規模データソースは、競合する理論の選択、政策を通じた改善された計測、実験なしでの因果関係の推定を可能にするが、研究者がデータに多くの要素を持ち込む必要があるため、興味深い重要な質問を立てることができる研究者を支援するのが最も適している。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>Google Flu Trends — Googleインフルトレンド</li>
+<li>nowcasting — 現在推計</li>
+<li>censorship — 検閲</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1451,6 +1463,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:ビッグデータの利用により、データと理論の関係が再調整され、データ優先の理論構築アプローチが試されるべきである。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>data collection — データ収集</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1486,6 +1502,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:観察だけでなく、質問や実験、直接的な参加を通じてさらに多くの情報を得ることができる</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>running experiments — 実験を行うこと</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1567,7 +1587,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

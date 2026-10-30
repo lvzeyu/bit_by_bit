@@ -1331,7 +1331,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:研究設計は質問と答えを結びつけることを扱う。</p>
+<p><strong>要点</strong>:研究設計は質問と答えを結びつけることを扱う。 「研究設計」は研究上の問いと、それに答えるためのデータや方法を結びつける計画である。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>research design — 研究設計</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1366,7 +1370,12 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:この本は、デジタル時代の社会行動研究に詳しいデータサイエンティストと、その研究に不慣れだが社会行動の研究に訓練と経験を持つ社会科学者の二つのコミュニティを結びつけようとするものである。</p>
+<p><strong>要点</strong>:本書は、社会行動の研究に詳しい社会科学者と、デジタル技術に詳しいデータ科学者を結びつける。両者は異なる専門性を持ち、互いから学べる。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>social scientists — 社会科学者</li>
+<li>data scientists — データ科学者</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1401,7 +1410,12 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:社会研究における研究設計の重要性と、デジタル時代における古典的アプローチの現代化について述べている。</p>
+<p><strong>要点</strong>:社会研究における研究設計の重要性と、デジタル時代における古典的アプローチの現代化について述べている。 「研究設計」は研究上の問いと、それに答えるためのデータや方法を結びつける計画である。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>running experiments — 実験を行うこと</li>
+<li>observing behavior — 行動を観察すること</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1483,7 +1497,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

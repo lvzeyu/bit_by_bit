@@ -1332,6 +1332,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:ビッグデータには社会研究にとって良い特性と悪い特性がある</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>data sources — データ源</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1367,6 +1371,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:大規模データソースの一般的な特性を理解することで、既存のデータソースを素早く学び、将来のデータソースにも適用可能なアイデアを得ることができる</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>the future — 未来</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1436,7 +1444,12 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:研究に有用な特性は大規模で常に活動的であり、かつ非反応的であることである</p>
+<p><strong>要点</strong>:研究に有用な特性は大規模で常に活動的であり、かつ非反応的であることである。 「非反応的」は測定されること自体で人々の行動が変わりにくい性質である。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>nonreactive — 非反応的な</li>
+<li>always-on — 常時稼働の</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1471,7 +1484,13 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:研究にとって問題となる要素は、不完全さ、アクセス不能性、非代表性、変動性、アルゴリズム的混同、汚染、機密性である。</p>
+<p><strong>要点</strong>:研究にとって問題となる要素は、不完全さ、アクセス不能性、非代表性、変動性、アルゴリズム的混同、汚染、機密性である。 「非代表性」は標本が母集団の構成を十分に反映していない性質である。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>nonrepresentative — 代表性のない</li>
+<li>inaccessible — アクセス困難な</li>
+<li>incomplete — 不完全な</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1588,7 +1607,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

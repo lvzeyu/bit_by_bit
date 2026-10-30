@@ -1335,6 +1335,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:常時接続の大データが予期しない出来事の研究とリアルタイム測定を可能にすること</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>always-on — 常時稼働の</li>
+<li>real-time — リアルタイムの</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1369,7 +1374,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:常時稼働するビッグデータシステムは研究者に時系列データを提供し、研究に二つの重要な意味を持ちます。</p>
+<p><strong>要点</strong>:常時稼働するビッグデータシステムは研究者に時系列データを提供し、研究に二つの重要な意味を持ちます。 「常時稼働」は継続的にデータを記録できる性質を指す。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>always-on — 常時稼働の</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1407,6 +1416,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:常にデータ収集が行われることにより、Ceren BudakとDuncan Wattsは、占拠ゲジ抗議行動の前後も含めて参加者と非参加者の行動と態度の変化を詳細に研究することができた。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>data collection — データ収集</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1482,6 +1495,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:常にオンのデータ収集源が過去の行動を直接観察できる唯一の方法であり、他の方法は粒度が粗く信頼性に欠ける。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>retrospective — 過去をさかのぼる・回顧的な</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1583,6 +1600,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:表2.1は、トルコのジゼ公園占拠運動から2001年9月11日の攻撃までの様々な予期しない出来事に関する研究を、それぞれの常時データソースとともに示している</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>pager — ポケベル</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1622,6 +1643,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:常にオンのビッグデータシステムは、リアルタイムの推定を生み出し、政策立案者の状況認識を支援する。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>real-time — リアルタイムの</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1657,6 +1682,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-16" class="callout-16-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:オンデマンドデータシステムは予期しない出来事の研究とリアルタイム情報提供に適しているが、長期的な変化の追跡には不適切である</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>drift — 経時的なずれ</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1739,7 +1768,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

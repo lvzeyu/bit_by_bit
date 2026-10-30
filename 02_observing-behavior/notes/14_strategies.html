@@ -1330,6 +1330,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>要点</strong>:ビッグデータから学ぶ3つの主要な戦略は、物事を数える、予測する、実験を近似することである。</p>
+<p><strong>語彙</strong></p>
+<ul>
+<li>counting — 数え上げ</li>
+<li>forecasting — 予測</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1411,7 +1416,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -1329,12 +1329,12 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:従来型の無作為抽出による電話調査を紹介し、次に示される新しい研究手法との対比を準備している。</p>
+<p><strong>要点</strong>:従来型の無作為抽出による電話調査を紹介し、次に示される新しい研究手法との対比を準備している。 「無作為標本」は、対象者を偶然に任せて抽出した標本である。</p>
 <p><strong>語彙</strong></p>
 <ul>
 <li>random sample — 無作為標本</li>
 <li>survey — 調査</li>
-<li>demographic characteristics — 人口統計的特性</li>
+<li>demographic, social, and economic characteristics — 人口統計的・社会的・経済的特性</li>
 </ul>
 </div>
 </div>
@@ -1370,7 +1370,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:標本調査と全顧客の通話記録を機械学習で結びつけ、全国の富と居住地を詳細な地理単位で推定している。</p>
+<p><strong>要点</strong>:標本調査と全顧客の通話記録を機械学習で結びつけ、全国の富と居住地を詳細な地理単位で推定している。 「機械学習」は、既知の調査回答から予測の規則を学び、未調査の人にも適用する方法である。</p>
 <p><strong>語彙</strong></p>
 <ul>
 <li>call records — 通話記録</li>
@@ -1414,7 +1414,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:詳細な地域レベルでの直接検証には限界があるものの、集約値は標準的調査と近く、速度と費用の面で大きな利点があった。</p>
+<p><strong>要点</strong>:詳細な地域レベルでの直接検証には限界があるものの、集約値は標準的調査と近く、速度と費用の面で大きな利点があった。 「集約」は、小さな地域の推定値をまとめて大きな地域の値にすることである。</p>
 <p><strong>語彙</strong></p>
 <ul>
 <li>validate — 妥当性や精度を検証する</li>
@@ -1455,11 +1455,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>要点</strong>:同じ研究でも立場によって意味が異なり、その多面性が社会調査の未来を象徴している。</p>
+<p><strong>要点</strong>:同じ研究でも立場によって意味が異なり、その多面性が社会調査の未来を象徴している。 「大規模監視」は、多数の人の行動や通信を継続的に記録・追跡することを指す。</p>
 <p><strong>語彙</strong></p>
 <ul>
 <li>Rorschach inkblot test — ロールシャッハ・テスト</li>
-<li>unlock value — 価値を引き出す</li>
+<li>unlocking value — 価値を引き出すこと</li>
 <li>mass surveillance — 大規模監視</li>
 </ul>
 </div>
@@ -1543,7 +1543,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lvzeyu\.github\.io\/bit_by_bit\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
